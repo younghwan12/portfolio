@@ -1,34 +1,39 @@
 #header {
-    padding: 0 100px;
-    margin-top: 40px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  padding: 20px 100px;
+  background: #000;
+  height: 70px;
 }
 
 #header nav {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 #header nav ul {
-    display: flex;
+  display: flex;
 }
 
 .menu li {
-    padding: 0 25px;
+  padding: 0 25px;
 }
 
 .menu li a {
-    font-family: 'Montserrat';
-    font-size: 18px;
+  font-family: "Montserrat";
+  font-size: 18px;
 }
 
 .social__link {
-    width: 38px;
-    height: 38px;
-    border: none;
-    background-color: transparent;
-    padding: 0;
+  width: 38px;
+  height: 38px;
+  border: none;
+  background-color: transparent;
+  padding: 0;
 }
 
 .social__link:first-child {
-    margin-right: 25px;
+  margin-right: 25px;
 }

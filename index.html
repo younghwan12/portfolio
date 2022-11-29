@@ -1,194 +1,180 @@
 <!DOCTYPE html>
 <html lang="ko">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>포트폴리오</title>
 
     <!-- CSS -->
-    <link rel="stylesheet" href="assets/style/font.css">
-    <link rel="stylesheet" href="assets/style/reset.css">
-    <link rel="stylesheet" href="assets/style/common.css">
+    <link rel="stylesheet" href="assets/style/font.css" />
+    <link rel="stylesheet" href="assets/style/reset.css" />
+    <link rel="stylesheet" href="assets/style/common.css" />
 
-
-    <link rel="stylesheet" href="assets/style/header.css">
+    <link rel="stylesheet" href="assets/style/header.css" />
+    <link rel="stylesheet" href="assets/style/section01.css" />
+    <link rel="stylesheet" href="assets/style/section02.css" />
 
     <style>
-        * {
-            box-sizing: border-box;
-            color: #fff;
-        }
+      * {
+        box-sizing: border-box;
+        color: #fff;
+      }
 
-        body {
-            background: #000;
-        }
-
-
-        #section01 {
-            background: #000;
-            font-family: '116watermelon';
-        }
-
-        #section01 h2 {
-            font-size: 160px;
-            text-align: center;
-            margin-top: 40px;
-            margin-bottom: 15px;
-        }
-
-        .section01__inner {
-            text-align: center;
-        }
-
-        .section01__inner .profile {
-            width: 530px;
-            height: 530px;
-            border-radius: 50%;
-            z-index: 2;
-        }
-
-        .section01__outer .bigWcloud {
-            position: absolute;
-            left: 33%;
-            top: 86%;
-            width: 30.73vw;
-            height: 9.9vw;
-            object-fit: contain;
-            z-index: 3;
-        }
-
-        .section01__outer .smallWcloud {
-            position: absolute;
-            left: 28%;
-            top: 75%;
-            width: 288px;
-            height: 70px;
-            object-fit: contain;
-        }
-
-        .section01__outer .star01 {
-            position: absolute;
-            left: 400px;
-            top: 500px;
-            width: 48px;
-            height: 48px;
-        }
-
-        .section01__outer .star02 {
-            position: absolute;
-            right: 500px;
-            top: 500px;
-            width: 48px;
-            height: 48px;
-            transform: rotate(-34.77deg);
-        }
-
-        .section01__outer .star03 {
-            position: absolute;
-            right: 200px;
-            top: 800px;
-            width: 34px;
-            height: 34px;
-            transform: rotate(-34.77deg);
-        }
-
-        .section01__outer .strainer {
-            position: absolute;
-            right: 300px;
-            top: 500px;
-            width: 140px;
-            transform: rotate(30deg);
-        }
-
-
-        .stroke {
-            position: fixed;
-            left: 50px;
-            bottom: 50px;
-            width: 140px;
-            height: 140px;
-            background-image: url("data:image/svg+xml,%0A%3Csvg width='92' height='92' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M46 81.962l-8.269 8.272-4.722-10.7-10.698 4.726-.538-11.684-11.684.543 3.72-11.09-11.091-3.714 7.473-8.997-8.999-7.47 10.219-5.69-5.693-10.216 11.584-1.614-1.618-11.583 11.385 2.68 2.675-11.386 9.648 6.611L46 1l6.608 9.65 9.648-6.611 2.675 11.386 11.385-2.68-1.618 11.583 11.584 1.614-5.693 10.217 10.219 5.689-9 7.47 7.474 8.997-11.09 3.715 3.719 11.089-11.684-.543-.538 11.684-10.698-4.727-4.722 10.7L46 81.963z' fill='%23fff' stroke='%23000'/%3E%3C/svg%3E");
-            background-size: cover;
-        }
-
-        .stroke p {
-            text-align: center;
-            color: #000;
-            line-height: 140px;
-            font-family: 'IropkeBatang';
-            font-size: 26px;
-        }
+      body {
+        /* background: #000; */
+      }
     </style>
-</head>
+  </head>
 
-<body>
+  <body>
     <header id="header">
-        <nav>
-            <ul class="menu">
-                <li><a href="#">ABOUT</a></li>
-                <li><a href="#">SITE</a></li>
-                <li><a href="#">BLOG</a></li>
-            </ul>
-            <ul>
-                <li><a href="#" rel="nofollow" target="_blank" class="social__link">
-                        <svg width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path class="soc__border"
-                                d="M31.2632 9.7713C28.5803 2.33449 20.32 -1.1356 12.8253 0.329411C8.95524 1.09204 5.51127 3.27098 3.17066 6.43777C1.5615 8.72086 0.602141 11.3958 0.394396 14.1788C-0.0257754 18.3508 1.15288 22.5268 3.69354 25.8678C6.05178 28.8571 9.43503 30.8713 13.1926 31.523C14.1388 31.6782 15.1098 31.7713 16.0685 31.8955C16.8942 31.9984 17.7277 32.0254 18.5584 31.9762C20.2039 31.8644 21.8133 31.4432 23.3017 30.7346C29.956 27.6308 33.2614 19.8029 32.0724 12.7882C31.8925 11.7592 31.6303 10.7462 31.2881 9.75888C31.0889 9.13811 30.3544 10.4728 30.4975 10.8949C31.7675 14.3394 31.8049 18.1157 30.6034 21.5845C29.4753 24.6066 27.336 27.1479 24.5466 28.7792C23.2037 29.5673 21.7265 30.1019 20.1893 30.356C18.614 30.5293 17.0224 30.4875 15.4584 30.2318C13.6581 30.0997 11.8906 29.6805 10.2234 28.9903C8.57331 28.2905 7.06185 27.3025 5.76018 26.0727C2.84292 23.2169 1.19119 19.3169 1.1725 15.2403C1.0942 13.0123 1.5734 10.8 2.56685 8.8029C4.22204 5.86161 6.88857 3.61695 10.074 2.48348C17.7616 -0.403096 27.5906 2.91801 30.4726 10.9073C30.6843 11.497 31.4126 10.1934 31.2632 9.7713Z"
-                                fill="white" />
-                            <circle class="soc__circle-inner" cx="15.8262" cy="15.5151" r="14.5455" fill="white" />
-                            <rect class="soc__black" x="8.73193" y="8.42108" width="15.6279" height="15.6279" rx="6.762"
-                                fill="black" />
-                            <path class="soc__white"
-                                d="M16.546 20.1048C18.6833 20.1048 20.4158 18.3723 20.4158 16.2351C20.4158 14.0978 18.6833 12.3653 16.546 12.3653C14.4088 12.3653 12.6763 14.0978 12.6763 16.2351C12.6763 18.3723 14.4088 20.1048 16.546 20.1048Z"
-                                fill="white" />
-                            <circle class="soc__white" cx="21.2345" cy="11.5468" r="0.781395" fill="white" />
-                            <path class="soc__black"
-                                d="M16.5459 18.6165C15.2307 18.6165 14.1646 17.5503 14.1646 16.2351C14.1646 14.9199 15.2307 13.8537 16.5459 13.8537C17.8612 13.8537 18.9273 14.9199 18.9273 16.2351C18.9273 17.5503 17.8612 18.6165 16.5459 18.6165Z"
-                                fill="black" />
-                        </svg>
-                    </a></li>
-                <li><a href="#" rel="nofollow" target="_blank" class="social__link">
-                        <svg width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <g id="fb">
-                                <path class="soc__circle-inner"
-                                    d="M30.6893 16.2177C30.6893 24.4628 23.8889 31.1468 15.5002 31.1468C7.11143 31.1468 1.31104 24.4628 1.31104 16.2177C1.31104 7 7.11143 1.28864 15.5002 1.28864C23.8889 1.28864 30.6893 7.97262 30.6893 16.2177Z"
-                                    fill="white" />
-                                <path class="soc__border"
-                                    d="M31.2741 9.7713C28.6192 2.33449 20.4448 -1.1356 13.0281 0.329411C9.1983 1.09204 5.79017 3.27098 3.47391 6.43777C1.88149 8.72086 0.93212 11.3958 0.726537 14.1787C0.310737 18.3508 1.47713 22.5268 3.99135 25.8678C6.32505 28.8571 9.6731 30.8713 13.3916 31.523C14.3279 31.6782 15.2888 31.7713 16.2375 31.8955C17.0546 31.9984 17.8794 32.0254 18.7015 31.9762C20.3299 31.8644 21.9225 31.4432 23.3954 30.7346C29.9805 27.6308 33.2515 19.8029 32.0749 12.7882C31.8969 11.7592 31.6374 10.7462 31.2988 9.75888C31.1016 9.13811 30.3748 10.4728 30.5164 10.8949C31.7732 14.3394 31.8102 18.1157 30.6212 21.5845C29.5048 24.6066 27.3877 27.1479 24.6275 28.7792C23.2985 29.5673 21.8367 30.1019 20.3154 30.356C18.7565 30.5293 17.1815 30.4875 15.6338 30.2318C13.8522 30.0997 12.1031 29.6805 10.4532 28.9903C8.82034 28.2905 7.32461 27.3025 6.03648 26.0727C3.14958 23.2169 1.51504 19.3169 1.49654 15.2403C1.41906 13.0123 1.89327 10.8 2.87639 8.8029C4.51435 5.86161 7.15313 3.61695 10.3054 2.48348C17.913 -0.403096 27.6397 2.91801 30.4918 10.9073C30.7012 11.497 31.422 10.1934 31.2741 9.7713Z"
-                                    fill="white" />
-                                <path class="soc__black"
-                                    d="M19.4005 10.3844H21.0308V7.69785C20.7496 7.66124 19.7822 7.57892 18.6557 7.57892C16.3048 7.57892 14.6947 8.9778 14.6947 11.5487V13.9149H12.1006V16.9182H14.6947V24.4748H17.875V16.9189H20.3641L20.7592 13.9156H17.8743V11.8465C17.875 10.9786 18.1221 10.3844 19.4005 10.3844Z"
-                                    fill="black" />
-                            </g>
-                        </svg>
-                    </a></li>
-            </ul>
-        </nav>
+      <nav>
+        <ul class="menu">
+          <li><a href="#">ABOUT</a></li>
+          <li><a href="#">SITE</a></li>
+          <li><a href="#">BLOG</a></li>
+        </ul>
+        <ul>
+          <li>
+            <a href="#" rel="nofollow" target="_blank" class="social__link">
+              <svg
+                width="33"
+                height="32"
+                viewBox="0 0 33 32"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  class="soc__border"
+                  d="M31.2632 9.7713C28.5803 2.33449 20.32 -1.1356 12.8253 0.329411C8.95524 1.09204 5.51127 3.27098 3.17066 6.43777C1.5615 8.72086 0.602141 11.3958 0.394396 14.1788C-0.0257754 18.3508 1.15288 22.5268 3.69354 25.8678C6.05178 28.8571 9.43503 30.8713 13.1926 31.523C14.1388 31.6782 15.1098 31.7713 16.0685 31.8955C16.8942 31.9984 17.7277 32.0254 18.5584 31.9762C20.2039 31.8644 21.8133 31.4432 23.3017 30.7346C29.956 27.6308 33.2614 19.8029 32.0724 12.7882C31.8925 11.7592 31.6303 10.7462 31.2881 9.75888C31.0889 9.13811 30.3544 10.4728 30.4975 10.8949C31.7675 14.3394 31.8049 18.1157 30.6034 21.5845C29.4753 24.6066 27.336 27.1479 24.5466 28.7792C23.2037 29.5673 21.7265 30.1019 20.1893 30.356C18.614 30.5293 17.0224 30.4875 15.4584 30.2318C13.6581 30.0997 11.8906 29.6805 10.2234 28.9903C8.57331 28.2905 7.06185 27.3025 5.76018 26.0727C2.84292 23.2169 1.19119 19.3169 1.1725 15.2403C1.0942 13.0123 1.5734 10.8 2.56685 8.8029C4.22204 5.86161 6.88857 3.61695 10.074 2.48348C17.7616 -0.403096 27.5906 2.91801 30.4726 10.9073C30.6843 11.497 31.4126 10.1934 31.2632 9.7713Z"
+                  fill="white"
+                />
+                <circle
+                  class="soc__circle-inner"
+                  cx="15.8262"
+                  cy="15.5151"
+                  r="14.5455"
+                  fill="white"
+                />
+                <rect
+                  class="soc__black"
+                  x="8.73193"
+                  y="8.42108"
+                  width="15.6279"
+                  height="15.6279"
+                  rx="6.762"
+                  fill="black"
+                />
+                <path
+                  class="soc__white"
+                  d="M16.546 20.1048C18.6833 20.1048 20.4158 18.3723 20.4158 16.2351C20.4158 14.0978 18.6833 12.3653 16.546 12.3653C14.4088 12.3653 12.6763 14.0978 12.6763 16.2351C12.6763 18.3723 14.4088 20.1048 16.546 20.1048Z"
+                  fill="white"
+                />
+                <circle
+                  class="soc__white"
+                  cx="21.2345"
+                  cy="11.5468"
+                  r="0.781395"
+                  fill="white"
+                />
+                <path
+                  class="soc__black"
+                  d="M16.5459 18.6165C15.2307 18.6165 14.1646 17.5503 14.1646 16.2351C14.1646 14.9199 15.2307 13.8537 16.5459 13.8537C17.8612 13.8537 18.9273 14.9199 18.9273 16.2351C18.9273 17.5503 17.8612 18.6165 16.5459 18.6165Z"
+                  fill="black"
+                />
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="#" rel="nofollow" target="_blank" class="social__link">
+              <svg
+                width="33"
+                height="32"
+                viewBox="0 0 33 32"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g id="fb">
+                  <path
+                    class="soc__circle-inner"
+                    d="M30.6893 16.2177C30.6893 24.4628 23.8889 31.1468 15.5002 31.1468C7.11143 31.1468 1.31104 24.4628 1.31104 16.2177C1.31104 7 7.11143 1.28864 15.5002 1.28864C23.8889 1.28864 30.6893 7.97262 30.6893 16.2177Z"
+                    fill="white"
+                  />
+                  <path
+                    class="soc__border"
+                    d="M31.2741 9.7713C28.6192 2.33449 20.4448 -1.1356 13.0281 0.329411C9.1983 1.09204 5.79017 3.27098 3.47391 6.43777C1.88149 8.72086 0.93212 11.3958 0.726537 14.1787C0.310737 18.3508 1.47713 22.5268 3.99135 25.8678C6.32505 28.8571 9.6731 30.8713 13.3916 31.523C14.3279 31.6782 15.2888 31.7713 16.2375 31.8955C17.0546 31.9984 17.8794 32.0254 18.7015 31.9762C20.3299 31.8644 21.9225 31.4432 23.3954 30.7346C29.9805 27.6308 33.2515 19.8029 32.0749 12.7882C31.8969 11.7592 31.6374 10.7462 31.2988 9.75888C31.1016 9.13811 30.3748 10.4728 30.5164 10.8949C31.7732 14.3394 31.8102 18.1157 30.6212 21.5845C29.5048 24.6066 27.3877 27.1479 24.6275 28.7792C23.2985 29.5673 21.8367 30.1019 20.3154 30.356C18.7565 30.5293 17.1815 30.4875 15.6338 30.2318C13.8522 30.0997 12.1031 29.6805 10.4532 28.9903C8.82034 28.2905 7.32461 27.3025 6.03648 26.0727C3.14958 23.2169 1.51504 19.3169 1.49654 15.2403C1.41906 13.0123 1.89327 10.8 2.87639 8.8029C4.51435 5.86161 7.15313 3.61695 10.3054 2.48348C17.913 -0.403096 27.6397 2.91801 30.4918 10.9073C30.7012 11.497 31.422 10.1934 31.2741 9.7713Z"
+                    fill="white"
+                  />
+                  <path
+                    class="soc__black"
+                    d="M19.4005 10.3844H21.0308V7.69785C20.7496 7.66124 19.7822 7.57892 18.6557 7.57892C16.3048 7.57892 14.6947 8.9778 14.6947 11.5487V13.9149H12.1006V16.9182H14.6947V24.4748H17.875V16.9189H20.3641L20.7592 13.9156H17.8743V11.8465C17.875 10.9786 18.1221 10.3844 19.4005 10.3844Z"
+                    fill="black"
+                  />
+                </g>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </nav>
     </header>
     <main id="main">
-        <div class="stroke">
-            <p>10%</p>
-        </div>
-        <section id="section01">
-            <div class="section01__wrap">
-                <div class="section01__inner">
-                    <h2>코딩과 함께 한 모든<br>시간이 눈부셨다.</h2>
-                    <img class="profile" src="assets/img/profile.png" alt="">
-                    <div class="section01__outer">
-                        <img class="bigWcloud" src="assets/img/bottle-cloud-big.svg" alt="">
-                        <img class="smallWcloud" src="assets/img/bottle-cloud-little.svg" alt="">
-                        <img class="star01" src="assets/img/star.svg" alt="">
-                        <img class="star02" src="assets/img/star.svg" alt="">
-                        <img class="star03" src="assets/img/star.svg" alt="">
-                        <img class="strainer" src="assets/img/strainer.svg" alt="">
-                    </div>
-                </div>
+      <div class="stroke">
+        <p>10%</p>
+      </div>
+      <section id="section01">
+        <div class="section01__wrap">
+          <div class="section01__inner">
+            <h2>코딩과 함께 한 모든<br />시간이 눈부셨다.</h2>
+            <img class="profile" src="assets/img/profile.png" alt="" />
+            <div class="section01__outer">
+              <img
+                class="bigWcloud"
+                src="assets/img/bottle-cloud-big.svg"
+                alt=""
+              />
+              <img
+                class="smallWcloud"
+                src="assets/img/bottle-cloud-little.svg"
+                alt=""
+              />
+              <img class="star01" src="assets/img/star.svg" alt="" />
+              <img class="star02" src="assets/img/star.svg" alt="" />
+              <img class="star03" src="assets/img/star.svg" alt="" />
+              <img class="strainer" src="assets/img/strainer.svg" alt="" />
             </div>
-        </section>
+          </div>
+        </div>
+        <img class="cloud-section" src="assets/img/cloud-section.svg" alt="" />
+      </section>
+      <section id="section02">
+        <img class="bCloud-big" src="assets/img/blackcloud-big.svg" alt="" />
+        <div class="section02__inner">
+          <h2>자신 있다면 어떤 것도 두려울 게 없다</h2>
+          <h3>
+            새로운 꿈을 꾸고 앞을 향해 나아가는 사람이<br />
+            되고 싶어 개발자로 이직을 준비하고 있다.
+          </h3>
+          <p>
+            새로운 변화가 끊임없이 일어나는 웹 환경에서 최신 트렌드에 뒤처지<br />지
+            않기 위해 스터디 모임과 세미나에 많이 참여하여<br />
+            핵심 사이트를 벤치마킹하고 업무 시간 외에도 꾸준히 부족한<br />
+            부분과 유행하는 기술들을 공부합니다.
+          </p>
+          <img class="halfmoon" src="assets/img/halfmoon.svg" alt="" />
+          <img
+            class="bCloud-small"
+            src="assets/img/blackcloud-small.svg"
+            alt=""
+          />
+          <img
+            class="bCloud-medium"
+            src="assets/img/blackcloud-medium.svg"
+            alt=""
+          />
+          <img class="town" src="assets/img/town.svg" alt="" />
+        </div>
+      </section>
     </main>
-
-</body>
-
+  </body>
 </html>

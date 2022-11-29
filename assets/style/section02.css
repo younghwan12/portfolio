@@ -1,0 +1,57 @@
+#section02 {
+  margin-top: 200px;
+}
+.bCloud-big {
+  width: 400px;
+  margin-bottom: 65px;
+}
+
+.halfmoon {
+  width: 99px;
+  position: absolute;
+  right: 360px;
+  top: -150px;
+}
+.bCloud-small {
+  width: 200px;
+  position: absolute;
+  left: 550px;
+  top: 560px;
+}
+.bCloud-medium {
+  width: 500px;
+  position: absolute;
+  left: 50px;
+  top: 800px;
+  transform: rotate(-180deg);
+}
+.section02__inner {
+  position: relative;
+}
+.section02__inner h2 {
+  color: #000;
+  font-size: 80px;
+  font-family: "116watermelon";
+  margin-left: 330px;
+  margin-bottom: 90px;
+}
+.section02__inner h3 {
+  color: #000;
+  font-family: "IropkeBatang";
+  margin-left: 330px;
+  line-height: 141%;
+  margin-bottom: 100px;
+  font-size: 30px;
+}
+.section02__inner p {
+  font-family: "IropkeBatang";
+  color: #000;
+  margin-left: 580px;
+  font-size: 30px;
+}
+.town {
+  width: 1200px;
+  position: absolute;
+  right: 0;
+  top: 135px;
+}

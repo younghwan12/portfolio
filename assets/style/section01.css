@@ -1,0 +1,101 @@
+#section01 {
+  margin-top: 70px;
+  background: #000;
+  font-family: "116watermelon";
+  position: relative;
+}
+.cloud-section {
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  width: 100%;
+}
+
+#section01 h2 {
+  font-size: 160px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.section01__inner {
+  text-align: center;
+}
+
+.section01__inner .profile {
+  width: 530px;
+  height: 530px;
+  border-radius: 50%;
+  z-index: 2;
+  margin-bottom: 100px;
+}
+
+.section01__outer .bigWcloud {
+  position: absolute;
+  left: 33%;
+  top: 75%;
+  width: 30.73vw;
+  height: 9.9vw;
+  object-fit: contain;
+  z-index: 3;
+}
+
+.section01__outer .smallWcloud {
+  position: absolute;
+  left: 28%;
+  top: 55%;
+  width: 288px;
+  height: 70px;
+  object-fit: contain;
+}
+
+.section01__outer .star01 {
+  position: absolute;
+  left: 400px;
+  top: 500px;
+  width: 48px;
+  height: 48px;
+}
+
+.section01__outer .star02 {
+  position: absolute;
+  right: 500px;
+  top: 500px;
+  width: 48px;
+  height: 48px;
+  transform: rotate(-34.77deg);
+}
+
+.section01__outer .star03 {
+  position: absolute;
+  right: 200px;
+  top: 800px;
+  width: 34px;
+  height: 34px;
+  transform: rotate(-34.77deg);
+}
+
+.section01__outer .strainer {
+  position: absolute;
+  right: 300px;
+  top: 500px;
+  width: 140px;
+  transform: rotate(30deg);
+}
+
+.stroke {
+  position: fixed;
+  left: 50px;
+  bottom: 50px;
+  width: 140px;
+  height: 140px;
+  background-image: url("data:image/svg+xml,%0A%3Csvg width='92' height='92' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M46 81.962l-8.269 8.272-4.722-10.7-10.698 4.726-.538-11.684-11.684.543 3.72-11.09-11.091-3.714 7.473-8.997-8.999-7.47 10.219-5.69-5.693-10.216 11.584-1.614-1.618-11.583 11.385 2.68 2.675-11.386 9.648 6.611L46 1l6.608 9.65 9.648-6.611 2.675 11.386 11.385-2.68-1.618 11.583 11.584 1.614-5.693 10.217 10.219 5.689-9 7.47 7.474 8.997-11.09 3.715 3.719 11.089-11.684-.543-.538 11.684-10.698-4.727-4.722 10.7L46 81.963z' fill='%23fff' stroke='%23000'/%3E%3C/svg%3E");
+  background-size: cover;
+}
+
+.stroke p {
+  text-align: center;
+  color: #000;
+  line-height: 140px;
+  font-family: "IropkeBatang";
+  font-size: 26px;
+}
