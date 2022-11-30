@@ -1,0 +1,44 @@
+#section04 {
+  width: 100%;
+  background: #000;
+  height: 130vh;
+  position: relative;
+}
+.section04__inner h2 {
+  margin-left: 120px;
+  margin-top: 50px;
+  margin-bottom: 120px;
+  font-size: 150px;
+  font-family: "BungeeShade";
+}
+.section04__inner h3 {
+  margin-left: 120px;
+  font-size: 35px;
+  font-family: "IropkeBatang";
+  line-height: 145.5%;
+  margin-bottom: 110px;
+}
+.section04__inner ul {
+  margin-left: 120px;
+}
+.section04__inner ul li {
+  list-style: inside;
+}
+.section04__inner li a {
+  font-family: "IropkeBatang";
+  font-size: 30px;
+  color: #fff;
+}
+.section04__outer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+}
+.section__map {
+  position: absolute;
+  right: 10%;
+  top: 40%;
+}

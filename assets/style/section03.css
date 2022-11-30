@@ -77,3 +77,6 @@ h2 .modal-title {
   transform: rotate(-105deg);
   width: 172px;
 }
+.wave-top {
+  width: 100%;
+}
