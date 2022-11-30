@@ -37,8 +37,27 @@
   bottom: 0;
   pointer-events: none;
 }
-.section__map {
+.section04__outer .section04__island {
   position: absolute;
+  right: 20%;
+  bottom: 5%;
+}
+.section04__strainer {
+  position: absolute;
+  width: 120px;
+  bottom: 15%;
   right: 10%;
-  top: 40%;
+  transform: rotate(20deg);
+}
+.map-line {
+  stroke-dasharray: 12 12;
+  stroke-dashoffset: 1000;
+  animation: dash 30s linear infinite forwards;
+}
+
+@keyframes dash {
+  to {
+    stroke-dasharray: 12 12;
+    stroke-dashoffset: 0;
+  }
 }
