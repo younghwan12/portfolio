@@ -23,11 +23,57 @@ h2 .modal-title {
 
 .section03__cardWrap h3 {
   color: #000;
-  text-align: right;
   font-family: "116watermelon";
   font-size: 100px;
+  position: relative;
 }
 
+.section03__cardinner {
+  margin-top: 100px;
+}
+.section03__card {
+  display: flex;
+  justify-content: space-between;
+  margin: 150px 0;
+}
+.section03__card .section03__card_svg {
+  width: 46%;
+  position: relative;
+}
 .section03__card .section03_svg01 {
-  /* transform: rotate(-6.6deg); */
+  transform: rotate(-6deg);
+}
+.section03__card .section03_svg02 {
+  transform: rotate(15deg);
+}
+.section03__card .section03__card_desc {
+  width: 42%;
+  color: #000;
+  font-family: "Iropke Batang OTF";
+  font-size: 30px;
+}
+.section03_divider {
+  margin-bottom: 240px;
+  width: 1000px;
+}
+.cat_svg {
+  width: 160px;
+  position: absolute;
+  right: -30%;
+  bottom: 30%;
+  transform: rotate(-6.38deg);
+}
+
+.petrychka {
+  position: absolute;
+  left: -15%;
+  top: -100%;
+  width: 247px;
+}
+.knife {
+  position: absolute;
+  right: 15%;
+  top: 0;
+  transform: rotate(-105deg);
+  width: 172px;
 }
