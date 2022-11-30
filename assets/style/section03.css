@@ -27,3 +27,7 @@ h2 .modal-title {
   font-family: "116watermelon";
   font-size: 100px;
 }
+
+.section03__card .section03_svg01 {
+  /* transform: rotate(-6.6deg); */
+}
