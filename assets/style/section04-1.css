@@ -67,11 +67,11 @@
 /* section04-03 */
 .section04-03__svg .section04-03-apple {
   width: 170px;
-  transform: translate(120%, 120%) rotate(-14deg);
+  transform: translate(50%, 120%) rotate(-14deg);
 }
 .section04-03__svg .section04-03-leaf {
   width: 340px;
-  transform: translate(40%, 10%);
+  transform: translate(65%, -40%);
 }
 
 /* section04-05 */
@@ -81,7 +81,7 @@
 }
 .section04-03__svg .section04-05-tree {
   width: 626px;
-  transform: translate(30%, 50%) rotate(0);
+  transform: translate(8%, 50%) rotate(0) scale(0.7);
 }
 .section04-03__svg .section04-05-tree_leaf {
   width: 133px;

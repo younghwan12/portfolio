@@ -1,0 +1,51 @@
+#section05-01 {
+  background: #000;
+  padding-top: 240px;
+}
+.section05-01__inner {
+  width: 100%;
+  flex-wrap: nowrap;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+.section05-01__inner ul {
+  column-count: 2;
+  column-gap: 200px;
+  width: 100%;
+}
+.section05-01__inner ul li {
+  position: relative;
+  margin-bottom: 180px;
+}
+.scriptbg01 {
+  width: 600px;
+}
+.scriptbg02 {
+  width: 450px;
+}
+.script01 {
+  position: absolute;
+  right: 17%;
+  top: 12%;
+  width: 450px;
+}
+.script02 {
+  position: absolute;
+  right: 37%;
+  top: 12%;
+  width: 350px;
+}
+.section05-01__comment {
+  margin-top: 75px;
+}
+.section05-01__comment h3 {
+  font-family: "116watermelon";
+  font-size: 100px;
+  margin-bottom: 60px;
+}
+.section05-01__comment p {
+  font-family: "IropkeBatang";
+  font-size: 24px;
+  line-height: 145.5%;
+}

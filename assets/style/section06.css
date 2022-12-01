@@ -1,0 +1,39 @@
+#section06 {
+  background: #fff;
+  height: 3000px;
+}
+#section06 h2 {
+  font-family: "BungeeShade";
+  font-size: 150px;
+  color: #000;
+  text-align: center;
+  margin-top: 190px;
+  margin-bottom: 160px;
+}
+.section06__top {
+  width: 100%;
+  height: 100vh;
+}
+.section06__top__inner {
+  position: relative;
+  height: inherit;
+}
+.section06__top__inner p {
+  text-align: center;
+  color: #000;
+}
+.section06__top__inner picture .section06-air_ballon {
+  width: 109px;
+}
+.section06__top__inner picture .section06-wire {
+  width: 310px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.section06__top__inner picture .section06-bridge {
+  width: 1254px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}

@@ -1,0 +1,67 @@
+#section05 {
+  background: #000;
+}
+#section05 h2 {
+  text-align: center;
+  font-family: "BungeeShade";
+  font-size: 150px;
+  margin-top: 60px;
+  margin-bottom: 160px;
+}
+.section05__wrap {
+  position: relative;
+}
+.section05_bus {
+  width: 333px;
+  transform: rotate(-28.15deg);
+}
+.section05_divider {
+  width: 1000px;
+  float: right;
+  margin-bottom: 120px;
+}
+.section05__comment__wrap {
+  clear: both;
+  display: flex;
+  justify-content: space-between;
+}
+.section05__comment {
+  width: 48%;
+}
+.section05__comment p {
+  clear: both;
+  margin-left: 80px;
+  font-family: "IropkeBatang";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 145.5%;
+  margin-bottom: 150px;
+}
+.section05__right {
+  width: 48%;
+  position: relative;
+}
+.section05__cloud-big {
+  width: 593px;
+}
+
+.section05__right .section05__cloud-little {
+  width: 288px;
+  position: absolute;
+  left: 35%;
+  bottom: 20;
+}
+.section05__right .section05__spoon {
+  width: 150px;
+  position: absolute;
+  right: 0;
+  top: 5%;
+}
+.section05__bus {
+  position: absolute;
+  top: 20%;
+  left: 25%;
+  width: 300px;
+  transform: rotate(340deg) scaleX(-1);
+}
