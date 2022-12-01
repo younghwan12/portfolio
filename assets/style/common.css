@@ -147,6 +147,10 @@
   margin-top: 70px !important;
 }
 
+.mt80 {
+  margin-top: 80px !important;
+}
+
 @media (max-width: 1226px) {
   .container {
     width: 96%;
