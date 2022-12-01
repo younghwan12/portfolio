@@ -14,7 +14,7 @@
 }
 .siteimage02 {
   position: absolute;
-  left: 21px;
+  left: 19px;
   top: 18px;
   width: 95%;
   z-index: 1;
@@ -61,4 +61,36 @@
 }
 .section04-02__desc .cloud-white-small {
   width: 288px;
+}
+
+/* section04-04 */
+.section04-02__desc .section04-04_station {
+  width: 368px;
+  transform: translate(50%, -70%);
+}
+
+.section04-02__desc .section04-04_bubble01 {
+  width: 60px;
+  transform: translate(-600%, -150%);
+}
+
+.section04-02__desc .section04-04_bubble02 {
+  width: 60px;
+  transform: translate(-520%, -50%) scale(0.4);
+}
+
+.section04-02__desc .section04-04_rocket {
+  width: 214.51px;
+  /* transform: translate(202%, -50%); */
+  transform: translate(202%, -60%);
+}
+
+.section04-02__desc .section04-04_rocketfire {
+  width: 214.51px;
+  transform: translate(100%, 100%);
+}
+
+.section04-02__desc .section04-05-tree_leaf {
+  width: 110px;
+  transform: translate(100%, 100%);
 }

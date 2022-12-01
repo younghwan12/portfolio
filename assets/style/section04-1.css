@@ -7,14 +7,17 @@
   position: relative;
   width: 54%;
 }
-
+.section04-01-spoon {
+  width: 180px;
+  transform: translate(-120%, -60%);
+}
 .section04-01__wrap h2 {
   font-family: "116watermelon";
   font-size: 100px;
 }
 .siteimage01 {
   position: absolute;
-  left: 21px;
+  left: 19px;
   top: 18px;
   width: 95%;
   z-index: 1;
@@ -44,9 +47,10 @@
   background-size: cover;
   text-align: center;
 }
-.section04-01__desc ul li:first-child {
+.section04-01__desc ul li {
   margin-right: 30px;
 }
+
 .section04-01__desc ul li a {
   color: #000;
   font-family: "Aritaburi";
@@ -58,4 +62,38 @@
 .section04-01__desc img {
   width: 235px;
   transform: translate(22%, 40%) rotate(-36.14deg);
+}
+
+/* section04-03 */
+.section04-03__svg .section04-03-apple {
+  width: 170px;
+  transform: translate(120%, 120%) rotate(-14deg);
+}
+.section04-03__svg .section04-03-leaf {
+  width: 340px;
+  transform: translate(40%, 10%);
+}
+
+/* section04-05 */
+.section04-03__svg {
+  width: 0;
+  height: 0;
+}
+.section04-03__svg .section04-05-tree {
+  width: 626px;
+  transform: translate(30%, 50%) rotate(0);
+}
+.section04-03__svg .section04-05-tree_leaf {
+  width: 133px;
+  transform: translate(-20%, -120%);
+}
+.section04-03__svg .section04-05-maple01 {
+  width: 210px;
+  transform: translate(-120%, -40%);
+}
+.section04-03__svg .section04-05-maple02 {
+  width: 210px;
+  transform: translate(170%, -140%) rotate(-200deg) scale(0.7);
+}
+.section04-03__svg .section04-05-maple03 {
 }
