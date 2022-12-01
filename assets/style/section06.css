@@ -19,11 +19,19 @@
   height: inherit;
 }
 .section06__top__inner p {
-  text-align: center;
+  width: 45%;
   color: #000;
+  margin-left: 370px;
+  font-family: "Iropke Batang OTF";
+  font-size: 30px;
+  line-height: 145.5%;
+  word-break: break-all;
 }
 .section06__top__inner picture .section06-air_ballon {
   width: 109px;
+  position: absolute;
+  right: 10%;
+  top: 0;
 }
 .section06__top__inner picture .section06-wire {
   width: 310px;
@@ -36,4 +44,10 @@
   position: absolute;
   right: 0;
   bottom: 0;
+}
+.section06__top__inner picture .section06-crescent {
+  width: 167px;
+  position: absolute;
+  left: 10%;
+  top: -20%;
 }
