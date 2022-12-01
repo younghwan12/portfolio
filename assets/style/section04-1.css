@@ -1,3 +1,60 @@
 #section04-01 {
+  padding-top: 120px;
   background: #000;
+}
+.mask {
+  position: relative;
+  width: 54%;
+}
+
+.section04-01__wrap h2 {
+  font-family: "116watermelon";
+  font-size: 100px;
+}
+.siteimage01 {
+  position: absolute;
+  left: 21px;
+  top: 18px;
+  width: 95%;
+  z-index: 1;
+}
+.section04-01__inner {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+.section04-01__desc {
+  width: 40%;
+}
+.section04-01__desc p {
+  font-family: "AritaBuri";
+  font-size: 26px;
+  font-weight: 300;
+  margin-bottom: 30px;
+}
+.section04-01__desc ul {
+  display: flex;
+  flex-wrap: nowrap;
+}
+.section04-01__desc ul li {
+  width: 120px;
+  height: 120px;
+  background-image: url("data:image/svg+xml,%0A%3Csvg width='92' height='92' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M46 81.962l-8.269 8.272-4.722-10.7-10.698 4.726-.538-11.684-11.684.543 3.72-11.09-11.091-3.714 7.473-8.997-8.999-7.47 10.219-5.69-5.693-10.216 11.584-1.614-1.618-11.583 11.385 2.68 2.675-11.386 9.648 6.611L46 1l6.608 9.65 9.648-6.611 2.675 11.386 11.385-2.68-1.618 11.583 11.584 1.614-5.693 10.217 10.219 5.689-9 7.47 7.474 8.997-11.09 3.715 3.719 11.089-11.684-.543-.538 11.684-10.698-4.727-4.722 10.7L46 81.963z' fill='%23fff' stroke='%23000'/%3E%3C/svg%3E");
+  background-size: cover;
+  text-align: center;
+}
+.section04-01__desc ul li:first-child {
+  margin-right: 30px;
+}
+.section04-01__desc ul li a {
+  color: #000;
+  font-family: "Aritaburi";
+  font-style: normal;
+  font-size: 24px;
+  line-height: 120px;
+}
+
+.section04-01__desc img {
+  width: 235px;
+  transform: translate(22%, 40%) rotate(-36.14deg);
 }
