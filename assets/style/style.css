@@ -42,7 +42,7 @@ body {
 
 /* section01 */
 #section01 {
-    height: 100vh;
+    height: 110vh;
     background: #000;
     position: relative;
 }
@@ -50,7 +50,7 @@ body {
     z-index: 1000;
     position: absolute;
     left: 50%; top: 50%;
-    transform: translate(-50%, -40%);
+    transform: translate(-50%, -45%);
     text-align: center;
     align-items: center;
     justify-content: center;
@@ -91,18 +91,27 @@ svg.highlight {
     height: 10vw;
     transform: translate(15%, -80%);
 }
-/* .section01__outer {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    pointer-events: none;
-} */
-
-
+.strainer {
+    width: 7vw;
+    right: 15%;
+    bottom: 40%;
+    transform: rotate(30deg);
+}
+.cloud2 {
+    width: 20vw;
+    left: 27%;
+    bottom: 43%;
+}
 
 
 #section02 {
+    position: relative;
     height: 2000px;
+}
+.section02__inner {}
+.section__outer {}
+
+.cloud-section {
+    bottom: calc(100% - 2px);
+    width: 100%;
 }

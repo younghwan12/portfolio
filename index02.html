@@ -37,11 +37,28 @@
                 <img src="assets/img/profile.png" alt="">
                 <div class="cloud1"></div>
             </div>
+            <div class="section__outer">
+                <div class="decor strainer">
+                    <img src="assets/img/strainer.svg" alt="">
+                </div>
+                <div class="decor cloud2">
+                    <img src="assets/img/bottle-cloud-little.svg" alt="">
+                </div>
+            </div>
             <div id="canvas"></div>
         </section>
          <!-- section01 -->
         <section id="section02">
-    
+            <div class="section02__inner"></div>
+            <div class="section__outer">
+                <div class="decor cloud-section">
+                    <img src="assets/img/cloud-section.svg" alt="">
+                </div>
+                <div class="pin-spacer">
+                    <div class="decor plane"></div>
+
+                </div>
+            </div>
         </section> 
         <!-- section02 --> 
         <section id="section03"></section> <!-- section03 -->
@@ -53,7 +70,24 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@latest/bundled/lenis.js"></script>
+
     <script>
+        gsap.registerPlugin(ScrollTrigger);
+
+        const lenis = new Lenis({
+            duration: 1.2,
+            easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+            smooth: true,
+        });
+        function raf(time) {
+            lenis.raf(time);
+            requestAnimationFrame(raf);
+        }
+        requestAnimationFrame(raf);
+    </script>
+    <script>
+        
         document.querySelectorAll(".split").forEach(desc => {
             let splitText = desc.innerText;
             let splitWrap = splitText.split('').join("</span><span aria-hidden='true'>");
@@ -68,13 +102,33 @@
 
         gsap.set(".txt1 span", {opacity: 0, y: 100})
         gsap.set(".txt2 span", {opacity: 0, y: 0})
-        gsap.set(".section01__inner img", {opacity: 0, y: 500})
-        gsap.set(".cloud1", {opacity: 0})
+        gsap.set(".section01__inner img", {opacity: 0, y: 500,})
+        gsap.set(".strainer", {scale: 0})
+        gsap.set(".cloud1", {opacity: 0,})
+        gsap.set(".cloud2", {opacity: 0,})
+
 
         gsap.to(".txt1 span", {duration: 1.2, opacity: 1, y: 0, stagger: 0.06});
         gsap.to(".txt2 span", {duration: 2, delay: 1, opacity: 1, ease: "power2.out", y: -500});
-        gsap.to(".section01__inner img", {duration: 0.7, delay: 1.5, opacity: 1, ease: "power2.out", y:0});
+        gsap.to(".section01__inner img", {duration: 0.7, delay: 2, opacity: 1, ease: "power2.out", y:0});
+        gsap.to(".strainer", {duration: 1.2, delay: 2, rotation: 45, scale: 1, ease: "power2.out"});
         gsap.to(".cloud1", {duration: 0.7, delay: 1.5, opacity: 1, ease: "power2.out"});
+        gsap.to(".cloud2", {duration: 0.7, delay: 1.5, opacity: 1, ease: "power2.out"});
+
+        const sections = gsap.utils.toArray(".section"); // gsap 다중 선택
+
+        // gsap.to(sections, {
+        //     xPercent: -100 * (sections.length - 1),
+        //     ease: "none",
+        //     scrollTrigger: {
+        //     trigger: ".horizontalWrap",
+        //     pin: true,
+        //     scrub: 1,
+        //     end: "+=4000",
+        //     markers: true,
+        //     // snap: 1 / (sections.length - 1),
+        //     },
+        // });
     </script>
     <script>
         // const heart =
