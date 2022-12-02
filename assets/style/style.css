@@ -1,0 +1,108 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+/* header */
+#main {
+    position: relative;
+}
+#header {
+    position: fixed;
+    width: 100%;
+    z-index: 10000;
+    left: 0;
+    top: 0;
+}
+#header nav {
+    margin: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+#header nav ul {
+    display: flex;
+}
+#header nav ul a {
+    text-transform: uppercase;
+    font-family: "Montserrat";
+    font-size: 1vw;
+    margin: 15px;
+    color: #fff;
+}
+.blog {
+    background-image: url(../img/tstory.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background: #fff;
+    padding: 5px 10px;
+    width: 1vw;
+}
+/* //header */
+
+/* section01 */
+#section01 {
+    height: 100vh;
+    background: #000;
+    position: relative;
+}
+.section01__inner {
+    z-index: 1000;
+    position: absolute;
+    left: 50%; top: 50%;
+    transform: translate(-50%, -40%);
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+#canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    z-index: 10;
+}
+svg {
+    transition: fill 0.3s ease-out;
+    display: block;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    transform: translateZ(0px);
+    fill: #444444;
+}
+svg.highlight {
+    fill: #fff;
+}
+.section01__inner > div {
+    color: #fff;
+    font-family: "116watermelon";
+    font-size: 7vw;
+    line-height: 0.9;
+}
+.section01__inner > img {
+    margin-top: 40px;
+    width: 24vw;
+}
+.section01__inner .cloud1 {
+    background-image: url(../img/bottle-cloud-big.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 10vw;
+    transform: translate(15%, -80%);
+}
+/* .section01__outer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    pointer-events: none;
+} */
+
+
+
+
+#section02 {
+    height: 2000px;
+}
