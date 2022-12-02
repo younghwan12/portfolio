@@ -65,8 +65,8 @@ body {
 svg {
     transition: fill 0.3s ease-out;
     display: block;
-    width: 30px;
-    height: 30px;
+    width: 15px;
+    height: 15px;
     position: absolute;
     transform: translateZ(0px);
     fill: #444444;
