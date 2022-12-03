@@ -4,6 +4,14 @@ body {
     overflow-x: hidden;
 }
 
+.container {
+    width: 100%;
+    max-width: 1520px;
+    /* padding: 20px; */
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+
 /* header */
 #main {
     position: relative;
@@ -62,7 +70,7 @@ body {
     height: 100vh;
     z-index: 10;
 }
-svg {
+.sec01_svg {
     transition: fill 0.3s ease-out;
     display: block;
     width: 15px;
@@ -142,21 +150,21 @@ svg.highlight {
     max-width: 1200px;
     margin: 0 20%;
 }
-.section02__inner .txt3 {
+.section02__inner .sec02__txt1 {
     padding-top: 20%;
     white-space: nowrap;
     font-family: "116watermelon";
     font-size: 4.5vw;
     margin-bottom: 10%;
 }
-.section02__inner .txt4 {
+.section02__inner .sec02__txt2 {
     width: 38%;
     margin-bottom: 5%;
     font-size: 1.5vw;
     font-family: "IropkeBatang";
     line-height: 1.5;
 }
-.section02__inner .txt5 {
+.section02__inner .sec02__txt3 {
     width: 60%;
     float: right;
     font-size: 1.5vw;
@@ -201,3 +209,126 @@ svg.highlight {
     z-index: 13;
 }
 /* //section02 */
+
+/* section03 */
+#section03 {
+    position: relative;
+    height: 300vh;
+}
+.sec03__inner {
+    
+}
+.sec03__txt1 {
+    font-family: 'BungeeShade';
+    text-align: center;
+    font-size: 7vw;
+    margin-bottom: 10%;
+}
+.sec03__card__tit1 {
+    text-align: right;
+    font-family: '116watermelon';
+    font-style: normal;
+    font-size: 4.5vw;
+    margin-bottom: 5%;        
+}
+.sec03__card__tit2 {
+    font-family: '116watermelon';
+    font-style: normal;
+    font-size: 4.5vw;
+    margin-bottom: 5%;
+    margin-top: 20%;
+}
+.sec03__card {
+    margin-top: 10%;
+    margin-bottom: 10%;
+    display: flex;
+    justify-content: space-between;
+
+}
+.profile01 {
+    width: 52%;
+    transform: rotate(-6deg);
+}
+.profile02 {
+    width: 52%;
+    transform: rotate(6deg);
+}
+.sec03__card__txt2 {
+    width: 38%;
+    font-family: 'IropkeBatang';
+    font-size: 1.4vw;
+}
+.divider {
+    width: 47%;
+    left: 0;
+    margin-bottom: 5%;
+}
+
+/* section03__outer */
+.modal-title-decor {
+    width: 18vw;
+    right: 16%;
+    top: -1%;
+    transform: rotate(30deg);
+}
+.cone {
+    width: 7vw;
+    left: 25%;
+    top: 9%;
+}
+.cat {
+    width: 7vw;
+    left: 51%;
+    top: 25%;
+    transform: rotate(-6.38deg);
+}
+.petrychka {
+    width: 9vw;
+    top: 45%;
+}
+.knife {
+    width: 8vw;
+    right: 30%;
+    top: 48%;
+    transform: rotate(-105deg);
+}
+
+.arrow-btm {    
+    bottom: 20%;
+    left: 45%;
+    transform: rotate(90deg);
+    animation: bounce 2s ease-in-out infinite;
+}
+@keyframes bounce {
+    from,
+    20%,
+    53%,
+    to {
+      animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+      transform: translate3d(0, 0, 0) rotate(90deg);
+    }
+  
+    40%,
+    43% {
+      animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+      transform: translate3d(0, -30px, 0) rotate(90deg);
+    }
+  
+    70% {
+      animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+      transform: translate3d(0, -15px, 0) rotate(90deg);
+    }
+  
+    80% {
+      transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+      transform: translate3d(0, 0, 0) rotate(90deg);
+    }
+  
+    90% {
+      transform: translate3d(0, -4px, 0) rotate(90deg);
+    }
+}
+.sec03_waves {
+    bottom: -1px;
+}
+/* //section03__outer */
