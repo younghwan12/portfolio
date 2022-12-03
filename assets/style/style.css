@@ -47,7 +47,7 @@ body {
     position: relative;
 }
 .section01__inner {
-    z-index: 1000;
+    z-index: 11;
     position: absolute;
     left: 50%; top: 50%;
     transform: translate(-50%, -45%);
@@ -91,6 +91,7 @@ svg.highlight {
     height: 10vw;
     transform: translate(15%, -80%);
 }
+/* section01__outer */
 .strainer {
     width: 7vw;
     right: 15%;
@@ -102,16 +103,101 @@ svg.highlight {
     left: 27%;
     bottom: 43%;
 }
+.plane {
+    z-index: 12;
+}
+.plane-body {
+    right: 0;
+    top: 24.57%;
+    width: 20.625vw;
+    height: 6.51vw;
+}
+.plane-cloud {
+    width: 100vw;
+    top: -850px;
+    right: 400px;
+}
 
 
+/* //section01 */
+
+.wrapper {
+    display: block;
+    width: 100%;
+    max-width: 1700px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 45px;
+    padding-right: 45px;
+    position: relative;
+    z-index: 15;
+}
+/* section02 */
 #section02 {
     position: relative;
-    height: 2000px;
+    height: 180vh;
 }
-.section02__inner {}
-.section__outer {}
+.section02__inner {
+    z-index: 1000;
+    max-width: 1200px;
+    margin: 0 20%;
+}
+.section02__inner .txt3 {
+    padding-top: 20%;
+    white-space: nowrap;
+    font-family: "116watermelon";
+    font-size: 4.5vw;
+    margin-bottom: 10%;
+}
+.section02__inner .txt4 {
+    width: 38%;
+    margin-bottom: 5%;
+    font-size: 1.5vw;
+    font-family: "IropkeBatang";
+    line-height: 1.5;
+}
+.section02__inner .txt5 {
+    width: 60%;
+    float: right;
+    font-size: 1.5vw;
+    font-family: "IropkeBatang";
+    line-height: 1.5;
+}
 
+/* section02__outer */
 .cloud-section {
     bottom: calc(100% - 2px);
     width: 100%;
 }
+
+.black-cloud1 {
+    width: 20vw;
+    top: 10%;
+    z-index: 13;
+}
+.black-cloud2 {
+    width: 15vw;
+    left: 25%;
+    top: 50%;
+    z-index: 13;
+}
+.black-cloud3 {
+    width: 20vw;
+    left: 5%;
+    bottom: 30%;
+    transform: rotate(180deg);
+    z-index: 13;
+}
+.halfmoon {
+    width: 5vw;
+    right: 15%;
+    top: 15%;
+    z-index: 13;
+}
+.town {
+    width: 60vw;
+    bottom: 15%;
+    right: 0;
+    z-index: 13;
+}
+/* //section02 */
