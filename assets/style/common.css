@@ -144,6 +144,15 @@
 .mt80 {
   margin-top: 80px !important;
 }
+.mt140 {
+  margin-top: 140px !important;
+}
+.mt120 {
+  margin-top: 120px !important;
+}
+.aife {
+  align-items: flex-end;
+}
 
 @media (max-width: 1226px) {
   .container {
