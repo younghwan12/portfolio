@@ -294,8 +294,8 @@ svg.highlight {
 }
 
 .arrow-btm {    
-    bottom: 20%;
-    left: 45%;
+    bottom: 18%;
+    left: 50%;
     transform: rotate(90deg);
     animation: bounce 2s ease-in-out infinite;
 }

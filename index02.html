@@ -51,7 +51,7 @@
         <section id="section02">
             <div class="wrapper">
                 <div class="section02__inner">
-                    <div class="sec02__txt1">자신 있다면 어떤 것도 두려울 게 없다</div >
+                    <div class="sec02__txt1 split">자신 있다면 어떤 것도 두려울 게 없다</div >
                     <div class="sec02__txt2">새로운 꿈을 꾸고 앞을 향해 나아가는 사람이 되고 싶어 개발자로 이직을 준비하고 있다.</div>
                     <div class="sec02__txt3">새로운 변화가 끊임없이 일어나는 웹 환경에서 최신 트렌드에 뒤처지지 않기 위해 스터디 모임과 세미나에 많이 참여하여 핵심 사이트를 벤치마킹하고 업무 시간 외에도 꾸준히 부족한 부분과 유행하는 기술들을 공부합니다.</div>
                 </div>
@@ -304,10 +304,10 @@
         gsap.set(".strainer", {scale: 0})
         gsap.set(".cloud1", {opacity: 0,})
         gsap.set(".cloud2", {opacity: 0,})
-        gsap.to(".plane", {x:0, y:0,z:0, scale:1});
+        gsap.to(".plane", {x:0, y:0,z:0, scale:1});        
+        gsap.set(".sec02__txt1 span", {opacity: 0,})
 
 
-        // gsap.to(".plane", {duration: 1.2, delay: 1.5, x:1000, y:-1000,z:20});
         gsap.to(".txt1 span", {duration: 1.2, opacity: 1, y: 0, stagger: 0.06});
         gsap.to(".txt2 span", {duration: 2, delay: 1, opacity: 1, ease: "power2.out", y: -500});
         gsap.to(".section01__inner img", {duration: 0.7, delay: 2, opacity: 1, ease: "power2.out", y:0});
@@ -323,12 +323,56 @@
             }
         })
         .to(".plane", {
-            x: 3200,
+            x: 3000,
             y: -800,
             z: 20,
             scale: 2,         
             stagger: .2,
         })
+        .to(".black-cloud1", {
+            x: -100,
+            y: 0,
+        })
+        
+        const t2 = gsap.timeline({
+            scrollTrigger: {
+                trigger: ".sec02__txt1",
+                markers: true,  
+                scrub: 1
+            }
+        })
+        .to(".sec02__txt1 span", {
+            scale: 1.2,
+            opacity: 1,
+            delay: 3,
+            stagger: .2
+        })
+        .to(".halfmoon", {
+            x: 150,
+            rotation: 380,
+            stagger: .02,
+        })
+        .to(".sec02__txt2", {
+            x: -50,
+            stagger: .2,
+        })
+        .to(".sec02__txt3", {
+            x: 50,
+            stagger: .2,
+        })
+        .to(".black-cloud2", {
+            x: -150,
+            stagger: .2,
+        })
+        .to(".black-cloud3", {
+            x: 150,
+            stagger: .2,
+        })
+        .to(".town", {
+            rotation: -6,
+            stagger: .2,
+        })
+         
     </script>
     <script>
         // const heart =
