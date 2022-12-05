@@ -46,8 +46,8 @@
             <div class="wrapper">
                 <div class="section02__inner">
                     <div class="sec02__txt1 split">자신 있다면 어떤 것도 두려울 게 없다</div >
-                    <div class="sec02__txt2">새로운 꿈을 꾸고 앞을 향해 나아가는 사람이 되고 싶어 개발자로 이직을 준비하고 있다.</div>
-                    <div class="sec02__txt3">새로운 변화가 끊임없이 일어나는 웹 환경에서 최신 트렌드에 뒤처지지 않기 위해 스터디 모임과 세미나에 많이 참여하여 핵심 사이트를 벤치마킹하고 업무 시간 외에도 꾸준히 부족한 부분과 유행하는 기술들을 공부합니다.</div>
+                    <div class="sec02__txt2">새로운 꿈을 꾸고 앞을 향해 나아가는 사람이<br> 되고 싶어 개발자로 이직을 준비하고 있다.</div>
+                    <div class="sec02__txt3">새로운 변화가 끊임없이 일어나는 웹 환경에서 최신 트렌드에 뒤처지지 않기 위해 스터디 모임과 세미나에 많이 참여하여<br> 핵심 사이트를 벤치마킹하고 업무 시간 외에도 꾸준히 부족한<br> 부분과 유행하는 기술들을 공부합니다.</div>
                 </div>
             </div>
             <div class="section__outer">
@@ -83,7 +83,7 @@
         <section id="section03">
             <div class="sec03__inner container">
                 <div class="sec03__txt1">the about</div>
-                <div class="sec03__card__tit1">
+                <div class="sec03__card__tit1 split">
                     손가락이 보이지 않는 스피드
                 </div>
                 <div class="sec03__card">
@@ -157,11 +157,11 @@
                 <div class="decor divider">
                     <img src="assets/img/divider.svg" alt="">
                 </div>              
-                <div class="sec03__card__tit2">
+                <div class="sec03__card__tit2 split">
                     도전하지 않는 건 멈춘것과 같다
                 </div>
                 <div class="sec03__card">
-                    <div class="sec03__card__txt2">
+                    <div class="sec03__card__txt3">
                         새로운 변화가 끊임없이 일어나는 웹 환경에서 최신 트렌드에 뒤처지지 않기 위해 스터디 모임과 세미나에 많이 참여하여 핵심 사이트를 벤치마킹하고 업무 시간 외에도 꾸준히 부족한 부분과 유행하는 기술들을 공부합니다.
                     </div>
                     <div class="profile02">
@@ -640,6 +640,7 @@
     
     <script>
         
+        // 글씨 쪼개기
         document.querySelectorAll(".split").forEach(desc => {
             let splitText = desc.innerText;
             let splitWrap = splitText.split('').join("</span><span aria-hidden='true'>");
@@ -648,6 +649,7 @@
                 desc.setAttribute("aria-label", splitText);
         })
 
+        // 가로 모드
         const sections = gsap.utils.toArray("#section04");      // gsap 다중 선택
 
         gsap.to(sections, {
@@ -657,36 +659,48 @@
                 trigger: ".horizontalWrap",
                 pin: true,
                 scrub: 1,
-                end: "+=2000",
-                markers: true,
+                // end: "+=2000",
+                // markers: true,
                 // snap: 1 / (sections.length - 1),
             }
         })
 
-        // gsap.set(".sec1 h1 em span", {opacity: 0, y: 100})
-        // gsap.set("#header", {top: "-100%"})
-        // gsap.set(".about", {y: 50, opacity: 0})
-
+        // section01
+        gsap.set("#header", {y: -100})
         gsap.set(".txt1 span", {opacity: 0, y: 100})
         gsap.set(".txt2 span", {opacity: 0, y: 100})
         gsap.set(".section01__inner img", {scale: 0 ,opacity: 0,})
         gsap.set(".cloud1", {scale: 0, opacity: 0,})
-        gsap.set(".cloud2", {opacity: 0,})
         gsap.to(".plane", {x:0, y:0,z:0, scale:1});        
         gsap.set(".sec02__txt1 span", {opacity: 0,})
+        gsap.set(".sec02__txt2", {opacity: 0, y:-100})
+        gsap.set(".sec02__txt3", {opacity: 0, y:-100})
+        gsap.set(".sec03__txt1", {opacity: 0, scale: 0})
+        gsap.set(".sec03__card__tit1 span", {x: -100, opacity: 0, scale: 0})
+        gsap.set(".sec03__card__txt2", {y: -100, opacity: 0,})
+        gsap.set(".sec03__card__tit2 span", {x: -100, opacity: 0, scale: 0})
+        gsap.set(".sec03__card__txt3", {y: -100, opacity: 0,})
 
 
-        gsap.to(".txt1 span", {duration: 1, delay: 2 ,opacity: 1, y: 0, stagger: 0.1});
-        gsap.to(".txt2 span", {duration: 1, delay: 4 ,opacity: 1, y: 0, stagger: 0.2});
-        gsap.to(".section01__inner img", {duration: 2, delay: 6, scale: 1, opacity: 1, ease: "slow(0.7, 0.7, false)", y: 0});
-        gsap.to(".cloud1", {duration: 2, delay: 8,scale: 1, opacity: 1, ease: "power2.out"});
-        // gsap.to(".cloud2", {duration: 0.7, delay: 1.5, opacity: 1, ease: "power2.out"});
+
+        
+
+        
+
+
+        gsap.to(".txt1 span", {duration: 1, delay: 2 ,opacity: 1, y: 0, stagger: 0.08});
+        gsap.to(".txt2 span", {duration: 1, delay: 3 ,opacity: 1, y: 0, stagger: 0.09});
+        gsap.to(".section01__inner img", {duration: 2, delay: 4, scale: 1, opacity: 1, ease: "slow(0.7, 0.7, false)", y: 0});
+        gsap.to(".cloud1", {duration: 2, delay: 5, scale: 1, opacity: 1, ease: "power2.out"});
+        gsap.to("#header", {duration: 2, delay: 6, y:0});
+        // section01
 
         const tl = gsap.timeline({
             scrollTrigger: {
                 trigger: ".cloud-section",
-                markers: true,  
-                scrub: 1
+                // markers: true,  
+                scrub: 1,
+                delay: 2,
             }
         })
         .to(".plane", {
@@ -696,56 +710,73 @@
             scale: 2,         
             stagger: .2,
         })
-        .to(".black-cloud1", {
-            x: -100,
-            y: 0,
-        })
-        
+
         const t2 = gsap.timeline({
             scrollTrigger: {
                 trigger: ".sec02__txt1",
-                markers: true,  
-                scrub: 1
+                // markers: true,
+                start: "top 50%",
+                scrub: 1,
             }
         })
         .to(".sec02__txt1 span", {
-            scale: 1.2,
-            opacity: 1,
             delay: 3,
-            stagger: .2
-        })
-        .to(".halfmoon", {
-            x: 150,
-            rotation: 380,
-            stagger: .02,
+            opacity: 1,
             duration: 2,
+            stagger: .3
         })
         .to(".sec02__txt2", {
-            x: -50,
-            stagger: .2,
-            duration: 2,
+            opacity: 1,
+            y:0,
+            duration: 4,
+            // stagger: .02,
         })
         .to(".sec02__txt3", {
-            x: 50,
-            stagger: .2,
-            duration: 2,
+            opacity: 1,
+            y:0,
+            duration: 4,
         })
-        .to(".black-cloud2", {
-            x: -150,
+        
+        .to(".halfmoon", {
+            x: 100,
+            rotation: 360,
             stagger: .2,
-            duration: 2,
-            duration: 2,
-        })
-        .to(".black-cloud3", {
-            x: 150,
-            stagger: .2,
-            duration: 2,
-        })
+            duration: 6,
+        })        
         .to(".town", {
             rotation: -6,
             stagger: .2,
             duration: 2,
         })
+        // section02
+
+        const t3 = gsap.timeline({
+            scrollTrigger: {
+                trigger: ".sec03__txt1",
+                markers: true,  
+                scrub: 1,
+                start: "top 50%",
+                // end: "top 70%",
+            }
+        })
+        .to(".sec03__txt1", {opacity: 1, scale: 1,stagger: 2, duration: 4})
+        .to(".sec03__card__tit1 span", {opacity: 1, scale: 1, x:0, delay: 2, stagger: .2,})
+        .to(".sec03__card__txt2", {opacity: 1, y:0, duration: 4})
+
+        const t4 = gsap.timeline({
+            scrollTrigger: {
+                trigger: ".divider",
+                markers: true,  
+                scrub: 1,
+                start: "top 50%",
+            }
+        })        
+        .to(".sec03__card__tit2 span", {opacity: 1, scale: 1, x:0, stagger: 1,})
+        .to(".sec03__card__txt3", {opacity: 1, y:0, duration: 4})
+
+        
+        
+        
          
     </script>
     <script>

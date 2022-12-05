@@ -167,14 +167,18 @@ svg.highlight {
     margin-bottom: 10%;
 }
 .section02__inner .sec02__txt2 {
-    width: 38%;
+    width: 52%;
     margin-bottom: 5%;
     font-size: 1.5vw;
     font-family: "IropkeBatang";
     line-height: 1.5;
 }
+.sec02__txt2 span {
+    display: inline-block;
+    white-space: pre;
+}
 .section02__inner .sec02__txt3 {
-    width: 60%;
+    width: 70%;
     float: right;
     font-size: 1.5vw;
     font-family: "IropkeBatang";
@@ -191,12 +195,39 @@ svg.highlight {
     width: 20vw;
     top: 10%;
     z-index: 13;
+    animation: move1 15s ease-in-out infinite;
 }
+@keyframes move1 {
+    from,
+    50%,
+    to {
+        transform: translateX(25%)
+    }
+  
+    25%,
+    75% {
+        transform: translateX(-25%)
+    }
+}
+@keyframes move2 {
+    from,
+    50%,
+    to {
+        transform: translateX(-25%)
+    }
+  
+    25%,
+    75% {
+        transform: translateX(25%)
+    }
+}
+
 .black-cloud2 {
     width: 15vw;
     left: 25%;
     top: 50%;
     z-index: 13;
+    animation: move2 10s ease-in-out infinite;
 }
 .black-cloud3 {
     width: 20vw;
@@ -204,12 +235,14 @@ svg.highlight {
     bottom: 30%;
     transform: rotate(180deg);
     z-index: 13;
+    animation: move1 10s ease-in-out infinite;
 }
 .halfmoon {
     width: 5vw;
     right: 15%;
     top: 15%;
     z-index: 13;
+    animation: move1 10s ease-in-out infinite;
 }
 .town {
     width: 60vw;
@@ -263,6 +296,11 @@ svg.highlight {
     transform: rotate(6deg);
 }
 .sec03__card__txt2 {
+    width: 38%;
+    font-family: 'IropkeBatang';
+    font-size: 1.4vw;
+}
+.sec03__card__txt3 {
     width: 38%;
     font-family: 'IropkeBatang';
     font-size: 1.4vw;
