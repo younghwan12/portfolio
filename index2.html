@@ -46,8 +46,8 @@
             <div class="wrapper">
                 <div class="section02__inner">
                     <div class="sec02__txt1 split">자신 있다면 어떤 것도 두려울 게 없다</div >
-                    <div class="sec02__txt2">새로운 꿈을 꾸고 앞을 향해 나아가는 사람이<br> 되고 싶어 개발자로 이직을 준비하고 있다.</div>
-                    <div class="sec02__txt3">새로운 변화가 끊임없이 일어나는 웹 환경에서 최신 트렌드에 뒤처지지 않기 위해 스터디 모임과 세미나에 많이 참여하여<br> 핵심 사이트를 벤치마킹하고 업무 시간 외에도 꾸준히 부족한<br> 부분과 유행하는 기술들을 공부합니다.</div>
+                    <div class="sec02__txt2">새로운 꿈을 꾸고 앞을 향해 나아가는 사람이 되고 싶어 개발자로 이직을 준비하고 있다.</div>
+                    <div class="sec02__txt3">새로운 변화가 끊임없이 일어나는 웹 환경에서 최신 트렌드에 뒤처지지 않기 위해 스터디 모임과 세미나에 많이 참여하여 핵심 사이트를 벤치마킹하고 업무 시간 외에도 꾸준히 부족한 부분과 유행하는 기술들을 공부합니다.</div>
                 </div>
             </div>
             <div class="section__outer">
@@ -668,23 +668,26 @@
         // section01
         gsap.set("#header", {y: -100})
         gsap.set(".txt1 span", {opacity: 0, y: 100})
-        gsap.set(".txt2 span", {opacity: 0, y: 100})
+        gsap.set(".txt2 span", {opacity: 0, y: -100})
         gsap.set(".section01__inner img", {scale: 0 ,opacity: 0,})
         gsap.set(".cloud1", { opacity: 0,})
-        gsap.to(".plane", {x:0, y:0,z:0, scale:1});        
-        gsap.set(".sec02__txt1 span", {opacity: 0,})
-        gsap.set(".sec02__txt2", {opacity: 0, y:-100})
-        gsap.set(".sec02__txt3", {opacity: 0, y:-100})
+        gsap.to(".plane", {x:0, y:0,z:0, scale:1});
+        // 합격
+
+        gsap.set(".sec02__txt1 span", {opacity: 0, y: -200})
+        gsap.set(".sec02__txt2", {opacity: 0, scale:0, rotation:150, skewY:35})
+        gsap.set(".sec02__txt3", {opacity: 0, y:-400})
+
         gsap.set(".sec03__txt1", {opacity: 0, scale: 0})
         gsap.set(".sec03__card__tit1 span", {x: -100, opacity: 0, scale: 0})
-        gsap.set(".sec03__card__txt2", {y: -100, opacity: 0,})
+        gsap.set(".sec03__card__txt2", {yPercent: -100, opacity: 0,})
         gsap.set(".sec03__card__tit2 span", {x: -100, opacity: 0, scale: 0})
         gsap.set(".sec03__card__txt3", {y: -100, opacity: 0,})
 
 
 
         
-
+        
         
 
 
@@ -698,9 +701,10 @@
         const tl = gsap.timeline({
             scrollTrigger: {
                 trigger: ".cloud-section",
-                // markers: true,  
+                markers: true,
                 scrub: 1,
                 delay: 2,
+                // toggleActions: "play none none none",
             }
         })
         .to(".plane", {
@@ -715,26 +719,29 @@
             scrollTrigger: {
                 trigger: ".sec02__txt1",
                 // markers: true,
-                start: "top 50%",
-                scrub: 1,
+                start: "top 30%",
             }
         })
         .to(".sec02__txt1 span", {
-            delay: 3,
             opacity: 1,
+            ease: Elastic.easeOut.config( 1, 0.3),
+            y: 0,
             duration: 2,
-            stagger: .3
+            stagger: .09
+            
         })
         .to(".sec02__txt2", {
             opacity: 1,
-            y:0,
-            duration: 4,
-            // stagger: .02,
+            rotation:0, skewY:0, ease:"elastic",
+            scale:1,
+            duration: 2,
+            stagger: 1,
         })
         .to(".sec02__txt3", {
             opacity: 1,
             y:0,
-            duration: 4,
+            ease: Elastic.easeOut.config( 1, 0.3),
+            duration: 1,
         })
         
         .to(".halfmoon", {
@@ -760,7 +767,7 @@
         })
         .to(".sec03__txt1", {opacity: 1, scale: 1,stagger: 2, duration: 4})
         .to(".sec03__card__tit1 span", {opacity: 1, scale: 1, x:0, delay: 2, stagger: .2,})
-        .to(".sec03__card__txt2", {opacity: 1, y:0, duration: 4})
+        .to(".sec03__card__txt2", {opacity: 1, yPercent:0,ease: "power4.easeOut", duration: 4})
 
         const t4 = gsap.timeline({
             scrollTrigger: {

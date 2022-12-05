@@ -166,12 +166,17 @@ svg.highlight {
     font-size: 4.5vw;
     margin-bottom: 10%;
 }
+.section02__inner .sec02__txt1 span {
+    display: inline-block;
+    white-space: pre;
+}
 .section02__inner .sec02__txt2 {
     width: 52%;
     margin-bottom: 5%;
     font-size: 1.5vw;
     font-family: "IropkeBatang";
     line-height: 1.5;
+    overflow: hidden;
 }
 .sec02__txt2 span {
     display: inline-block;
@@ -439,6 +444,7 @@ svg.highlight {
     }
 }
 .sec03_waves {
+    width: 100%;
     bottom: -1px;
 }
 /* //section03__outer */
