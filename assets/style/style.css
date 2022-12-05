@@ -316,19 +316,82 @@ svg.highlight {
     width: 18vw;
     right: 16%;
     top: -1%;
-    transform: rotate(30deg);
+    animation: jello 2s ease-in-out infinite;
 }
+@keyframes jello {
+    from,
+    11.1%,
+    to {
+      transform: translate3d(0, 0, 0) rotate(30deg);
+    }
+  
+    22.2% {
+      transform: skewX(-12.5deg) skewY(-12.5deg) rotate(30deg);
+    }
+  
+    33.3% {
+      transform: skewX(6.25deg) skewY(6.25deg) rotate(30deg);
+    }
+  
+    44.4% {
+      transform: skewX(-3.125deg) skewY(-3.125deg) rotate(30deg);
+    }
+  
+    55.5% {
+      transform: skewX(1.5625deg) skewY(1.5625deg) rotate(30deg);
+    }
+  
+    66.6% {
+      transform: skewX(-0.78125deg) skewY(-0.78125deg) rotate(30deg);
+    }
+  
+    77.7% {
+      transform: skewX(0.390625deg) skewY(0.390625deg) rotate(30deg);
+    }
+  
+    88.8% {
+      transform: skewX(-0.1953125deg) skewY(-0.1953125deg) rotate(30deg);
+    }
+  }
+
 .cone {
     width: 7vw;
     left: 25%;
     top: 9%;
+    animation: move1 15s ease-in-out infinite;
 }
 .cat {
     width: 7vw;
     left: 51%;
     top: 25%;
     transform: rotate(-6.38deg);
+    animation: headShake 6s ease-in-out infinite;
 }
+@keyframes headShake {
+    0% {
+      transform: translateX(0) rotate(-6.38deg);
+    }
+  
+    6.5% {
+      transform: translateX(-6px) rotateY(-9deg);
+    }
+  
+    18.5% {
+      transform: translateX(5px) rotateY(7deg);
+    }
+  
+    31.5% {
+      transform: translateX(-3px) rotateY(-5deg);
+    }
+  
+    43.5% {
+      transform: translateX(2px) rotateY(3deg);
+    }
+  
+    50% {
+      transform: translateX(0);
+    }
+  }
 .petrychka {
     width: 9vw;
     top: 45%;
