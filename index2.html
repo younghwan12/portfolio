@@ -670,7 +670,7 @@
         gsap.set(".txt1 span", {opacity: 0, y: 100})
         gsap.set(".txt2 span", {opacity: 0, y: 100})
         gsap.set(".section01__inner img", {scale: 0 ,opacity: 0,})
-        gsap.set(".cloud1", {scale: 0, opacity: 0,})
+        gsap.set(".cloud1", { opacity: 0,})
         gsap.to(".plane", {x:0, y:0,z:0, scale:1});        
         gsap.set(".sec02__txt1 span", {opacity: 0,})
         gsap.set(".sec02__txt2", {opacity: 0, y:-100})
@@ -691,7 +691,7 @@
         gsap.to(".txt1 span", {duration: 1, delay: 2 ,opacity: 1, y: 0, stagger: 0.08});
         gsap.to(".txt2 span", {duration: 1, delay: 3 ,opacity: 1, y: 0, stagger: 0.09});
         gsap.to(".section01__inner img", {duration: 2, delay: 4, scale: 1, opacity: 1, ease: "slow(0.7, 0.7, false)", y: 0});
-        gsap.to(".cloud1", {duration: 2, delay: 5, scale: 1, opacity: 1, ease: "power2.out"});
+        gsap.to(".cloud1", {duration: 2, delay: 5, opacity: 1, ease: "power2.out"});
         gsap.to("#header", {duration: 2, delay: 6, y:0});
         // section01
 
@@ -756,7 +756,6 @@
                 markers: true,  
                 scrub: 1,
                 start: "top 50%",
-                // end: "top 70%",
             }
         })
         .to(".sec03__txt1", {opacity: 1, scale: 1,stagger: 2, duration: 4})
