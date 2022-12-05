@@ -63,18 +63,27 @@ body {
     align-items: center;
     justify-content: center;
 }
+.txt1 span {
+    display: inline-block;
+    white-space: pre;
+}
+.txt2 span {
+    display: inline-block;
+    white-space: pre;
+}
 #canvas {
     position: absolute;
     top: 0;
     left: 0;
+    width: 100%;
     height: 100vh;
     z-index: 10;
 }
 .sec01_svg {
     transition: fill 0.3s ease-out;
     display: block;
-    width: 15px;
-    height: 15px;
+    width: 10px;
+    height: 10px;
     position: absolute;
     transform: translateZ(0px);
     fill: #444444;
@@ -85,19 +94,35 @@ svg.highlight {
 .section01__inner > div {
     color: #fff;
     font-family: "116watermelon";
-    font-size: 7vw;
+    font-size: 6vw;
     line-height: 0.9;
 }
-.section01__inner > img {
+.section01__inner .profile {
+    position: relative;
+    margin-top: 6%;
+}
+.section01__inner .profile > img {
     margin-top: 40px;
-    width: 24vw;
+    width: 15vw;
+}
+.section01__inner .profile::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translate(-50%, 0);
+    width: 19vw;
+    height: 19vw;
+    border-radius: 50%;
+    background: linear-gradient(45deg, rgb(255 255 255), transparent);
+    z-index: -1;
 }
 .section01__inner .cloud1 {
     background-image: url(../img/bottle-cloud-big.svg);
     background-size: contain;
     background-repeat: no-repeat;
-    height: 10vw;
-    transform: translate(15%, -80%);
+    height: 7vw;
+    transform: translate(23%, -85%);
 }
 /* section01__outer */
 .strainer {
@@ -562,7 +587,7 @@ svg.highlight {
 /* section05 */
 #section05 {
     width: 100%;
-    height: 450vh;
+    height: 500vh;
     background: #000;
     position: relative;
 }

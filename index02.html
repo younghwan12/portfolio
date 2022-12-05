@@ -32,18 +32,14 @@
         </header>
         <section id="section01">
             <div class="section01__inner">
+                <div class="profile">
+                    <img src="assets/img/profile.png" alt="profile">
+                </div>
                 <div class="txt1 split">코딩과 함께 한 모든</div>
                 <div class="txt2 split">순간이 눈부셨다</div>
-                <img src="assets/img/profile.png" alt="profile">
                 <div class="cloud1"></div>
             </div>
-            <div class="section__outer">
-                <div class="decor strainer">
-                    <img src="assets/img/strainer.svg" aria-hidden="true" alt="strainer">
-                </div>
-                <div class="decor cloud2">
-                    <img src="assets/img/bottle-cloud-little.svg" aria-hidden="true" alt="cloud-little">
-                </div>                          
+            <div class="section__outer">                         
             </div>
             <div id="canvas"></div>
         </section>
@@ -674,21 +670,19 @@
         // gsap.set(".about", {y: 50, opacity: 0})
 
         gsap.set(".txt1 span", {opacity: 0, y: 100})
-        gsap.set(".txt2 span", {opacity: 0, y: 0})
-        gsap.set(".section01__inner img", {opacity: 0, y: 500,})
-        gsap.set(".strainer", {scale: 0})
+        gsap.set(".txt2 span", {opacity: 0, y: 100})
+        gsap.set(".section01__inner .profile", {scale: 0 ,opacity: 0,})
         gsap.set(".cloud1", {opacity: 0,})
         gsap.set(".cloud2", {opacity: 0,})
         gsap.to(".plane", {x:0, y:0,z:0, scale:1});        
         gsap.set(".sec02__txt1 span", {opacity: 0,})
 
 
-        gsap.to(".txt1 span", {duration: 1.2, opacity: 1, y: 0, stagger: 0.06});
-        gsap.to(".txt2 span", {duration: 2, delay: 1, opacity: 1, ease: "power2.out", y: -500});
-        gsap.to(".section01__inner img", {duration: 0.7, delay: 2, opacity: 1, ease: "power2.out", y:0});
-        gsap.to(".strainer", {duration: 1.2, delay: 2, rotation: 45, scale: 1, ease: "power2.out"});
-        gsap.to(".cloud1", {duration: 0.7, delay: 1.5, opacity: 1, ease: "power2.out"});
-        gsap.to(".cloud2", {duration: 0.7, delay: 1.5, opacity: 1, ease: "power2.out"});
+        gsap.to(".txt1 span", {duration: 1, delay: 1 ,opacity: 1, y: 0, stagger: 0.2});
+        gsap.to(".txt2 span", {duration: 1, delay: 1 ,opacity: 1, y: 0, stagger: 0.3});
+        gsap.to(".section01__inner .profile", {duration: 4, delay: 2, scale: 1, opacity: 1, ease: "slow(0.7, 0.7, false)", y: 0});
+        // gsap.to(".cloud1", {duration: 0.7, delay: 4, opacity: 1, ease: "power2.out"});
+        // gsap.to(".cloud2", {duration: 0.7, delay: 1.5, opacity: 1, ease: "power2.out"});
 
         const tl = gsap.timeline({
             scrollTrigger: {
@@ -831,13 +825,11 @@
         }
 
 
-        setTimeout(() => {
-            for (let i = 0; i < max; i++) {
-                particles.push(
-                    new Ball(data[randomInt(0, data.length - 1)])
-                )
-            }            
-        }, 2000);
+        for (let i = 0; i < max; i++) {
+            particles.push(
+                new Ball(data[randomInt(0, data.length - 1)])
+            )
+        }
 
         function update() {
             particles = particles.filter(function (p) {
