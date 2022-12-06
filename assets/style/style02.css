@@ -1,0 +1,126 @@
+/* header */
+#main {
+    position: relative;
+}
+#header {
+    position: fixed;
+    width: 100%;
+    z-index: 10000;
+    left: 0;
+    top: 0;
+}
+#header nav {
+    margin: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+#header nav ul {
+    display: flex;
+}
+#header nav ul a {
+    text-transform: uppercase;
+    font-family: "Montserrat";
+    font-size: 1vw;
+    margin: 15px;
+    color: #fff;
+}
+.blog {
+    background-image: url(../img/tstory.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background: #fff;
+    padding: 5px 10px;
+    width: 1vw;
+}
+/* //header */
+
+
+/* section01 */
+#section01 {
+    height: 100vh;
+    background: #000;
+    position: relative;
+}
+.section01__inner {
+    z-index: 11;
+    position: absolute;
+    left: 50%; top: 50%;
+    transform: translate(-50%, -45%);
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.txt1 span {
+    display: inline-block;
+    white-space: pre;
+}
+.txt2 span {
+    display: inline-block;
+    white-space: pre;
+}
+#canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 10;
+}
+.sec01_svg {
+    transition: fill 0.3s ease-out;
+    display: block;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    transform: translateZ(0px);
+    fill: #444444;
+}
+svg.highlight {
+    fill: #fff;
+}
+.section01__inner > div {
+    color: #fff;
+    font-family: "116watermelon";
+    font-size: 6vw;
+    line-height: 0.9;
+}
+.section01__inner > img {
+    margin-top: 40px;
+    width: 20vw;
+}
+.section01__inner .cloud1 {
+    background-image: url(../img/bottle-cloud-big.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 7vw;
+    transform: translate(23%, -85%);
+}
+/* section01__outer */
+.strainer {
+    width: 7vw;
+    right: 15%;
+    bottom: 40%;
+    transform: rotate(30deg);
+}
+.cloud2 {
+    width: 20vw;
+    left: 27%;
+    bottom: 43%;
+}
+.plane {
+    z-index: 12;
+}
+.plane-body {
+    right: 0;
+    top: 24.57%;
+    width: 20.625vw;
+    height: 6.51vw;
+}
+.plane-cloud {
+    width: 100vw;
+    top: -850px;
+    right: 400px;
+}
+
+
+/* //section01 */
