@@ -762,7 +762,10 @@ svg.highlight {
     right: 0;
     top: 18%;
 }
-
+.sec05_waves_bottom {
+    width: 100%;
+    bottom: 0;
+}
 
 .section05__inner ul {
     column-count: 2;
@@ -773,4 +776,128 @@ svg.highlight {
 .section05__inner ul li {
     position: relative;
     margin-bottom: 180px;
+}
+
+/* //section05 */
+
+/* section06 */
+#section06 {
+    width: 100%;
+    height: 150vh;
+    position: relative;
+}
+
+.sec06__tit {
+    font-family: 'BungeeShade';
+    padding-top: 15%;
+    text-align: center;
+    font-size: 7vw;
+    margin-bottom: 10%;
+}
+.sec06__txt {
+    font-family: 'IropkeBatang';
+    font-size: 1.2vw;
+    margin-left: 20%;
+}
+
+/* section06__outer */
+.wave-bottom {
+    width: 100%;
+    top: 0;
+}
+.wire {
+    top: 10%;
+    width: 20%;
+}
+
+.bridge {
+    width: 80%;
+    right: 0;
+    bottom: 0;
+}
+
+.air-balloon {
+    width: 6vw;
+    right: 10%;
+    top: 15%;
+}
+
+
+/* section06-01 */
+#section06-01 {
+    width: 100%;
+    height: 150vh;
+    position: relative;
+}
+.sec06-01__card:first-child {
+    padding-top: 15%;
+}
+.sec06-01__card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px dashed #444444;
+    padding: 15px 0;
+}
+.sec06-01__content {}
+.sec06-01__tit {
+    font-family: '116watermelon';
+    font-size: 2vw;
+}
+.sec06-01__txt {
+    font-family: 'IropkeBatang';
+    font-size: 1vw;
+    color: #707070;
+}
+
+.sec06-01__btn {
+    width: 20%;
+    height: 50px;
+    background: #000;
+    border-radius: 50px;
+}
+.sec06-01__btn a {
+    display: block;
+    font-family: 'IropkeBatang';
+    font-size: 1.5vw;
+    color: #fff;
+    text-align: center;
+    line-height: 50px;
+}
+
+/* section06-01__outer */
+.sec06-divider {
+    width: 60%;
+    left: 0;
+    top: 10%;
+}
+
+/* #footer */
+
+#footer {
+    margin-top: 20%;
+    /* margin-top: 500px; */
+    position: relative;
+}
+.footer__txt {
+    margin: 0 auto;
+    bottom: 0;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 2% 15%;
+}
+.footer__txt ul {
+    display: flex;
+}
+.footer__txt ul li a {
+    text-transform: uppercase;
+    font-family: "Montserrat";
+    font-size: 1vw;
+    margin: 15px;
+}
+.lanspace {
+    width: 100%;
+    bottom: 0;
+    z-index: -1;
 }
