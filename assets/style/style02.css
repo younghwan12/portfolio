@@ -460,28 +460,58 @@ svg.highlight {
     width: 100%;
     height: 100vh;
     overflow: hidden;
+    background: #000;
 }
 .horizontalSection {
     overscroll-behavior: none;
     width: 600%;
-    background: #000;
     display: flex;
     flex-wrap: nowrap;
 }
 
-
-#section04 {
-    background: #000;
+.section {
     width: 100%;
     height: 100vh;
 }
 
+#section04 {
+    width: 100%;
+    position: relative;
+    padding-top: 1%;
+}
+#section04-1 {
+    width: 100%;
+    position: relative;
+    padding-top: 1%;
+}
+#section04-2 {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    padding-top: 1%;
+}
+#section04-3 {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    padding-top: 1%;
+}
+#section04-4 {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    padding-top: 1%;
+}
+#section04-5 {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    padding-top: 1%;
+}
 .sec04__tit {
     font-size: 8vw;
     font-family: 'BungeeShade';
     color: #fff;
-    padding-top: 5%;
-    /* margin-bottom: 50px; */
 }
 .sec04__inner {
     display: flex;
@@ -519,7 +549,7 @@ svg.highlight {
 .plane2 {
     width: 10vw;
     right: 35%;
-    bottom: 40%;
+    bottom: 45%;
     transform: rotate(-15deg);
 }
 
@@ -574,18 +604,18 @@ svg.highlight {
 .spoon {
     width: 8vw;
     left: -5%;
-    bottom: -15%;
+    bottom: -5%;
 }
 
 .formula-apple {
     width: 10vw;
     right: 28%;
-    bottom: 20%;
+    bottom: 25%;
 }
 .formula-wheat {
     width: 10vw;
     right: 8%;
-    bottom: 10%;
+    bottom: 15%;
 }
 .cloudSvg {
     width: 8vw;
@@ -625,8 +655,9 @@ svg.highlight {
     top: 60%;
 }
 .bar-tool {
+    width: 20vw;
     right: 20%;
-    bottom: -5%;
+    bottom: -3%;
     transform: rotate(-120deg);
 }
 
@@ -671,12 +702,12 @@ svg.highlight {
 .rocket {
     width: 12vw;
     right: 30%;
-    bottom: 10%;
+    bottom: 20%;
 }
 .rocketfire {
     width: 12vw;
     right: 30%;
-    bottom: 0;
+    bottom: 10%;
 }
 /* //section04 */
 
