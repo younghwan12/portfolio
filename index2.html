@@ -826,9 +826,8 @@
         gsap.set(".sec02__txt3", {opacity: 0, y:-400})
 
         gsap.set(".sec03__txt1", {opacity: 0, scale: 0})
-        gsap.set(".sec03__card__tit1 span", {x: -100, opacity: 0, scale: 0})
-        gsap.set(".sec03__card__txt2", {yPercent: -100, opacity: 0,})
-        gsap.set(".sec03__card__tit2 span", {x: -100, opacity: 0, scale: 0})
+        gsap.set(".sec03__card__tit1 span", {y: -100, opacity: 0, scale: 0})
+        gsap.set(".sec03__card__txt2", {y: -100, opacity: 0,})
         gsap.set(".sec03__card__txt3", {y: -100, opacity: 0,})
 
 
@@ -873,7 +872,7 @@
             opacity: 1,
             ease: Elastic.easeOut.config( 1, 0.3),
             y: 0,
-            duration: 2,
+            duration: 1,
             stagger: .09
             
         })
@@ -881,7 +880,7 @@
             opacity: 1,
             rotation:0, skewY:0, ease:"elastic",
             scale:1,
-            duration: 2,
+            duration: 1,
             stagger: 1,
         })
         .to(".sec02__txt3", {
@@ -908,13 +907,13 @@
             scrollTrigger: {
                 trigger: ".sec03__txt1",
                 markers: true,  
-                scrub: 1,
+                // scrub: 1,
                 start: "top 50%",
             }
         })
-        .to(".sec03__txt1", {opacity: 1, scale: 1,stagger: 2, duration: 4})
-        .to(".sec03__card__tit1 span", {opacity: 1, scale: 1, x:0, delay: 2, stagger: .2,})
-        .to(".sec03__card__txt2", {opacity: 1, yPercent:0,ease: "power4.easeOut", duration: 4})
+        .to(".sec03__txt1", {opacity: 1, scale: 1,stagger: .2, ease: "bounce.out", duration: 1})
+        .to(".sec03__card__tit1 span", {y:0, opacity: 1, scale: 1,stagger: .2, ease: "bounce.out", duration: 1})
+        .to(".sec03__card__txt2", {opacity: 1, y:0,ease: "power4.easeOut", duration: 1.5})
 
         const t4 = gsap.timeline({
             scrollTrigger: {

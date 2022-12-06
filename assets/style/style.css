@@ -278,6 +278,10 @@ svg.highlight {
     font-size: 4.5vw;
     margin-bottom: 5%;        
 }
+.sec03__card__tit1 span {
+    display: inline-block;
+    white-space: pre;
+}
 .sec03__card__tit2 {
     font-family: '116watermelon';
     font-style: normal;
