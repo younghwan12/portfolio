@@ -53,6 +53,7 @@ body {
     height: 110vh;
     background: #000;
     position: relative;
+    overflow: hidden;
 }
 .section01__inner {
     z-index: 11;
