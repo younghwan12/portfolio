@@ -1039,7 +1039,6 @@
             scrub: 10,
             scrollTrigger: {
                 trigger: ".plane2",
-                markers: true,
                 containerAnimation: scrollTween,
                 start: "left center",
                 scrub: true,
@@ -1051,7 +1050,6 @@
             scrub: 10,
             scrollTrigger: {
                 trigger: ".spoon",
-                markers: true,
                 containerAnimation: scrollTween,
                 start: "left center",
                 scrub: true,
@@ -1066,7 +1064,6 @@
             ease: "power3.out",
             scrollTrigger: {
                 trigger: ".formula-apple",
-                markers: true,
                 containerAnimation: scrollTween,
                 // start: "left center",
                 scrub: true,
@@ -1081,11 +1078,38 @@
             ease: "power3.out",
             scrollTrigger: {
                 trigger: ".formula-apple",
-                markers: true,
                 containerAnimation: scrollTween,
                 start: "left center",
                 scrub: true,
                 toggleActions: "play none none none",
+            }
+        });
+
+        gsap.to(".cloudSvg", {
+            x: -80,
+            y: -80,
+            rotation: 12,
+            scrollTrigger: {
+                trigger: ".cloudSvg",
+                containerAnimation: scrollTween,
+                start: "left center",
+                toggleActions: "play none none reset",
+            }
+        });
+
+        gsap.to(".cloud-white-small", {
+            rotation:360,
+            x:200,
+            y:-150,
+            opacity: 0, 
+            duration: 2,
+            ease: "power3.out",
+            scrollTrigger: {
+                trigger: ".cloudSvg",
+                containerAnimation: scrollTween,
+                start: "left center",
+                // scrub: true,
+                toggleActions: "play none none reset",
             }
         });
 
