@@ -99,6 +99,15 @@ svg.highlight {
     line-height: 0.9;
     white-space: nowrap;
 }
+.section01__inner .txt1 {
+    overflow: hidden;
+}
+.section01__inner .txt2 {
+    overflow: hidden;
+}
+.section01__inner .txt1 span {
+
+}
 .section01__inner > img {
     margin-top: 40px;
     width: 20vw;
@@ -201,6 +210,14 @@ svg.highlight {
     width: 50%;
     margin-bottom: 5%;
     overflow: hidden;
+}
+.sec02__p1__p1 span, .sec02__p1__p2 span {
+    display: inline-block;
+    white-space: pre;
+}
+.sec02__p2__p1 span, .sec02__p2__p2 span, .sec02__p2__p3 span, .sec02__p2__p4 span {
+    display: inline-block;
+    white-space: pre;
 }
 .wrapper__inner .sec02__txt .sec02__p2 {
     margin-left: 30%;
