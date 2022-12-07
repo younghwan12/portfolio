@@ -947,7 +947,7 @@
         const tl = gsap.timeline({
             scrollTrigger: {
                 trigger: ".cloud-section",
-                markers: true,
+                // markers: true,
                 scrub: 1,
                 delay: 2,
             }
@@ -992,7 +992,6 @@
             stagger: .2,
             duration: .5,
         })
-        // section02
 
         // section03
         gsap.set(".sec03__tit", {opacity: 0, scale: 0})
@@ -1009,6 +1008,7 @@
         .to(".sec03__tit", { opacity: 1, scale: 1, duration: 1.5, ease: "bounce.out" })
         .to(".sec03__card__subTit1 span", { yPercent: 0, ease: "power3.out", stagger: .09, })
         .to(".sec03__card__txt2", { yPercent: 0, xPercent:0, rotation: 0, ease: "power1.out", scale:1, duration:1, })
+        .to(".profile01", { rotation:6 })
         // section03
 
 
@@ -1025,6 +1025,7 @@
         })
         .to(".sec03__card__subTit2 span", { yPercent: 0, ease: "power3.out", stagger: .09, })
         .to(".sec03__card__txt3", { yPercent: 0, xPercent:0, rotation: 0, ease: "power2.out", scale:1, duration:1, })
+        .to(".profile02", { rotation:-6 })
 
 
     </script>
