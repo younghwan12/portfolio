@@ -729,7 +729,7 @@
                     <img src="assets/img/waves02.svg" alt="waves_bottom">
                 </div> 
                 <div class="decor flower">
-                    <img src="assets/img/flower.svg" alt="flower">
+                    <img src="assets/img/bottle-cloud-little.svg" alt="flower">
                 </div>
             </div>
          </section>
@@ -943,9 +943,9 @@
         gsap.to(".plane", {x:0, y:0,z:0, scale:1});
         // 합격
 
-        gsap.to(".txt1 span", {duration: .5, delay: 1 ,opacity: 1, yPercent: 0, stagger: 0.09});
-        gsap.to(".txt2 span", {duration: .5, delay: 2 ,opacity: 1, y: 0, stagger: 0.09});
-        gsap.to(".section01__inner img", {duration: 1, delay: 3, scale: 1, opacity: 1, ease: "slow(0.7, 0.7, false)", y: 0});
+        gsap.to(".txt1 span", {duration: .3, delay: 1 ,opacity: 1, yPercent: 0, stagger: 0.09});
+        gsap.to(".txt2 span", {duration: .3, delay: 2 ,opacity: 1, y: 0, stagger: 0.09});
+        gsap.to(".section01__inner img", {duration: .6, delay: 3, scale: 1, opacity: 1, ease: "slow(0.7, 0.7, false)", y: 0});
         gsap.to(".cloud1", {duration: 1, delay: 4, opacity: 1, ease: "power2.out"});
         gsap.to("#header", {duration: 1, delay: 5, y:0});
         // section01
@@ -978,7 +978,7 @@
 
         gsap.to(".sec02__tit span", {
             opacity: 1,
-            ease: "circ.out",
+            ease: "bounce.out",
             yPercent: 0,
             stagger: .04,
             scrollTrigger: {
@@ -1000,7 +1000,7 @@
         });
         gsap.to(".sec02__p1__p2 span", {
             ease: "power3.easeInOut",
-            delay:0.3,
+            // delay:0.3,
             opacity:1,
             xPercent:0,
             yPercent:0,
@@ -1024,7 +1024,7 @@
         });
         gsap.to(".sec02__p2__p2 span", {
             ease: "power3.easeInOut",
-            delay:1.1,
+            delay:.8,
             opacity:1,
             xPercent:0,
             yPercent:0,
@@ -1036,7 +1036,7 @@
         });
         gsap.to(".sec02__p2__p3 span", {
             ease: "power3.easeInOut",
-            delay:1.4,
+            delay:.8,
             opacity:1,
             xPercent:0,
             yPercent:0,
@@ -1048,7 +1048,7 @@
         });
         gsap.to(".sec02__p2__p4 span", {
             ease: "power3.easeInOut",
-            delay:1.7,
+            delay:.8,
             opacity:1,
             xPercent:0,
             yPercent:0,
@@ -1070,19 +1070,22 @@
         });
 
         // section03
+        
         gsap.set(".sec03__tit", {opacity: 0, scale: 0,})
+        gsap.set(".modal-title-decor", {opacity: 0, scale: 0,})
         gsap.set(".sec03__card__subTit1 span", {opacity:0, scale:0, xPercent:-100, yPercent: -100,  rotation: 1080})
         gsap.set(".sec03__card__txt2 span", { xPercent:-100, yPercent:-100, opacity:0,})
 
-        // const t3 = gsap.timeline({
-        //     scrollTrigger: {
-        //         trigger: "#section03",
-        //         // markers: true,
-        //         start: "top 70%",
-        //     }
-        // })
+
         gsap.to(".sec03__tit", {
             opacity: 1, scale: 1, duration: .8, ease: "bounce.out",
+            scrollTrigger: {
+                trigger: ".sec03__tit",
+                start: "top 80%",
+            }
+        });
+        gsap.to(".modal-title-decor", {
+            delay:0.3, opacity: 1, scale: 1, duration: .8, ease: "bounce.out", rotation:30,
             scrollTrigger: {
                 trigger: ".sec03__tit",
                 start: "top 80%",
@@ -1113,11 +1116,11 @@
         });
 
 
-        gsap.set(".sec03__card__subTit2 span", {yPercent: -100, })
+        gsap.set(".sec03__card__subTit2 span", { xPercent:-100 ,yPercent: -100, })
         gsap.set(".sec03__card__txt3 span", {xPercent:-100, yPercent:-100, opacity:0 })
 
         gsap.to(".sec03__card__subTit2 span", {
-            yPercent:0, stagger:0.06, ease: "elastic.out(1, 0.3)", duration:1, opacity:1,
+            xPercent:0, yPercent:0, stagger:0.06, ease: "elastic.out(1, 0.3)", duration:1, opacity:1,
             scrollTrigger: {
                 trigger: ".sec03__card__subTit2",
                 start: "top 70%",
@@ -1201,7 +1204,7 @@
         gsap.to(".sec04-02__txt1 span", {
             xPercent:0, yPercent:0, opacity :1, stagger:0.015, ease: "power1.InOut",
             scrollTrigger: {
-                trigger: ".sec04-02__txt1",
+                trigger: ".cloudSvg",
                 containerAnimation: scrollTween,
                 start: "left center",
             }
@@ -1209,7 +1212,7 @@
         gsap.to(".sec04-03__txt1 span", {
             xPercent:0, yPercent:0, opacity :1, stagger:0.015, ease: "power3.InOut",
             scrollTrigger: {
-                trigger: ".sec04-03__txt1",
+                trigger: ".star1",
                 containerAnimation: scrollTween,
                 start: "left center",
             }
@@ -1217,7 +1220,7 @@
         gsap.to(".sec04-04__txt1 span", {
             xPercent:0, yPercent:0, opacity :1, stagger:0.015, ease: "power2.InOut",
             scrollTrigger: {
-                trigger: ".sec04-04__txt1",
+                trigger: ".bubble01",
                 containerAnimation: scrollTween,
                 start: "left center",
             }
@@ -1310,7 +1313,7 @@
         gsap.to(".star2", {
             scale: 1,
             opacity: 1,
-            delay: .5,
+            delay: .3,
             ease: "power3.out",
             scrollTrigger: {
                 trigger: ".star1",
@@ -1323,7 +1326,7 @@
         gsap.to(".star3", {
             scale: 1,
             opacity: 1,
-            delay: 1,
+            delay: .6,
             ease: "power3.out",
             scrollTrigger: {
                 trigger: ".star1",
@@ -1335,7 +1338,7 @@
         gsap.to(".star4", {
             scale: 2,
             opacity: 1,
-            delay: 1.5,
+            delay: .9,
             rotation:0,            
             x:0,
             y:0,
@@ -1350,7 +1353,7 @@
         gsap.to(".star5", {
             scale: 1,
             opacity: 1,
-            delay: 2,
+            delay: 1.2,
             ease: "power3.out",
             scrollTrigger: {
                 trigger: ".star1",
@@ -1391,7 +1394,7 @@
         gsap.to(".bubble02", {
             scale: 1,
             opacity: 1,
-            delay: 1,
+            delay: .3,
             ease: "power2.out",
             scrollTrigger: {
                 trigger: ".bubble01",
@@ -1403,7 +1406,7 @@
         gsap.to(".bubble03", {
             scale: 1,
             opacity: 1,
-            delay: 2,
+            delay: .6,
             ease: "power2.out",
             scrollTrigger: {
                 trigger: ".bubble01",
@@ -1415,7 +1418,7 @@
         gsap.to(".bubble04", {
             scale: 1,
             opacity: 1,
-            delay: .5,
+            delay: .9,
             ease: "power2.out",
             scrollTrigger: {
                 trigger: ".bubble01",
@@ -1427,7 +1430,7 @@
         gsap.to(".bubble05", {
             scale: 1,
             opacity: 1,
-            delay: 1.5,
+            delay: 1.2,
             ease: "power2.out",
             scrollTrigger: {
                 trigger: ".bubble01",
@@ -1446,7 +1449,29 @@
                 start: "left center",
                 scrub: true,
             }
-        });        
+        });
+
+        
+        gsap.to(".rocket", {
+            xPercent:-700, yPercent:-3000, rotation:-360 ,stagger:0.15, ease: "power4.InOut",
+            scrollTrigger: {
+                trigger: "#section04-5",
+                containerAnimation: scrollTween,
+                start: "left 10%",
+                scrub: true
+            }
+        });
+
+        gsap.to(".station", {
+            xPercent:-300, yPercent:300, stagger:0.15,
+            scrollTrigger: {
+                trigger: "#section04-5",
+                containerAnimation: scrollTween,
+                start: "left 10%",
+                scrub: true
+            }
+        });
+
 
         
 

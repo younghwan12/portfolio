@@ -288,6 +288,7 @@ svg.highlight {
 
 /* section03 */
 #section03 {
+    position: relative;
     padding-top: 5%;
 }
 .wrapper__inner__big {
@@ -370,9 +371,9 @@ svg.highlight {
 /* section03__outer */
 .modal-title-decor {
     width: 18vw;
-    right: 14%;
-    top: -2%;
-    animation: jello 2s ease-in-out infinite;
+    right: 15%;
+    top: 3%;
+    /* animation: jello 2s ease-in-out infinite; */
 }
 
 @keyframes jello {
@@ -735,7 +736,7 @@ svg.highlight {
 .rocket {
     width: 12vw;
     right: 30%;
-    bottom: 20%;
+    bottom: 19%;
 }
 .rocketfire {
     width: 12vw;
@@ -919,6 +920,7 @@ svg.highlight {
     width: 6vw;
     right: 10%;
     top: 15%;
+    animation: move1 6s ease-in-out infinite;
 }
 
 /* section06-1 */
