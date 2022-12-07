@@ -911,9 +911,9 @@
         })
 
         // 가로 모드
-        const sections = gsap.utils.toArray(".rowsection");      // gsap 다중 선택
+        let sections = gsap.utils.toArray(".rowsection");      // gsap 다중 선택
 
-        gsap.to(sections, {
+        let scrollTween = gsap.to(sections, {
             xPercent: -100 * (sections.length - 1),
             ease: "none",
             scrollTrigger: {
@@ -1026,6 +1026,68 @@
         .to(".sec03__card__subTit2 span", { yPercent: 0, ease: "power3.out", stagger: .09, })
         .to(".sec03__card__txt3", { yPercent: 0, xPercent:0, rotation: 0, ease: "power2.out", scale:1, duration:1, })
         .to(".profile02", { rotation:-6 })
+
+
+        // section04
+
+        // ScrollTrigger.defaults({markers: {startColor: "white", endColor: "white"}});
+
+        gsap.to(".plane2", {
+            y: -250,
+            x: 250,
+            rotation: 4,
+            scrub: 10,
+            scrollTrigger: {
+                trigger: ".plane2",
+                markers: true,
+                containerAnimation: scrollTween,
+                start: "left center",
+                scrub: true,
+            }
+        });
+
+        gsap.to(".spoon", {
+            rotation: -40,
+            scrub: 10,
+            scrollTrigger: {
+                trigger: ".spoon",
+                markers: true,
+                containerAnimation: scrollTween,
+                start: "left center",
+                scrub: true,
+            }
+        });
+
+        gsap.set(".formula-apple, .formula-wheat", {opacity:0, scale:0})
+
+        gsap.to(".formula-apple", {
+            opacity: 1,
+            scale:1,
+            ease: "power3.out",
+            scrollTrigger: {
+                trigger: ".formula-apple",
+                markers: true,
+                containerAnimation: scrollTween,
+                // start: "left center",
+                scrub: true,
+                toggleActions: "play none none none",
+            }
+        });
+
+        gsap.to(".formula-wheat", {
+            opacity: 1,
+            scale:1,
+            delay:2,
+            ease: "power3.out",
+            scrollTrigger: {
+                trigger: ".formula-apple",
+                markers: true,
+                containerAnimation: scrollTween,
+                start: "left center",
+                scrub: true,
+                toggleActions: "play none none none",
+            }
+        });
 
 
     </script>
