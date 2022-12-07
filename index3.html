@@ -1192,8 +1192,86 @@
                 start: "left center",
                 scrub: true,
             }
+        });
+        
+        gsap.set(".bubble01", {opacity:0, scale:0})
+        gsap.set(".bubble02", {opacity:0, scale:0})
+        gsap.set(".bubble03", {opacity:0, scale:0})
+        gsap.set(".bubble04", {opacity:0, scale:0})
+        gsap.set(".bubble05", {opacity:0, scale:0})
+
+        gsap.to(".bubble01", {
+            scale: 1,
+            opacity: 1,
+            ease: "power2.out",
+            scrollTrigger: {
+                trigger: ".bubble01",
+                containerAnimation: scrollTween,
+                start: "left center",
+                toggleActions: "play none none reset",
+            }
+        });
+        gsap.to(".bubble02", {
+            scale: 1,
+            opacity: 1,
+            delay: 1,
+            ease: "power2.out",
+            scrollTrigger: {
+                trigger: ".bubble01",
+                containerAnimation: scrollTween,
+                start: "left center",
+                toggleActions: "play none none reset",
+            }
+        });
+        gsap.to(".bubble03", {
+            scale: 1,
+            opacity: 1,
+            delay: 2,
+            ease: "power2.out",
+            scrollTrigger: {
+                trigger: ".bubble01",
+                containerAnimation: scrollTween,
+                start: "left center",
+                toggleActions: "play none none reset",
+            }
+        });
+        gsap.to(".bubble04", {
+            scale: 1,
+            opacity: 1,
+            delay: .5,
+            ease: "power2.out",
+            scrollTrigger: {
+                trigger: ".bubble01",
+                containerAnimation: scrollTween,
+                start: "left center",
+                toggleActions: "play none none reset",
+            }
+        });
+        gsap.to(".bubble05", {
+            scale: 1,
+            opacity: 1,
+            delay: 1.5,
+            ease: "power2.out",
+            scrollTrigger: {
+                trigger: ".bubble01",
+                containerAnimation: scrollTween,
+                start: "left center",
+                toggleActions: "play none none reset",
+            }
+        });
+
+        gsap.to(".strainer2", {
+            rotation: 16,
+            ease: "power3.out",
+            scrollTrigger: {
+                trigger: ".strainer2",
+                containerAnimation: scrollTween,
+                start: "left center",
+                scrub: true,
+            }
         });        
 
+        
 
     </script>
 
