@@ -976,10 +976,6 @@
         gsap.set(".sec02__txt .sec02__p2__p3 span", {opacity: 0,xPercent:-100, yPercent:-100 })
         gsap.set(".sec02__txt .sec02__p2__p4 span", {opacity: 0,xPercent:-100, yPercent:-100 })
 
-
-        
-        // gsap.set(".sec02__txt .sec02__p2 p span", {opacity: 0,xPercent:-100,})
-
         gsap.to(".sec02__tit span", {
             opacity: 1,
             ease: "circ.out",
@@ -1062,31 +1058,49 @@
                 start: "top 30%",
             }
         });
-
-
- 
-        // .to(".town", {
-        //     rotation: -6,
-        //     stagger: .2,
-        //     duration: .5,
-        // })
+        gsap.to(".town", {
+            rotation: -16,
+            stagger: .2,
+            duration: .5,
+            scrollTrigger: {
+                trigger: ".town",
+                start: "top 30%",
+                scrub: true,
+            }
+        });
 
         // section03
         gsap.set(".sec03__tit", {opacity: 0, scale: 0})
-        gsap.set(".sec03__card__subTit1 span", {yPercent: 100,})
+        gsap.set(".sec03__card__subTit1 span", {scale:0, xPercent:-100, yPercent: -100,})
         gsap.set(".sec03__card__txt2", {yPercent: -100, xPercent:100, scale:0, rotation: -720})
 
-        const t3 = gsap.timeline({
+        // const t3 = gsap.timeline({
+        //     scrollTrigger: {
+        //         trigger: "#section03",
+        //         // markers: true,
+        //         start: "top 70%",
+        //     }
+        // })
+        gsap.to(".sec03__tit", {
+            opacity: 1, scale: 1, duration: .8, ease: "bounce.out",
             scrollTrigger: {
-                trigger: "#section03",
-                // markers: true,
-                start: "top 70%",
+                trigger: ".sec03__tit",
+                start: "top 80%",
             }
-        })
-        .to(".sec03__tit", { opacity: 1, scale: 1, duration: 1.5, ease: "bounce.out" })
-        .to(".sec03__card__subTit1 span", { yPercent: 0, ease: "power3.out", stagger: .09, })
-        .to(".sec03__card__txt2", { yPercent: 0, xPercent:0, rotation: 0, ease: "power1.out", scale:1, duration:1, })
-        .to(".profile01", { rotation:6 })
+        });
+
+        gsap.to(".sec03__card__subTit1 span", {
+            scale:1, yPercent: 0, xPercent:0, ease: "power3.InOut", stagger: .04,
+            scrollTrigger: {
+                trigger: ".sec03__card__subTit1",
+                start: "top 70%",
+                markers: true,
+            }
+        });
+
+        // .to(".sec03__card__subTit1 span", { yPercent: 0, ease: "power3.out", stagger: .09, })
+        // .to(".sec03__card__txt2", { yPercent: 0, xPercent:0, rotation: 0, ease: "power1.out", scale:1, duration:1, })
+        // .to(".profile01", { rotation:6 })
         // section03
 
 

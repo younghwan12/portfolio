@@ -105,9 +105,6 @@ svg.highlight {
 .section01__inner .txt2 {
     overflow: hidden;
 }
-.section01__inner .txt1 span {
-
-}
 .section01__inner > img {
     margin-top: 40px;
     width: 20vw;
@@ -927,7 +924,6 @@ svg.highlight {
     border-bottom: 1px dashed #444444;
     padding: 15px 0;
 }
-.sec06-01__content {}
 .sec06-01__tit {
     font-family: '116watermelon';
     font-size: 2vw;
