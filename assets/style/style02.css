@@ -598,12 +598,16 @@ svg.highlight {
     /* margin-top: 30px; */
     font-size: 5vw;
 }
-.sec04-01__txt1 {
+.sec04-01__txt1, .sec04-02__txt1, .sec04-03__txt1, .sec04-04__txt1, .sec04-05__txt1 {
     color: #fff;
     font-family: 'Aritaburi';
     font-size: 1.4vw;
     font-weight: 100;
     margin-bottom: 30px;
+}
+.sec04-01__txt1 span, .sec04-02__txt1 span, .sec04-03__txt1 span, .sec04-04__txt1 span, .sec04-05__txt1 span {
+    display: inline-block;
+    white-space: pre;
 }
 
 .sec04-con__left {
