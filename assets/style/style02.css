@@ -194,16 +194,18 @@ svg.highlight {
     font-size: 1.5vw;
     font-family: "IropkeBatang";
     line-height: 1.5;
-    overflow: hidden;
+    /* overflow: hidden; */
+    word-break: keep-all;
 }
-.wrapper__inner .sec02__txt p {
+.wrapper__inner .sec02__txt .sec02__p1 {
     width: 50%;
     margin-bottom: 5%;
-    word-break: break-word;
+    overflow: hidden;
 }
 .wrapper__inner .sec02__txt .sec02__p2 {
     margin-left: 30%;
     width: 70%;
+    overflow: hidden;
 }
 /* section02__outer */
 .cloud-section {
@@ -295,9 +297,10 @@ svg.highlight {
     font-family: '116watermelon';
     font-style: normal;
     font-size: 4.5vw;
-    margin-bottom: 5%;        
+    margin-bottom: 5%;
+    overflow: hidden;       
 }
-.sec03__card__subTtit1 span {
+.sec03__card__subTit1 span {
     display: inline-block;
     white-space: pre;
 }
@@ -306,6 +309,11 @@ svg.highlight {
     font-style: normal;
     font-size: 4.5vw;
     margin: 5% 0;
+    overflow: hidden;
+}
+.sec03__card__subTit2 span {
+    display: inline-block;
+    white-space: pre;
 }
 .sec03__card {
     margin-top: 10%;
