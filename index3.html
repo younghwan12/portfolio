@@ -167,7 +167,7 @@
                             />
                             </svg>
                         </div>
-                        <div class="sec03__card__txt2">
+                        <div class="sec03__card__txt2 split">
                             새로운 변화가 끊임없이 일어나는 웹 환경에서 최신 트렌드에 뒤처지지 않기 위해 스터디 모임과 세미나에 많이 참여하여 핵심 사이트를 벤치마킹하고 업무 시간 외에도 꾸준히 부족한 부분과 유행하는 기술들을 공부합니다.
                         </div>
                     </div>
@@ -192,7 +192,7 @@
                         도전하지 않는 건 멈춘 것과 같다
                     </div>
                     <div class="sec03__card">
-                        <div class="sec03__card__txt3">
+                        <div class="sec03__card__txt3 split">
                             새로운 변화가 끊임없이 일어나는 웹 환경에서 최신 트렌드에 뒤처지지 않기 위해 스터디 모임과 세미나에 많이 참여하여 핵심 사이트를 벤치마킹하고 업무 시간 외에도 꾸준히 부족한 부분과 유행하는 기술들을 공부합니다.
                         </div>
                         <div class="profile02">
@@ -1070,9 +1070,9 @@
         });
 
         // section03
-        gsap.set(".sec03__tit", {opacity: 0, scale: 0})
-        gsap.set(".sec03__card__subTit1 span", {scale:0, xPercent:-100, yPercent: -100,})
-        gsap.set(".sec03__card__txt2", {yPercent: -100, xPercent:100, scale:0, rotation: -720})
+        gsap.set(".sec03__tit", {opacity: 0, scale: 0,})
+        gsap.set(".sec03__card__subTit1 span", {opacity:0, scale:0, xPercent:-100, yPercent: -100,  rotation: 1080})
+        gsap.set(".sec03__card__txt2 span", { xPercent:-100, yPercent:-100, opacity:0,})
 
         // const t3 = gsap.timeline({
         //     scrollTrigger: {
@@ -1090,34 +1090,70 @@
         });
 
         gsap.to(".sec03__card__subTit1 span", {
-            scale:1, yPercent: 0, xPercent:0, ease: "power3.InOut", stagger: .04,
+            scale:1, yPercent: 0, xPercent:0, ease: "power3.InOut", stagger: .06,  rotation: 0, opacity:1,
             scrollTrigger: {
                 trigger: ".sec03__card__subTit1",
                 start: "top 70%",
-                markers: true,
+            }
+        });
+        gsap.to(".sec03__card__txt2 span", {
+            xPercent:0, yPercent:0, opacity:1, stagger:.011, ease: "power2.InOut",
+            scrollTrigger: {
+                trigger: ".sec03__card__txt2",
+                start: "top 50%",
+            }
+        });
+        gsap.to(".profile01", {
+            rotation:6,
+            scrollTrigger: {
+                trigger: ".profile01",
+                start: "top 50%",
+                scrub: true,
             }
         });
 
-        // .to(".sec03__card__subTit1 span", { yPercent: 0, ease: "power3.out", stagger: .09, })
-        // .to(".sec03__card__txt2", { yPercent: 0, xPercent:0, rotation: 0, ease: "power1.out", scale:1, duration:1, })
-        // .to(".profile01", { rotation:6 })
-        // section03
 
+        gsap.set(".sec03__card__subTit2 span", {yPercent: -100, })
+        gsap.set(".sec03__card__txt3 span", {xPercent:-100, yPercent:-100, opacity:0 })
 
-        gsap.set(".sec03__card__subTit2 span", {yPercent: 100,})
-        gsap.set(".sec03__card__txt3", {yPercent: -100, xPercent:-100, scale:0, rotation: -720})
-
-        // section03-1
-        const t4 = gsap.timeline({
+        gsap.to(".sec03__card__subTit2 span", {
+            yPercent:0, stagger:0.06, ease: "elastic.out(1, 0.3)", duration:1, opacity:1,
             scrollTrigger: {
-                trigger: "#section03-1",
-                // markers: true,
+                trigger: ".sec03__card__subTit2",
                 start: "top 70%",
             }
-        })
-        .to(".sec03__card__subTit2 span", { yPercent: 0, ease: "power3.out", stagger: .09, })
-        .to(".sec03__card__txt3", { yPercent: 0, xPercent:0, rotation: 0, ease: "power2.out", scale:1, duration:1, })
-        .to(".profile02", { rotation:-6 })
+        });
+        gsap.to(".petrychka", {
+            rotation:15, scale:1.2,
+            scrollTrigger: {
+                trigger: ".petrychka",
+                start: "top 70%",
+                scrub:true,
+            }
+        });
+        gsap.to(".knife", {
+            rotation: 30, x: 80, y:80,
+            scrollTrigger: {
+                trigger: ".knife",
+                start: "top 70%",
+                scrub:true,
+            }
+        });
+        gsap.to(".sec03__card__txt3 span", {
+            xPercent:0, yPercent:0, stagger:0.018, opacity:1, ease:"power3.InOut",
+            scrollTrigger: {
+                trigger: ".sec03__card__txt3",
+                start: "top 70%",
+            }
+        });
+        gsap.to(".profile02", {
+            rotation:-6,
+            scrollTrigger: {
+                trigger: ".profile02",
+                start: "top 70%",
+                scrub:true,
+            }
+        });
 
 
         // section04

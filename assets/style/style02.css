@@ -346,11 +346,20 @@ svg.highlight {
     width: 38%;
     font-family: 'IropkeBatang';
     font-size: 1.4vw;
+    overflow: hidden;
+}
+.sec03__card__txt2 span {
+    display: inline-block;
+    white-space: pre;
 }
 .sec03__card__txt3 {
     width: 38%;
     font-family: 'IropkeBatang';
     font-size: 1.4vw;
+}
+.sec03__card__txt3 span {
+    display: inline-block;
+    white-space: pre;
 }
 .divider {
     width: 47%;
