@@ -942,9 +942,9 @@
         gsap.to("#header", {duration: 2, delay: 6, y:0});
         // section01
 
-        gsap.set(".sec02__tit span", {opacity: 0, y: -200})
-        gsap.set(".sec02__txt .sec02__p1", {opacity: 0, scale:0, rotation:150, skewY:35})
-        gsap.set(".sec02__txt .sec02__p2", {opacity: 0, y:-400})
+        gsap.set(".sec02__tit span", {opacity: 0, y: -100})
+        gsap.set(".sec02__txt .sec02__p1", {opacity: 0, scale:0, skewY:-50, skewX:-50})
+        gsap.set(".sec02__txt .sec02__p2", {opacity: 0, scale:0, skewY:50, skewX:-50})
 
         // gsap.set(".sec03__txt1", {opacity: 0, scale: 0})
         // gsap.set(".sec03__card__tit1 span", {y: -100, opacity: 0, scale: 0})
@@ -953,7 +953,8 @@
 
         const tl = gsap.timeline({
             scrollTrigger: {
-                trigger: ".cloud-section",
+                // trigger: ".cloud-section",
+                trigger: "#section02",
                 markers: true,
                 scrub: 1,
                 delay: 2,
@@ -979,34 +980,32 @@
             opacity: 1,
             ease: Elastic.easeOut.config( 1, 0.3),
             y: 0,
-            duration: 1,
+            duration: .8,
             stagger: .09
             
         })
         .to(".sec02__p1", {
             opacity: 1,
-            rotation:0, skewY:0, ease:"elastic",
+            duration: 1.5, ease: "power2.out",
             scale:1,
+            skewY:0,
+            skewX:0,
             duration: 1,
             stagger: 1,
         })
         .to(".sec02__p2", {
             opacity: 1,
-            y:0,
-            ease: Elastic.easeOut.config( 1, 0.3),
+            duration: 1.5, ease: "power2.out",
+            scale:1,
+            skewY:0,
+            skewX:0,
             duration: 1,
-        })
-        
-        .to(".halfmoon", {
-            x: 100,
-            rotation: 360,
-            stagger: .2,
-            duration: 6,
-        })        
+            stagger: 1,
+        })   
         .to(".town", {
             rotation: -6,
             stagger: .2,
-            duration: 2,
+            duration: 1,
         })
         // section02
     </script>
