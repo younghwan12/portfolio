@@ -921,18 +921,18 @@ svg.highlight {
 #section06 {
     padding-top: 10%;
     position: relative;
-    padding-bottom: 37%;
+    padding-bottom: 40%;
 }
 
 .sec06__tit {
     font-family: 'BungeeShade';
     text-align: center;
     font-size: 7vw;
-    margin-bottom: 10%;
+    margin-bottom: 15%;
 }
 .sec06__txt {
     font-family: 'IropkeBatang';
-    font-size: 1.2vw;
+    font-size: 1.3vw;
     margin-left: 15%;
 }
 
@@ -971,11 +971,12 @@ svg.highlight {
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px dashed #444444;
-    padding: 15px 0;
+    padding: 20px 0;
 }
 .sec06-01__tit {
     font-family: '116watermelon';
     font-size: 2vw;
+    margin-bottom: 5px;
 }
 .sec06-01__txt {
     font-family: 'IropkeBatang';
@@ -984,8 +985,6 @@ svg.highlight {
 }
 
 .sec06-01__btn {
-    width: 20%;
-    height: 50px;
     background: #000;
     border-radius: 50px;
 }
@@ -995,7 +994,7 @@ svg.highlight {
     font-size: 1.5vw;
     color: #fff;
     text-align: center;
-    line-height: 50px;
+    padding: 2px 120px;
 }
 
 /* section06-01__outer */
