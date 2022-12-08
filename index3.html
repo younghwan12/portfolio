@@ -803,24 +803,27 @@
                     <img src="assets/img/landspace.svg" alt="">
                 </div>
             </div>
-         </section>       
+         </section>
+         <!-- footer -->
+        <footer id="footer">
+            <div class="wrapper">
+                <div class="footer__txt">
+                    <ul>
+                        <li><a href="#">about</a></li>
+                        <li><a href="#">site</a></li>
+                        <li><a href="#">blog</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#">contact me</a></li>
+                    </ul>
+                </div>        
+            </div>
+        </footer>
+        <!-- //footer -->    
     </main>
     <!-- //main -->
 
-    <!-- footer -->
-    <!-- <footer id="footer">
-        <div class="footer__txt">
-            <ul>
-                <li><a href="#">about</a></li>
-                <li><a href="#">site</a></li>
-                <li><a href="#">blog</a></li>
-            </ul>
-            <ul>
-                <li><a href="#">contact me</a></li>
-            </ul>
-        </div>        
-    </footer> -->
-    <!-- //footer -->
+    
 
     <script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
@@ -1417,7 +1420,7 @@
             scrollTrigger: {
                 trigger: ".sec05__txt1__t1 span",
                 start: "top 60%",
-                markers: true
+                // markers: true
             }
         });
         gsap.to(".sec05__txt1__t2 span", {
@@ -1425,7 +1428,7 @@
             scrollTrigger: {
                 trigger: ".sec05__txt1__t1 span",
                 start: "top 60%",
-                markers: true
+                // markers: true
             }
         });
         gsap.to(".sec05__txt1__t3 span", {
@@ -1433,7 +1436,7 @@
             scrollTrigger: {
                 trigger: ".sec05__txt1__t1 span",
                 start: "top 60%",
-                markers: true
+                // markers: true
             }
         });
         gsap.to(".sec05__txt1__t4 span", {
@@ -1483,12 +1486,23 @@
             }
         });
 
-        // gsap.set("#section07", {y:800})
+
+        // gsap.set("#section07", {y: -200})
+        gsap.to("#section07", {
+            scrollTrigger: {
+                trigger: "#section06-1 .wrapper",
+                scrub: true,
+                start: "top 10%",
+                end: "+=750",
+                pin: true,
+            }
+        });
 
         // gsap.to("#section07", {
         //     y:0, duration:1,
         //     scrollTrigger: {
         //         trigger: "#section06-1",
+        //         pin: true,
         //         start: "top 20%",
         //         scrub: true,
         //         markers:true

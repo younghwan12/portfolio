@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
 .container {
@@ -211,6 +211,9 @@ svg.highlight {
     display: inline-block;
     white-space: pre;
 }
+.sec02__p2__p1, .sec02__p2__p2 {
+    word-break: keep-all;
+}
 .sec02__p2__p1 span, .sec02__p2__p2 span, .sec02__p2__p3 span, .sec02__p2__p4 span {
     display: inline-block;
     white-space: pre;
@@ -415,7 +418,7 @@ svg.highlight {
 .cone {
     width: 7vw;
     left: 25%;
-    top: 15%;
+    top: 20%;
     animation: move1 15s ease-in-out infinite;
 }
 .cat {
@@ -560,6 +563,7 @@ svg.highlight {
     margin-bottom: 110px;
 }
 .sec04__txt2 ul li {
+    font-family: 'IropkeBatang';
     list-style: inside;
     font-size: 1.2vw;
     line-height: 145%;
@@ -932,7 +936,6 @@ svg.highlight {
 #section06-1 {
     position: relative;
     padding-top: 10%;
-    padding-bottom: 10%;
     /* padding-bottom: 40%; */
 }
 
@@ -979,20 +982,27 @@ svg.highlight {
     z-index: 15;
     position: relative;
 }
+.lanspace {
+    width: 100%;
+    bottom: 0;
+    z-index: -1;
+}
 
 /* #footer */
 
 #footer {
     /* margin-top: 500px; */
-    position: relative;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    /* position: relative; */
 }
 .footer__txt {
-    margin: 0 auto;
-    bottom: 0;
     color: #fff;
     display: flex;
     justify-content: space-between;
-    padding: 2% 15%;
+    padding: 2%;
 }
 .footer__txt ul {
     display: flex;
@@ -1002,9 +1012,4 @@ svg.highlight {
     font-family: "Montserrat";
     font-size: 1vw;
     margin: 15px;
-}
-.lanspace {
-    width: 100%;
-    bottom: 0;
-    z-index: -1;
 }
