@@ -125,9 +125,9 @@ table {
     height: 10px;
 }
 ::-webkit-scrollbar-track {
-    background: #1f224a26;
+    background: rgba(0, 0, 0, 0.824);
 }
 ::-webkit-scrollbar-thumb {
-    background: rgba(69, 71, 100, 0.321);
+    background: rgba(0, 0, 0, 0.824);
     border-radius: 20px;
 }

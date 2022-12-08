@@ -273,7 +273,7 @@ svg.highlight {
 }
 .halfmoon {
     width: 5vw;
-    right: 15%;
+    right: 10%;
     top: 15%;
     z-index: 13;
     animation: move1 10s ease-in-out infinite;
@@ -363,8 +363,8 @@ svg.highlight {
     white-space: pre;
 }
 .divider {
-    width: 47%;
-    margin-left: -10%;
+    width: 55%;
+    margin-left: -15%;
     margin-bottom: 5%;
 }
 
@@ -776,6 +776,11 @@ svg.highlight {
     margin-left: 60%;
     font-size: 1.2vw;
     font-family: 'IropkeBatang';
+    white-space: nowrap;
+}
+.sec05__txt1__t1 span, .sec05__txt1__t2 span, .sec05__txt1__t3 span, .sec05__txt1__t4 span {
+    display: inline-block;
+    white-space: pre;
 }
 .bigCard {
     width: 75%;   
@@ -875,7 +880,7 @@ svg.highlight {
     position: relative;
     padding-bottom: 25%;
 }
-.flower {
+.sec05_cloud2 {
     width: 10vw;
     left: 20%;
     top: -2%;
@@ -927,7 +932,8 @@ svg.highlight {
 #section06-1 {
     position: relative;
     padding-top: 10%;
-    padding-bottom: 35%;
+    padding-bottom: 10%;
+    /* padding-bottom: 40%; */
 }
 
 .sec06-01__card {
@@ -969,6 +975,10 @@ svg.highlight {
     top: 0;
 }
 
+#section07 {
+    z-index: 15;
+    position: relative;
+}
 
 /* #footer */
 
