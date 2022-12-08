@@ -212,14 +212,15 @@ svg.highlight {
     white-space: pre;
 }
 .sec02__p2__p1, .sec02__p2__p2 {
-    word-break: keep-all;
+    /* word-break: keep-all; */
 }
 .sec02__p2__p1 span, .sec02__p2__p2 span, .sec02__p2__p3 span, .sec02__p2__p4 span {
     display: inline-block;
     white-space: pre;
+    word-break: keep-all;
 }
 .wrapper__inner .sec02__txt .sec02__p2 {
-    margin-left: 30%;
+    margin-left: 25%;
     overflow: hidden;
 }
 /* section02__outer */
@@ -570,6 +571,7 @@ svg.highlight {
     font-size: 8vw;
     font-family: 'BungeeShade';
     color: #fff;
+    margin-bottom: 15px;
 }
 .sec04__inner {
     display: flex;
@@ -590,7 +592,7 @@ svg.highlight {
 .sec04__txt2 ul li {
     font-family: 'IropkeBatang';
     list-style: inside;
-    font-size: 1.2vw;
+    font-size: 1.5vw;
     line-height: 145%;
     color: #fff;
 }
