@@ -662,14 +662,14 @@
          <section id="section06">
             <div class="wrapper">
                 <div class="wrapper__inner__big">
-                    <div class="sec06__tit">
+                    <div class="sec06__tit split">
                         the Study
                     </div>
                     <div class="sec06__txt">
-                        <div>학원 수강하면서 공부한 것들을 모아놓은 리스트입니다.</div>
-                        <div>그날 배운 내용에 만족하지 않고, 부족한 부분을 파악하고</div> 
-                        <div>skill up 하기 위해서 노력하였습니다. 경험과 배움을 통해 꾸준히 학습하고, </div> 
-                        <div>성장해 나가는 더욱 발전된 모습을 보여드리겠습니다.</div>
+                        <div class="sec06__txt__t1 split">학원 수강하면서 공부한 것들을 모아놓은 리스트입니다.</div>
+                        <div class="sec06__txt__t2 split">그날 배운 내용에 만족하지 않고, 부족한 부분을 파악하고</div> 
+                        <div class="sec06__txt__t3 split">skill up 하기 위해서 노력하였습니다. 경험과 배움을 통해 꾸준히 학습하고, </div> 
+                        <div class="sec06__txt__t4 split">성장해 나가는 더욱 발전된 모습을 보여드리겠습니다.</div>
                     </div>
                 </div>
             </div>
@@ -1514,6 +1514,82 @@
                 scrub: true,
             }
         });
+
+        
+
+        gsap.set(".sec06__tit span",{ opacity:0, yPercent:-100})
+
+        gsap.to(".sec06__tit span", {
+            ease: "bounce.out",
+            duration:0.6,
+            opacity:1,
+            yPercent:0,
+            stagger: 0.02,
+            scrollTrigger: {
+                trigger: ".sec06__tit",
+                start: "top 80%",
+                markers:true,
+            }
+        });
+
+
+        gsap.set(".sec06__txt__t1 span",{ opacity:0, xPercent:-100, yPercent:-100})
+        gsap.set(".sec06__txt__t2 span",{ opacity:0, xPercent:-100, yPercent:-100})
+        gsap.set(".sec06__txt__t3 span",{ opacity:0, xPercent:-100, yPercent:-100})
+        gsap.set(".sec06__txt__t4 span",{ opacity:0, xPercent:-100, yPercent:-100})
+
+        gsap.to(".sec06__txt__t1 span", {
+            ease: "power3.easeIn",
+            opacity:1,
+            xPercent:0,
+            yPercent:0,
+            stagger: 0.02,
+            scrollTrigger: {
+                trigger: ".sec06__txt",
+                start: "top 80%",
+                markers:true,
+            }
+        });
+        gsap.to(".sec06__txt__t2 span", {
+            ease: "power3.easeOut",
+            opacity:1,
+            xPercent:0,
+            yPercent:0,
+            stagger: 0.02,
+            scrollTrigger: {
+                trigger: ".sec06__txt",
+                start: "top 80%",
+                markers:true,
+            }
+        });
+        gsap.to(".sec06__txt__t3 span", {
+            ease: "power3.easeInOut",
+            opacity:1,
+            xPercent:0,
+            yPercent:0,
+            stagger: 0.02,
+            scrollTrigger: {
+                trigger: ".sec06__txt",
+                start: "top 80%",
+                markers:true,
+            }
+        });
+        gsap.to(".sec06__txt__t4 span", {
+            ease: "power2.easeInOut",
+            opacity:1,
+            xPercent:0,
+            yPercent:0,
+            stagger: 0.02,
+            scrollTrigger: {
+                trigger: ".sec06__txt",
+                start: "top 80%",
+                markers:true,
+            }
+        });
+        
+
+
+        
 
 
         // gsap.set("#section07", {y: -200})

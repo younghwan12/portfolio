@@ -930,10 +930,18 @@ svg.highlight {
     font-size: 7vw;
     margin-bottom: 15%;
 }
+.sec06__tit span {
+    display: inline-block;
+    white-space: pre;
+}
 .sec06__txt {
     font-family: 'IropkeBatang';
     font-size: 1.3vw;
     margin-left: 15%;
+}
+.sec06__txt__t1 span, .sec06__txt__t2 span, .sec06__txt__t3 span, .sec06__txt__t4 span {
+    display: inline-block;
+    white-space: pre;
 }
 
 /* section06__outer */
