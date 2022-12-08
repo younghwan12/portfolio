@@ -183,6 +183,9 @@
                 <div class="decor cone">
                     <img src="assets/img/cone.svg" aria-hidden="true" alt="cone">
                 </div>
+                <div class="decor cat">
+                    <img src="assets/img/cat.svg" aria-hidden="true" alt="cat">
+                </div>
             </div>
         </section>
         <section id="section03-1">
@@ -808,21 +811,19 @@
         <footer id="footer">
             <div class="wrapper">
                 <div class="footer__txt">
-                    <ul>
-                        <li><a href="#">about</a></li>
-                        <li><a href="https://younghwan12.github.io/codingclass/" target="_blank">site</a></li>
-                        <li><a href="https://younghwan112.tistory.com/" target="_blank">blog</a></li>
-                    </ul>
-                    <ul>
-                        <li><a href="#">contact me</a></li>
-                    </ul>
-                </div>        
-            </div>
+                    <h2>contact me</h2>
+                    <div>Phone : 010 - 9095 - 3432</div>
+                    <div>
+                        Email : <a href="mailto:leesh3432@naver.com">leesh3432@naver.com</a>
+                    </div>                     
+                    <div>Github : <a href="https://github.com/younghwan12" target="_blank">github.com/younghwan12</a></div>
+                    <div>Blog : <a href="https://younghwan112.tistory.com/" target="_blank">younghwan112.tistory.com</a></div>
+                </div>
+            </div>            
         </footer>
         <!-- //footer -->    
     </main>
     <!-- //main -->
-
 
     
 
@@ -1499,16 +1500,6 @@
             }
         });
 
-        // gsap.to("#section07", {
-        //     y:0, duration:1,
-        //     scrollTrigger: {
-        //         trigger: "#section06-1",
-        //         pin: true,
-        //         start: "top 20%",
-        //         scrub: true,
-        //         markers:true
-        //     }
-        // });
         
         
 
@@ -1517,6 +1508,13 @@
         
         
 
+    </script>
+
+    <script>
+        const contactBtn =  document.querySelector(".contactBtn")
+        contactBtn.addEventListener("click", (e)=>{
+            e.preventDefault();
+        })
     </script>
 
 

@@ -424,9 +424,34 @@ svg.highlight {
 .cat {
     width: 7vw;
     left: 51%;
-    top: 25%;
+    top: 63%;
     transform: rotate(-6.38deg);
-    animation: headShake 6s ease-in-out infinite;
+    animation: headShake 4s ease-in-out infinite;
+}
+@keyframes headShake {
+    0% {
+      transform: translateX(0) rotate(-6.38deg);
+    }
+  
+    6.5% {
+      transform: translateX(-6px) rotateY(-9deg);
+    }
+  
+    18.5% {
+      transform: translateX(5px) rotateY(7deg);
+    }
+  
+    31.5% {
+      transform: translateX(-3px) rotateY(-5deg);
+    }
+  
+    43.5% {
+      transform: translateX(2px) rotateY(3deg);
+    }
+  
+    50% {
+      transform: translateX(0);
+    }
 }
 
 #section03-1 {
@@ -1000,16 +1025,22 @@ svg.highlight {
 }
 .footer__txt {
     color: #fff;
-    display: flex;
-    justify-content: space-between;
-    padding: 2%;
+    text-align: center;
+    padding-bottom: 2%;
 }
-.footer__txt ul {
-    display: flex;
-}
-.footer__txt ul li a {
+.footer__txt h2 {
     text-transform: uppercase;
     font-family: "Montserrat";
-    font-size: 1vw;
-    margin: 15px;
+    font-size: 2vw;
+    margin-bottom: 40px;
+}
+.footer__txt > div {
+    font-family: "Montserrat";
+    font-size: 1.2vw;
+    margin: 10px;
+}
+
+.footer__txt > div > a:hover {
+    border-bottom: 1px solid #fff ;
+
 }
