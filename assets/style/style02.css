@@ -1082,24 +1082,29 @@ svg.highlight {
         font-size: 1.8vw;
     }
     .sec04__tit {
-        font-size: 10vw;
+        font-size: 12vw;
+        text-align: center;
     }
     .sec04__txt1 {
-        font-size: 2.7vw;
+        font-size: 3vw;
     }
     .sec04__txt2 ul li {
         font-size: 2.5vw;
     }
     .sec04-01__txt1, .sec04-02__txt1, .sec04-03__txt1, .sec04-04__txt1, .sec04-05__txt1 {
-        font-size: 2vw;
+        font-size: 2.5vw;
+        margin-top: 3%;
+    }
+    .sec04-con__right ul {
+        justify-content: space-between;
     }
     .sec04-con__right ul li {
-        width: 10vw;
-        height: 10vw;
+        width: 13vw;
+        height: 13vw;
     }
     .sec04-con__right ul li a {
-        font-size: 2vw;
-        line-height: 10vw;
+        font-size: 3vw;
+        line-height: 13vw;
     }
     .sec05__txt1 {
         margin-left: 48%;
@@ -1293,5 +1298,45 @@ svg.highlight {
     }
     .footer__txt > div {
         font-size: 2vw;
+    }
+    #section04 {
+        padding-top: 5%;
+    }
+    #section04 .section__outer {
+        display: none;
+    }
+    .c
+    .sec04__left {
+        width: 100%;
+    }
+    .sec04__txt2 ul {
+        text-align: center;
+    }
+    #section04 .sec04__right {
+        display: none;
+    }
+    .cloudSvg, .cloudSvg {
+        display: none;
+    }
+    #section04-1, #section04-2, #section04-3, #section04-4, #section04-5 {
+        padding-top: 3%;
+    }
+    .sec04__inner {
+        display: block;
+    }
+    .sec04-con__left {
+        width: 100%;
+    }
+    .sec04-con__right {
+        width: 100%;
+    }
+    .sec04-01__tit {
+        font-size:  7vw;
+    }
+    .rocket, .rocketfire, .station {
+        display: none;
+    }
+    #section07 {
+        padding-top: 0;
     }
 }
