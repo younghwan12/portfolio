@@ -49,10 +49,10 @@
                 <div class="wrapper__inner">
                     <div class="sec02__tit split">새로운 즐거움을 찾다.</div>
                     <div class="sec02__txt">
-                        <div class="sec02__p1">
-                            전자통신과를 전공하고 다양한 분야의 업무를 하며 적성에 맞는 일을 찾고자 하였습니다.
+                        <div class="sec02__p1 split">
+                            전자통신과를 전공하고 다양한 분야의 업무를 하며<br> 적성에 맞는 일을 찾고자 하였습니다.
                         </div>
-                        <div class="sec02__p2">
+                        <div class="sec02__p2 split">
                             새로운 자극을 받고자 다양한 직종을 찾아보던중
                             프로그래밍을 접하게 되면서 국비지원교육을 받게되었습니다.
                             내가 작성한대로 구현이 되는 컴퓨터 세계는 저에게 즐거움과
@@ -282,7 +282,7 @@
                 <section id="section04" class="rowsection">
                     <div class="wrapper">
                         <div class="wrapper__inner__big">
-                            <div class="sec04__tit">the site</div>
+                            <div class="sec04__tit split">the site</div>
                             <div class="sec04__inner">
                                 <div class="sec04__left">
                                     <div class="sec04__txt1">
@@ -290,10 +290,10 @@
                                     </div>
                                     <div class="sec04__txt2">
                                         <ul>
-                                            <li>웹표준 사이트</li>
-                                            <li>PHP 사이트</li>
-                                            <li>리액트 사이트</li>
-                                            <li>뷰 사이트</li>
+                                            <li class="split">웹표준 사이트</li>
+                                            <li class="split">PHP 사이트</li>
+                                            <li class="split">리액트 사이트</li>
+                                            <li class="split">뷰 사이트</li>
                                         </ul>
                                     </div>        
                                 </div>
@@ -933,9 +933,8 @@
         })
 
         gsap.set(".sec02__tit span", {opacity: 0, yPercent: -100})
-        gsap.set(".sec02__txt .sec02__p1__p1 span", {opacity: 0,xPercent:-100, yPercent:-100 })
-        gsap.set(".sec02__txt .sec02__p1__p2 span", {opacity: 0,xPercent:-100, yPercent:-100 })
         gsap.set(".sec02__txt .sec02__p1 span", {opacity: 0,xPercent:-100, yPercent:-100 })
+        gsap.set(".sec02__txt .sec02__p2 span", {opacity: 0,xPercent:-100, yPercent:-100 })
         gsap.set(".sec02__txt .sec02__p2__p1 span", {opacity: 0,xPercent:-100, yPercent:-100 })
         gsap.set(".sec02__txt .sec02__p2__p2 span", {opacity: 0,xPercent:-100, yPercent:-100 })
         gsap.set(".sec02__txt .sec02__p2__p3 span", {opacity: 0,xPercent:-100, yPercent:-100 })
@@ -952,30 +951,18 @@
             }
         });
 
-        // gsap.to(".sec02__p1 span", {
-        //     ease: "power3.easeInOut",
-        //     opacity:1,
-        //     xPercent:0,
-        //     yPercent:0,
-        //     stagger: 0.03,
-        //     scrollTrigger: {
-        //         trigger: ".halfmoon",
-        //         start: "top 30%",
-        //     }
-        // });
-
-        gsap.to(".sec02__p1__p1 span", {
+        gsap.to(".sec02__p1 span", {
             ease: "power3.easeInOut",
             opacity:1,
             xPercent:0,
             yPercent:0,
-            stagger: 0.02,
+            stagger: 0.03,
             scrollTrigger: {
                 trigger: ".halfmoon",
                 start: "top 30%",
             }
         });
-        gsap.to(".sec02__p1__p2 span", {
+        gsap.to(".sec02__p2 span", {
             ease: "power3.easeInOut",
             // delay:0.3,
             opacity:1,
@@ -1094,7 +1081,7 @@
 
 
         gsap.set(".sec03__card__subTit2 span", { xPercent:-100 ,yPercent: -100, })
-        gsap.set(".sec03__card__txt3 span", {xPercent:-100, yPercent:-100, opacity:0 })
+        gsap.set(".sec03__card__txt3 span", {yPercent:-100, opacity:0 })
 
         gsap.to(".sec03__card__subTit2 span", {
             xPercent:0, yPercent:0, stagger:0.06, ease: "elastic.out(1, 0.3)", duration:1, opacity:1,
@@ -1120,7 +1107,7 @@
             }
         });
         gsap.to(".sec03__card__txt3 span", {
-            xPercent:0, yPercent:0, stagger:0.018, opacity:1, ease:"power3.InOut",
+            yPercent:0, stagger:0.018, opacity:1, ease:"power3.InOut",
             scrollTrigger: {
                 trigger: ".sec03__card__txt3",
                 start: "top 70%",
@@ -1165,11 +1152,41 @@
             }
         });
 
+        gsap.set(".sec04__tit span", {scale:0})
+        gsap.to(".sec04__tit span", {
+            scale :1, stagger:0.015, ease: "bounce.out",
+            scrollTrigger: {
+                trigger: "#section04",
+                start: "top 40%",
+                scrub: false,
+            }
+        })
+        
+        gsap.set(".sec04__txt1", {yPercent:-100 ,opacity:0})
+        gsap.to(".sec04__txt1", {
+            delay:.4, opacity :1, yPercent:0, stagger:0.15, ease: "power4.inout",
+            scrollTrigger: {
+                trigger: "#section04",
+                start: "top 20%",
+                scrub: false,
+            }
+        })
+        gsap.set(".sec04__txt2 ul li span", {yPercent:-100,xPercent:-100, opacity:0})
+        gsap.to(".sec04__txt2 ul li span", {
+            opacity:1,yPercent:0,xPercent:0, stagger:0.03, ease: "power3.inout",
+            scrollTrigger: {
+                trigger: "#section04",
+                start: "top 0%",
+                scrub: false,
+            }
+        })
+
         gsap.set("#section04-1 ul li", {scale:0})
         gsap.set("#section04-2 ul li", {scale:0})
         gsap.set("#section04-3 ul li", {scale:0})
         gsap.set("#section04-4 ul li", {scale:0})
         gsap.set("#section04-5 ul li", {scale:0})
+        
         gsap.set(".sec04-01__txt1 span", {opacity:0 , xPercent:-100, yPercent:-100})
         gsap.set(".sec04-02__txt1 span", {opacity:0 , xPercent:-100, yPercent:-100})
         gsap.set(".sec04-03__txt1 span", {opacity:0 , xPercent:-100, yPercent:-100})
@@ -1646,7 +1663,7 @@
             scrollTrigger: {
                 trigger: "#section06-1 .wrapper",
                 scrub: true,
-                start: "top -40%",
+                start: "top -80%",
                 pin: true,
             }
         });
