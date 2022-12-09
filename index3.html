@@ -17,7 +17,7 @@
     <header id="header">
         <div class="header__inner">
             <nav class="header__menu">
-                <ul>
+                <ul class="moving">
                     <li><a href="#section03">about</a></li>
                     <li><a href="#section04">site</a></li>
                     <li><a href="#section05">script</a></li>
@@ -1863,6 +1863,14 @@
         btnHam.addEventListener("click", () => {
             btnHam.classList.toggle("active");
             btnMenu.classList.toggle("active");
+        });
+
+        document.querySelectorAll(".moving li a").forEach((el) => {
+            el.addEventListener("click", (e) => {
+                e.preventDefault();
+
+                document.querySelector(el.getAttribute("href")).scrollIntoView({ behavior: "smooth" });
+            });
         });
     </script>
 </body>
