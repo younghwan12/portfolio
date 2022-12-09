@@ -1054,7 +1054,7 @@ svg.highlight {
         max-width: 690px;
     }
     .wrapper__inner__big {
-        min-width: 550px;
+        max-width: 550px;
     }
     .section01__inner .txt1, .section01__inner .txt2 {
         font-size: 8vw;
