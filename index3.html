@@ -19,8 +19,8 @@
             <ul>
                 <li><a href="#">about</a></li>
                 <li><a href="#">site</a></li>
-                <li><a href="#">study</a></li>
                 <li><a href="#">script</a></li>
+                <li><a href="#">study</a></li>
             </ul>
             <ul>
                 <li><a href="https://github.com/younghwan12" target="_blank">github</a></li>
@@ -41,7 +41,7 @@
             </div>
             <div class="section__outer">                         
             </div>
-            <div id="canvas"></div>
+            <!-- <div id="canvas"></div> -->
         </section>
          <!-- //section01 -->
         <section id="section02">
@@ -582,7 +582,7 @@
                 <div class="wrapper__inner__big">
                     <div class="sec05__inner aife">
                         <div class="sec05__left">
-                            <figure class="bigCard">
+                            <figure class="bigCard Card1">
                                 <img src="assets/img/scriptbg.png" alt="scriptbg1">
                                 <a href="https://younghwan12.github.io/codingclass/javascript/effect/parallaxEffect01.html" target="_blank"><img class="script01" src="assets/img/script01.png" alt="script01"></a>
                                 <div class="sec05__card__tit">
@@ -592,7 +592,7 @@
                                     innerHeight 와 ScrollTop을 이용해 사이드 메뉴, 리빌 효과, 이질감 효과 등 다양한 효과를 스크립트로 제작하였습니다.
                                 </div>
                             </figure>
-                            <figure class="smallCard">
+                            <figure class="smallCard Card3">
                                 <img src="assets/img/scriptbg.png" alt="scriptbg3">
                                 <a href="https://younghwan12.github.io/codingclass/javascript/effect/quizEffect01.html" target="_blank"><img class="script02" src="assets/img/script03.png" alt="script03"></a>
                                 <div class="sec05__card__tit">
@@ -602,7 +602,7 @@
                                     객관식, 주관식, 다음문제등, 여러 유형의 문제들을 객체에 저장시켜 사용자의 입력값과 정답을 확인하는 퀴즈들을 제작하였습니다. 
                                 </div>
                             </figure>
-                            <figure class="bigCard">
+                            <figure class="bigCard Card5">
                                 <img src="assets/img/scriptbg.png" alt="scriptbg5">
                                 <a href="https://younghwan12.github.io/codingclass/javascript/effect/gameEffect01.html" target="_blank"><img class="script01" src="assets/img/script05.png" alt="script05"></a>
                                 <div class="sec05__card__tit">
@@ -614,7 +614,7 @@
                             </figure>
                         </div>
                         <div class="sec05__right">
-                            <figure class="smallCard">
+                            <figure class="smallCard Card2">
                                 <img src="assets/img/scriptbg.png" alt="scriptbg2">
                                 <a href="https://younghwan12.github.io/codingclass/javascript/effect/searchEffect01.html" target="_blank"><img class="script02" src="assets/img/script02.png" alt="script02"></a>                                
                                 <div class="sec05__card__tit">
@@ -624,7 +624,7 @@
                                     다양한 메서드들을 이용해서 사용자의 입력값을 찾을수 있는 서치 효과를 스크립트로 제작하였습니다.
                                 </div>
                             </figure>
-                            <figure class="bigCard">
+                            <figure class="bigCard Card4">
                                 <img src="assets/img/scriptbg.png" alt="scriptbg4">
                                 <a href="https://younghwan12.github.io/codingclass/javascript/effect/mouseEffect01.html" target="_blank"><img class="script01" src="assets/img/script04.png" alt="script04"></a>
                                 <div class="sec05__card__tit">
@@ -634,7 +634,7 @@
                                     마우스 커서의 좌표값을 구한뒤, 그 커서를 이용해서 마우스로 표현할수 있는 다양한 효과를 스크립트로 제작하였습니다. 
                                 </div>
                             </figure>
-                            <figure class="smallCard">
+                            <figure class="smallCard Card6">
                                 <img src="assets/img/scriptbg.png" alt="scriptbg6">
                                 <a href="https://younghwan12.github.io/codingclass/javascript/effect/sliderEffect01.html" target="_blank"><img class="script02" src="assets/img/script06.png" alt="script06"></a>
                                 <div class="sec05__card__tit">
@@ -854,8 +854,9 @@
 
     
 
-    <script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollToPlugin.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@latest/bundled/lenis.js"></script>
@@ -873,8 +874,8 @@
             requestAnimationFrame(raf);
         }
         requestAnimationFrame(raf);
-    </script>
-    <script>
+
+
         // 글씨 쪼개기
         document.querySelectorAll(".split").forEach(desc => {
             let splitText = desc.innerText;
@@ -895,8 +896,6 @@
                 pin: true,
                 scrub: 1,
                 end: "+=6000",
-                // markers: true,
-                // snap: 1 / (sections.length - 1),
             }
         })
 
@@ -1126,6 +1125,7 @@
 
 
         // section04
+        
 
         // ScrollTrigger.defaults({markers: {startColor: "white", endColor: "white"}});
 
@@ -1153,6 +1153,11 @@
             }
         });
 
+        gsap.set("#section04-1 ul li", {scale:0})
+        gsap.set("#section04-2 ul li", {scale:0})
+        gsap.set("#section04-3 ul li", {scale:0})
+        gsap.set("#section04-4 ul li", {scale:0})
+        gsap.set("#section04-5 ul li", {scale:0})
         gsap.set(".sec04-01__txt1 span", {opacity:0 , xPercent:-100, yPercent:-100})
         gsap.set(".sec04-02__txt1 span", {opacity:0 , xPercent:-100, yPercent:-100})
         gsap.set(".sec04-03__txt1 span", {opacity:0 , xPercent:-100, yPercent:-100})
@@ -1164,41 +1169,87 @@
             scrollTrigger: {
                 trigger: ".sec04-01__txt1",
                 containerAnimation: scrollTween,
-                start: "left center",
+                start: "left 70%",
+                scrub: false,
             }
-        });
+        })
+        gsap.to("#section04-1 ul li", {scale:1, delay:2, ease: "bounce.out",
+            scrollTrigger: {
+                trigger: ".sec04-01__txt1",
+                containerAnimation: scrollTween,
+                start: "left 70%",
+                scrub: false,
+            }
+        })
         gsap.to(".sec04-02__txt1 span", {
             xPercent:0, yPercent:0, opacity :1, stagger:0.015, ease: "power1.InOut",
             scrollTrigger: {
                 trigger: ".cloudSvg",
                 containerAnimation: scrollTween,
-                start: "left center",
+                start: "left 70%",
+                scrub: false,
             }
         });
+        gsap.to("#section04-2 ul li", {scale:1, delay:2, ease: "bounce.out",
+            scrollTrigger: {
+                trigger: ".cloudSvg",
+                containerAnimation: scrollTween,
+                start: "left 70%",
+                scrub: false,
+            }
+        })
         gsap.to(".sec04-03__txt1 span", {
             xPercent:0, yPercent:0, opacity :1, stagger:0.015, ease: "power3.InOut",
             scrollTrigger: {
                 trigger: ".star1",
                 containerAnimation: scrollTween,
-                start: "left center",
+                start: "left 70%",
+                scrub: false,
             }
         });
+        gsap.to("#section04-3 ul li", {scale:1, delay:2, ease: "bounce.out",
+            scrollTrigger: {
+                trigger: ".star1",
+                containerAnimation: scrollTween,
+                start: "left 70%",
+                scrub: false,
+            }
+        })
         gsap.to(".sec04-04__txt1 span", {
             xPercent:0, yPercent:0, opacity :1, stagger:0.015, ease: "power2.InOut",
             scrollTrigger: {
                 trigger: ".bubble01",
                 containerAnimation: scrollTween,
-                start: "left center",
+                start: "left 70%",
+                scrub: false,
             }
         });
+        gsap.to("#section04-4 ul li", {scale:1, delay:2, ease: "bounce.out",
+            scrollTrigger: {
+                trigger: ".bubble01",
+                containerAnimation: scrollTween,
+                start: "left 70%",
+                scrub: false,
+            }
+        })
         gsap.to(".sec04-05__txt1 span", {
             xPercent:0, yPercent:0, opacity :1, stagger:0.015, ease: "power4.InOut",
             scrollTrigger: {
                 trigger: "#section04-5",
                 containerAnimation: scrollTween,
                 start: "left 20%",
+                scrub: false,
             }
         });
+        gsap.to("#section04-5 ul li", {scale:1, delay:2, ease: "bounce.out",
+            scrollTrigger: {
+                trigger: "#section04-5",
+                containerAnimation: scrollTween,
+                start: "left 20%",
+                scrub: false,
+            }
+        })
+        
 
         
 
@@ -1211,7 +1262,6 @@
             scrollTrigger: {
                 trigger: ".formula-apple",
                 containerAnimation: scrollTween,
-                // start: "left center",
                 scrub: true,
                 toggleActions: "play none none none",
             }
@@ -1254,7 +1304,6 @@
                 trigger: ".cloudSvg",
                 containerAnimation: scrollTween,
                 start: "left center",
-                // scrub: true,
                 toggleActions: "play none none reset",
             }
         });
@@ -1285,7 +1334,6 @@
                 trigger: ".star1",
                 containerAnimation: scrollTween,
                 start: "left center",
-                // markers: true,
                 toggleActions: "play none none reset",
             }
         });
@@ -1528,7 +1576,6 @@
             scrollTrigger: {
                 trigger: ".sec06__tit",
                 start: "top 80%",
-                markers:true,
             }
         });
 
@@ -1547,7 +1594,6 @@
             scrollTrigger: {
                 trigger: ".sec06__txt",
                 start: "top 80%",
-                markers:true,
             }
         });
         gsap.to(".sec06__txt__t2 span", {
@@ -1559,7 +1605,6 @@
             scrollTrigger: {
                 trigger: ".sec06__txt",
                 start: "top 80%",
-                markers:true,
             }
         });
         gsap.to(".sec06__txt__t3 span", {
@@ -1571,7 +1616,6 @@
             scrollTrigger: {
                 trigger: ".sec06__txt",
                 start: "top 80%",
-                markers:true,
             }
         });
         gsap.to(".sec06__txt__t4 span", {
@@ -1583,15 +1627,8 @@
             scrollTrigger: {
                 trigger: ".sec06__txt",
                 start: "top 80%",
-                markers:true,
             }
         });
-        
-
-
-        
-
-
         // gsap.set("#section07", {y: -200})
         gsap.to("#section07", {
             scrollTrigger: {
@@ -1601,24 +1638,7 @@
                 pin: true,
             }
         });
-
-        
-        
-
-
-
-        
-        
-
     </script>
-
-    <script>
-        const contactBtn =  document.querySelector(".contactBtn")
-        contactBtn.addEventListener("click", (e)=>{
-            e.preventDefault();
-        })
-    </script>
-
 
     <script>
         // const heart =

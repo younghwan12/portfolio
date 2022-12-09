@@ -146,12 +146,6 @@ svg.highlight {
 
 /* //section01 */
 
-/* //section01 media */
-/* @media (max-width: 960px) {
-    .section01__inner > div {
-        font-size: 18px;
-    }
-} */
 /* section02 */
 #section02 {
     position: relative;
@@ -175,16 +169,6 @@ svg.highlight {
     display: flex;
     flex-direction: column;
     position: relative;
-}
-@media (max-width: 1280px) {
-    .wrapper__inner {
-        max-width: 690px;
-    }
-}
-@media (max-width: 960px) {
-    .wrapper__inner {
-        max-width: 470px;
-    }
 }
 .wrapper__inner .sec02__tit {
     white-space: nowrap;
@@ -1053,3 +1037,25 @@ svg.highlight {
     border-bottom: 1px solid #fff ;
 
 }
+
+
+
+
+@media (max-width: 1280px) {
+    .wrapper__inner {
+        max-width: 690px;
+    }
+    /* .section01__inner .txt1 {
+        font-size: 80px;
+    } */
+}
+@media (max-width: 960px) {
+    .wrapper__inner {
+        max-width: 470px;
+    }
+}
+
+@media (max-width: 767px) {
+    
+}
+
