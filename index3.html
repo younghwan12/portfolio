@@ -15,18 +15,26 @@
 <body>
     <!-- header -->
     <header id="header">
-        <nav>
-            <ul>
-                <li><a href="#">about</a></li>
-                <li><a href="#">site</a></li>
-                <li><a href="#">script</a></li>
-                <li><a href="#">study</a></li>
-            </ul>
-            <ul>
-                <li><a href="https://github.com/younghwan12" target="_blank">github</a></li>
-                <li><a href="https://younghwan112.tistory.com/" target="_blank">blog</a></li>
-            </ul>
-        </nav>
+        <div class="header__inner">
+            <nav class="header__menu">
+                <ul>
+                    <li><a href="#section03">about</a></li>
+                    <li><a href="#section04">site</a></li>
+                    <li><a href="#section05">script</a></li>
+                    <li><a href="#section06">study</a></li>
+                </ul>
+                <ul>
+                    <li><a href="https://github.com/younghwan12" target="_blank">github</a></li>
+                    <li><a href="https://younghwan112.tistory.com/" target="_blank">blog</a></li>
+                </ul>
+            </nav>
+            <div class="ham_menu">
+                <input type="checkbox">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
     </header>
     <!-- //header -->
 
@@ -1845,6 +1853,17 @@
             requestAnimationFrame(update.bind(this))
         }
         update()
+    </script>
+
+    <script>
+        const btnHam = document.querySelector(".ham_menu");
+        const btnMenu = document.querySelector(".header__menu");
+        const btnMenuList = btnMenu.querySelectorAll("ul li a")
+
+        btnHam.addEventListener("click", () => {
+            btnHam.classList.toggle("active");
+            btnMenu.classList.toggle("active");
+        });
     </script>
 </body>
 </html>
