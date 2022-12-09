@@ -23,9 +23,6 @@ body {
     left: 0;
     top: 0;
 }
-.header__inner {
-
-}
 .ham_menu {
     position: absolute !important;
     top: 50%;
