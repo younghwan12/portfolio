@@ -50,14 +50,13 @@
                     <div class="sec02__tit split">새로운 즐거움을 찾다.</div>
                     <div class="sec02__txt">
                         <div class="sec02__p1">
-                            <div class="sec02__p1__p1 split">전자통신과를 전공하고 다양한 분야의 업무를 하며</div>
-                            <div class="sec02__p1__p2 split">적성에 맞는 일을 찾고자 하였습니다.</div>
+                            전자통신과를 전공하고 다양한 분야의 업무를 하며 적성에 맞는 일을 찾고자 하였습니다.
                         </div>
                         <div class="sec02__p2">
-                            <div class="sec02__p2__p1 split">새로운 자극을 받고자 다양한 직종을 찾아보던중</div>
-                            <div class="sec02__p2__p2 split">프로그래밍을 접하게 되면서 국비지원교육을 받게되었습니다.</div>
-                            <div class="sec02__p2__p3 split">내가 작성한대로 구현이 되는 컴퓨터 세계는 저에게 즐거움과</div>
-                            <div class="sec02__p2__p4 split">새로운 자극으로 다가왔습니다.</div>
+                            새로운 자극을 받고자 다양한 직종을 찾아보던중
+                            프로그래밍을 접하게 되면서 국비지원교육을 받게되었습니다.
+                            내가 작성한대로 구현이 되는 컴퓨터 세계는 저에게 즐거움과
+                            새로운 자극으로 다가왔습니다.
                         </div>
                     </div>
                 </div>
@@ -936,6 +935,7 @@
         gsap.set(".sec02__tit span", {opacity: 0, yPercent: -100})
         gsap.set(".sec02__txt .sec02__p1__p1 span", {opacity: 0,xPercent:-100, yPercent:-100 })
         gsap.set(".sec02__txt .sec02__p1__p2 span", {opacity: 0,xPercent:-100, yPercent:-100 })
+        gsap.set(".sec02__txt .sec02__p1 span", {opacity: 0,xPercent:-100, yPercent:-100 })
         gsap.set(".sec02__txt .sec02__p2__p1 span", {opacity: 0,xPercent:-100, yPercent:-100 })
         gsap.set(".sec02__txt .sec02__p2__p2 span", {opacity: 0,xPercent:-100, yPercent:-100 })
         gsap.set(".sec02__txt .sec02__p2__p3 span", {opacity: 0,xPercent:-100, yPercent:-100 })
@@ -951,6 +951,18 @@
                 start: "top 30%",
             }
         });
+
+        // gsap.to(".sec02__p1 span", {
+        //     ease: "power3.easeInOut",
+        //     opacity:1,
+        //     xPercent:0,
+        //     yPercent:0,
+        //     stagger: 0.03,
+        //     scrollTrigger: {
+        //         trigger: ".halfmoon",
+        //         start: "top 30%",
+        //     }
+        // });
 
         gsap.to(".sec02__p1__p1 span", {
             ease: "power3.easeInOut",

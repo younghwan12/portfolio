@@ -191,6 +191,7 @@ svg.highlight {
     margin-bottom: 5%;
     overflow: hidden;
 }
+
 .sec02__p1__p1 span, .sec02__p1__p2 span {
     display: inline-block;
     white-space: pre;
@@ -1050,12 +1051,63 @@ svg.highlight {
     } */
 }
 @media (max-width: 960px) {
-    .wrapper__inner {
+    /* .wrapper__inner {
         max-width: 470px;
-    }
+    } */
 }
 
 @media (max-width: 767px) {
-    
+    .section01__inner .txt1, .section01__inner .txt2 {
+        font-size: 12vw;
+    }
+    .section01__inner > img {
+        width: 55vw;
+    }
+    .section01__inner .cloud1 {
+        height: 20vw;
+        transform: translate(10%, -85%);
+    }
+    .plane {
+        display: none;
+    }
+    .wrapper__inner .sec02__tit {
+        font-size: 10vw;
+        text-align: center;
+    }
+    .wrapper__inner .sec02__txt .sec02__p1 {
+        font-size: 3vw;
+        margin-bottom: 10%;
+    }
+    .wrapper__inner .sec02__txt .sec02__p2 {
+        font-size: 3vw;
+        margin-left: 0;
+    }
+    .town {
+        opacity: 0.4;
+    }
+
+    .sec03__tit {
+        font-size: 10vw;
+    }
+    .modal-title-decor {
+        right: 5%;
+        top: 4%;
+    }
+
+    .sec03__card__subTit1 {
+        font-size: 7.5vw;
+    }
+
+    .sec03__card {
+        display: block;
+    }
+    .profile01 {
+        width: 100%;
+        margin-bottom: 5%;
+    }
+    .sec03__card__txt2  {
+        width: 100%;
+        font-size: 2.6vw;
+    }
 }
 
