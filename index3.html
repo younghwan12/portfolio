@@ -1257,18 +1257,20 @@
                 scrub: false,
             }
         })
+
         gsap.to(".sec04-02__txt1 span", {
             xPercent:0, yPercent:0, opacity :1, stagger:0.015, ease: "power1.InOut",
             scrollTrigger: {
-                trigger: ".cloudSvg",
+                trigger: ".sec04-02__txt1",
                 containerAnimation: scrollTween,
                 start: "left 70%",
+                markers: true,
                 scrub: false,
             }
         });
         gsap.to("#section04-2 ul li", {scale:1, delay:2, ease: "bounce.out",
             scrollTrigger: {
-                trigger: ".cloudSvg",
+                trigger: ".sec04-02__txt1",
                 containerAnimation: scrollTween,
                 start: "left 70%",
                 scrub: false,
