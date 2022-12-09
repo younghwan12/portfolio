@@ -1056,6 +1056,92 @@ svg.highlight {
     .wrapper__inner__big {
         min-width: 550px;
     }
+    .section01__inner .txt1, .section01__inner .txt2 {
+        font-size: 8vw;
+    }
+    .section01__inner > img {
+        width: 30vw;
+    }
+    .section01__inner .cloud1 {
+        height: 12vw;
+        transform: translate(14%, -85%);
+    }
+    .wrapper__inner .sec02__tit {
+        font-size: 7.5vw;
+    }
+    .wrapper__inner .sec02__txt {
+        font-size: 2vw;
+    }
+    .sec03__tit {
+        font-size: 8vw;
+    }   
+    .sec03__card__subTit1 {
+        font-size: 5.5vw;
+    } 
+    .sec03__card__txt2, .sec03__card__txt3 {
+        font-size: 1.8vw;
+    }
+    .sec04__tit {
+        font-size: 10vw;
+    }
+    .sec04__txt1 {
+        font-size: 2.7vw;
+    }
+    .sec04__txt2 ul li {
+        font-size: 2.5vw;
+    }
+    .sec04-01__txt1, .sec04-02__txt1, .sec04-03__txt1, .sec04-04__txt1, .sec04-05__txt1 {
+        font-size: 2vw;
+    }
+    .sec04-con__right ul li {
+        width: 10vw;
+        height: 10vw;
+    }
+    .sec04-con__right ul li a {
+        font-size: 2vw;
+        line-height: 10vw;
+    }
+    .sec05__txt1 {
+        margin-left: 48%;
+        font-size: 2vw;
+    }
+    .sec05__card__tit {
+        font-size: 6vw;
+    }
+    .sec05__card__txt {
+        font-size: 2vw;
+    }
+    .sec06__tit {
+        font-size: 9vw;
+    }
+    .sec06__txt {
+        font-size: 2vw;
+    }
+    .bridge {
+        top: 44%;
+        opacity: 0.4;
+    }
+    .sec06-01__card {
+        display: block;
+    }
+    .sec06-01__tit {
+        text-align: center;
+        font-size: 3vw;
+    }
+    .sec06-01__txt {
+        text-align: center;
+        font-size: 2vw;
+        margin-bottom: 3%;
+    }
+    .sec06-01__btn a {
+        font-size: 2.5vw;
+    }
+    #section06-1 {
+        padding-bottom: 40%;
+    }
+    #section07 {
+        padding-top: 92%;
+    }
 }
 @media (max-width: 960px) {
     /* .wrapper__inner {
