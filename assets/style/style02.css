@@ -32,6 +32,7 @@ body {
     height: 36px;
     position: relative;
     cursor: pointer;
+    transform: scale(0.7);
 }
 .ham_menu div {
     position: absolute;
@@ -102,16 +103,16 @@ body {
         position: fixed;
         right: -100%;
         top: 80px;
-        width: 15%;
-        height: 100vh;
         padding: 20px;
         text-align: right;
         transition: right 0.4s ease-in;        
-        background-color: rgba(255, 255, 255, 0.1);
+        background-color: rgba(255, 255, 255, 0.4);
     }
     .header__menu ul li {
-        display: block;
-        margin: 20px;
+        margin-bottom: 10px;
+    }
+    #header nav ul a {
+        color: #dbf53b !important;
     }
     .header__member a:hover {
         background-color: #000;
@@ -150,7 +151,7 @@ body {
         transition: opacity 0.3s 1.6s;
     }
     .ham_menu {
-        right: 40px;
+        right: 35px;
         top: 20px;
     }
     #header nav {
@@ -216,6 +217,7 @@ body {
     width: 100%;
     height: 100vh;
     z-index: 10;
+    overflow: hidden;
 }
 .sec01_svg {
     transition: fill 0.3s ease-out;
@@ -1223,10 +1225,11 @@ svg.highlight {
         text-align: center;
     }
     .sec04__txt1 {
-        font-size: 3vw;
+        font-size: 4vw;
+        margin-bottom: 50px;
     }
     .sec04__txt2 ul li {
-        font-size: 2.5vw;
+        font-size: 3.5vw;
         list-style: none;
     }
     .sec04-01__txt1, .sec04-02__txt1, .sec04-03__txt1, .sec04-04__txt1, .sec04-05__txt1 {
@@ -1371,6 +1374,13 @@ svg.highlight {
         margin-left: 0;
         text-align: center;
     }
+    .horizontalSection {
+        width: auto;
+        display: block;
+    }
+    .horizontalWrap {
+        height: auto;
+    }
     .sec05__inner {
         display: block;
         margin-left: 5%;
@@ -1438,7 +1448,7 @@ svg.highlight {
         font-size: 2vw;
     }
     #section04 {
-        padding-top: 5%;
+        padding-top: 10%;
     }
     #section04 .section__outer {
         display: none;
@@ -1456,7 +1466,11 @@ svg.highlight {
         display: none;
     }
     #section04-1, #section04-2, #section04-3, #section04-4, #section04-5 {
-        padding-top: 3%;
+        height: auto;
+        padding: 7% 0;
+    }
+    .horizontalSection .section__outer {
+        display: none;
     }
     .sec04__inner {
         display: block;

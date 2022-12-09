@@ -933,8 +933,9 @@
 
         // 가로 모드
         let sections = gsap.utils.toArray(".rowsection");      // gsap 다중 선택
-
-        let scrollTween = gsap.to(sections, {
+        ScrollTrigger.matchMedia({
+            "(max-with:767px)": function(){
+                let scrollTween = gsap.to(sections, {
             xPercent: -100 * (sections.length - 1),
             ease: "none",
             scrollTrigger: {
@@ -944,6 +945,18 @@
                 end: "+=6000",
             }
         })
+            }
+        })
+
+
+
+        let mm = gsap.matchMedia();
+
+        mm.add("(min-width: 767px)", () => {
+            let sections = gsap.utils.toArray(".rowsection");
+            let scrollTween = gsap.to()
+        })
+
 
         // section01
         gsap.set("#header", {y: -100})
