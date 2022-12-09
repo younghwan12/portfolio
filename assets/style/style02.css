@@ -1090,6 +1090,7 @@ svg.highlight {
     }
     .sec04__txt2 ul li {
         font-size: 2.5vw;
+        list-style: none;
     }
     .sec04-01__txt1, .sec04-02__txt1, .sec04-03__txt1, .sec04-04__txt1, .sec04-05__txt1 {
         font-size: 2.5vw;
@@ -1305,7 +1306,6 @@ svg.highlight {
     #section04 .section__outer {
         display: none;
     }
-    .c
     .sec04__left {
         width: 100%;
     }
