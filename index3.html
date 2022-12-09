@@ -931,31 +931,39 @@
                 desc.setAttribute("aria-label", splitText);
         })
 
+
         // 가로 모드
-        let sections = gsap.utils.toArray(".rowsection");      // gsap 다중 선택
-        ScrollTrigger.matchMedia({
-            "(max-with:767px)": function(){
-                let scrollTween = gsap.to(sections, {
-            xPercent: -100 * (sections.length - 1),
-            ease: "none",
-            scrollTrigger: {
-                trigger: ".horizontalWrap",
-                pin: true,
-                scrub: 1,
-                end: "+=6000",
-            }
-        })
-            }
-        })
-
-
+        
+        const sections = gsap.utils.toArray(".rowsection");
 
         let mm = gsap.matchMedia();
-
-        mm.add("(min-width: 767px)", () => {
-            let sections = gsap.utils.toArray(".rowsection");
-            let scrollTween = gsap.to()
+        mm.add("(min-width: 676px)", () => {
+            this.scrollTween = gsap.to(sections, {
+                xPercent: -100 * (sections.length - 1),
+                ease: "none",
+                scrollTrigger: {
+                    trigger: ".horizontalWrap",
+                    pin: true,
+                    scrub: 1,
+                    end: "+=6000",
+                },
+            });
         })
+
+        // ScrollTrigger.matchMedia({
+        //     "(min-width: 676px)": function() {
+        //         let scrollTween = gsap.to(sections, {
+        //         xPercent: -100 * (sections.length - 1),
+        //         ease: "none",
+        //         scrollTrigger: {
+        //             trigger: ".horizontalWrap",
+        //             pin: true,
+        //             scrub: 1,
+        //             end: "+=6000",
+        //         },
+        //         });
+        //     },
+        // });
 
 
         // section01
@@ -1195,7 +1203,7 @@
             scrub: 10,
             scrollTrigger: {
                 trigger: ".plane2",
-                containerAnimation: scrollTween,
+                containerAnimation: this.scrollTween,
                 start: "left center",
                 scrub: true,
             }
@@ -1206,7 +1214,7 @@
             scrub: 10,
             scrollTrigger: {
                 trigger: ".spoon",
-                containerAnimation: scrollTween,
+                containerAnimation: this.scrollTween,
                 start: "left center",
                 scrub: true,
             }
@@ -1257,7 +1265,7 @@
             xPercent:0, yPercent:0, opacity :1, stagger:0.015, ease: "power1.InOut",
             scrollTrigger: {
                 trigger: ".sec04-01__txt1",
-                containerAnimation: scrollTween,
+                containerAnimation: this.scrollTween,
                 start: "left 70%",
                 scrub: false,
             }
@@ -1265,7 +1273,7 @@
         gsap.to("#section04-1 ul li", {scale:1, delay:2, ease: "bounce.out",
             scrollTrigger: {
                 trigger: ".sec04-01__txt1",
-                containerAnimation: scrollTween,
+                containerAnimation: this.scrollTween,
                 start: "left 70%",
                 scrub: false,
             }
@@ -1275,16 +1283,15 @@
             xPercent:0, yPercent:0, opacity :1, stagger:0.015, ease: "power1.InOut",
             scrollTrigger: {
                 trigger: ".sec04-02__txt1",
-                containerAnimation: scrollTween,
+                containerAnimation: this.scrollTween,
                 start: "left 70%",
-                markers: true,
                 scrub: false,
             }
         });
         gsap.to("#section04-2 ul li", {scale:1, delay:2, ease: "bounce.out",
             scrollTrigger: {
                 trigger: ".sec04-02__txt1",
-                containerAnimation: scrollTween,
+                containerAnimation: this.scrollTween,
                 start: "left 70%",
                 scrub: false,
             }
@@ -1293,7 +1300,7 @@
             xPercent:0, yPercent:0, opacity :1, stagger:0.015, ease: "power3.InOut",
             scrollTrigger: {
                 trigger: ".star1",
-                containerAnimation: scrollTween,
+                containerAnimation: this.scrollTween,
                 start: "left 70%",
                 scrub: false,
             }
@@ -1301,7 +1308,7 @@
         gsap.to("#section04-3 ul li", {scale:1, delay:2, ease: "bounce.out",
             scrollTrigger: {
                 trigger: ".star1",
-                containerAnimation: scrollTween,
+                containerAnimation: this.scrollTween,
                 start: "left 70%",
                 scrub: false,
             }
@@ -1310,7 +1317,7 @@
             xPercent:0, yPercent:0, opacity :1, stagger:0.015, ease: "power2.InOut",
             scrollTrigger: {
                 trigger: ".bubble01",
-                containerAnimation: scrollTween,
+                containerAnimation: this.scrollTween,
                 start: "left 70%",
                 scrub: false,
             }
@@ -1318,7 +1325,7 @@
         gsap.to("#section04-4 ul li", {scale:1, delay:2, ease: "bounce.out",
             scrollTrigger: {
                 trigger: ".bubble01",
-                containerAnimation: scrollTween,
+                containerAnimation: this.scrollTween,
                 start: "left 70%",
                 scrub: false,
             }
@@ -1327,7 +1334,7 @@
             xPercent:0, yPercent:0, opacity :1, stagger:0.015, ease: "power4.InOut",
             scrollTrigger: {
                 trigger: "#section04-5",
-                containerAnimation: scrollTween,
+                containerAnimation: this.scrollTween,
                 start: "left 20%",
                 scrub: false,
             }
@@ -1335,7 +1342,7 @@
         gsap.to("#section04-5 ul li", {scale:1, delay:2, ease: "bounce.out",
             scrollTrigger: {
                 trigger: "#section04-5",
-                containerAnimation: scrollTween,
+                containerAnimation: this.scrollTween,
                 start: "left 20%",
                 scrub: false,
             }
@@ -1352,8 +1359,9 @@
             ease: "power3.out",
             scrollTrigger: {
                 trigger: ".formula-apple",
-                containerAnimation: scrollTween,
+                containerAnimation: this.scrollTween,
                 scrub: true,
+                start: "left 50%",
                 toggleActions: "play none none none",
             }
         });
@@ -1365,7 +1373,7 @@
             ease: "power3.out",
             scrollTrigger: {
                 trigger: ".formula-apple",
-                containerAnimation: scrollTween,
+                containerAnimation: this.scrollTween,
                 start: "left center",
                 scrub: true,
                 toggleActions: "play none none none",
@@ -1378,7 +1386,7 @@
             rotation: 12,
             scrollTrigger: {
                 trigger: ".cloudSvg",
-                containerAnimation: scrollTween,
+                containerAnimation: this.scrollTween,
                 start: "left center",
                 toggleActions: "play none none reset",
             }
@@ -1393,7 +1401,7 @@
             ease: "power3.out",
             scrollTrigger: {
                 trigger: ".cloudSvg",
-                containerAnimation: scrollTween,
+                containerAnimation: this.scrollTween,
                 start: "left center",
                 toggleActions: "play none none reset",
             }
@@ -1411,7 +1419,7 @@
             ease: "power3.out",
             scrollTrigger: {
                 trigger: ".star1",
-                containerAnimation: scrollTween,
+                containerAnimation: this.scrollTween,
                 start: "left center",
                 toggleActions: "play none none reset",
             }
@@ -1423,7 +1431,7 @@
             ease: "power3.out",
             scrollTrigger: {
                 trigger: ".star1",
-                containerAnimation: scrollTween,
+                containerAnimation: this.scrollTween,
                 start: "left center",
                 toggleActions: "play none none reset",
             }
@@ -1435,7 +1443,7 @@
             ease: "power3.out",
             scrollTrigger: {
                 trigger: ".star1",
-                containerAnimation: scrollTween,
+                containerAnimation: this.scrollTween,
                 start: "left center",
                 toggleActions: "play none none reset",
             }
@@ -1450,7 +1458,7 @@
             ease: "power3.out",
             scrollTrigger: {
                 trigger: ".star1",
-                containerAnimation: scrollTween,
+                containerAnimation: this.scrollTween,
                 start: "left center",
                 toggleActions: "play none none reset",
             }
@@ -1462,7 +1470,7 @@
             ease: "power3.out",
             scrollTrigger: {
                 trigger: ".star1",
-                containerAnimation: scrollTween,
+                containerAnimation: this.scrollTween,
                 start: "left center",
                 toggleActions: "play none none reset",
             }
@@ -1473,7 +1481,7 @@
             ease: "power3.out",
             scrollTrigger: {
                 trigger: ".bar-tool",
-                containerAnimation: scrollTween,
+                containerAnimation: this.scrollTween,
                 start: "left center",
                 scrub: true,
             }
@@ -1491,7 +1499,7 @@
             ease: "power2.out",
             scrollTrigger: {
                 trigger: ".bubble01",
-                containerAnimation: scrollTween,
+                containerAnimation: this.scrollTween,
                 start: "left center",
                 toggleActions: "play none none reset",
             }
@@ -1503,7 +1511,7 @@
             ease: "power2.out",
             scrollTrigger: {
                 trigger: ".bubble01",
-                containerAnimation: scrollTween,
+                containerAnimation: this.scrollTween,
                 start: "left center",
                 toggleActions: "play none none reset",
             }
@@ -1515,7 +1523,7 @@
             ease: "power2.out",
             scrollTrigger: {
                 trigger: ".bubble01",
-                containerAnimation: scrollTween,
+                containerAnimation: this.scrollTween,
                 start: "left center",
                 toggleActions: "play none none reset",
             }
@@ -1527,7 +1535,7 @@
             ease: "power2.out",
             scrollTrigger: {
                 trigger: ".bubble01",
-                containerAnimation: scrollTween,
+                containerAnimation: this.scrollTween,
                 start: "left center",
                 toggleActions: "play none none reset",
             }
@@ -1539,7 +1547,7 @@
             ease: "power2.out",
             scrollTrigger: {
                 trigger: ".bubble01",
-                containerAnimation: scrollTween,
+                containerAnimation: this.scrollTween,
                 start: "left center",
                 toggleActions: "play none none reset",
             }
@@ -1550,7 +1558,7 @@
             ease: "power3.out",
             scrollTrigger: {
                 trigger: ".strainer2",
-                containerAnimation: scrollTween,
+                containerAnimation: this.scrollTween,
                 start: "left center",
                 scrub: true,
             }
@@ -1561,9 +1569,9 @@
             xPercent:-700, yPercent:-3000, rotation:-360 ,stagger:0.15, ease: "power4.InOut",
             scrollTrigger: {
                 trigger: "#section04-5",
-                containerAnimation: scrollTween,
+                containerAnimation: this.scrollTween,
                 start: "left 10%",
-                scrub: true
+                scrub: true,
             }
         });
 
@@ -1571,9 +1579,9 @@
             xPercent:-300, yPercent:300, stagger:0.15,
             scrollTrigger: {
                 trigger: "#section04-5",
-                containerAnimation: scrollTween,
+                containerAnimation: this.scrollTween,
                 start: "left 10%",
-                scrub: true
+                scrub: true,
             }
         });
 

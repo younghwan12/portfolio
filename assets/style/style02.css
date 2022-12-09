@@ -1192,9 +1192,9 @@ svg.highlight {
     .wrapper__inner {
         max-width: 690px;
     }
-    .wrapper__inner__big {
+    /* .wrapper__inner__big {
         max-width: 550px;
-    }
+    } */
     .section01__inner .txt1, .section01__inner .txt2 {
         font-size: 8vw;
     }
@@ -1212,7 +1212,7 @@ svg.highlight {
         font-size: 2vw;
     }
     .sec03__tit {
-        font-size: 8vw;
+        font-size: 6vw;
     }   
     .sec03__card__subTit1 {
         font-size: 5.5vw;
@@ -1225,27 +1225,29 @@ svg.highlight {
         text-align: center;
     }
     .sec04__txt1 {
-        font-size: 4vw;
-        margin-bottom: 50px;
+        font-size: 3vw;
     }
     .sec04__txt2 ul li {
-        font-size: 3.5vw;
+        font-size: 2.5vw;
         list-style: none;
     }
     .sec04-01__txt1, .sec04-02__txt1, .sec04-03__txt1, .sec04-04__txt1, .sec04-05__txt1 {
-        font-size: 2.5vw;
+        font-size: 1.6vw;
         margin-top: 3%;
+    }
+    .strainer2 {
+        top: 10%;
     }
     .sec04-con__right ul {
         justify-content: space-between;
     }
     .sec04-con__right ul li {
-        width: 13vw;
-        height: 13vw;
+        width: 8vw;
+        height: 8vw;
     }
     .sec04-con__right ul li a {
-        font-size: 3vw;
-        line-height: 13vw;
+        font-size: 1.8vw;
+        line-height: 8vw;
     }
     .sec05__txt1 {
         margin-left: 48%;
@@ -1467,7 +1469,7 @@ svg.highlight {
     }
     #section04-1, #section04-2, #section04-3, #section04-4, #section04-5 {
         height: auto;
-        padding: 7% 0;
+        padding: 10% 0;
     }
     .horizontalSection .section__outer {
         display: none;
