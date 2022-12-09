@@ -1142,10 +1142,10 @@ svg.highlight {
         font-size: 2.5vw;
     }
     #section06-1 {
-        padding-bottom: 40%;
+        padding-bottom: 0;
     }
     #section07 {
-        padding-top: 92%;
+        padding-top: 40%;
     }
 }
 @media (max-width: 960px) {
@@ -1286,7 +1286,7 @@ svg.highlight {
     }
 
     #section06-1 {
-        padding-bottom: 5%;
+        padding-bottom: 40%;
     }
     .footer__txt {
         text-align: right;
