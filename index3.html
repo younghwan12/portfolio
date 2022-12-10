@@ -589,10 +589,10 @@
                 <div class="wrapper__inner__big">
                     <div class="sec05__inner aife">
                         <div class="sec05__left">
-                            <figure class="bigCard Card1">
+                            <figure class="bigCard Card1">                                
                                 <img src="assets/img/scriptbg.png" alt="scriptbg1">
-                                <a href="https://younghwan12.github.io/codingclass/javascript/effect/parallaxEffect01.html" target="_blank"><img class="script01" src="assets/img/script01.png" alt="script01"></a>
-                                <div class="sec05__card__tit">
+                                <a href="https://younghwan12.github.io/codingclass/javascript/effect/parallaxEffect01.html" target="_blank"><img class="script01" src="assets/img/script01.png" alt="script01"></a> 
+                                <div class="sec05__card__tit Card1__tit">
                                     패럴랙스
                                 </div>
                                 <div class="sec05__card__txt">
@@ -602,7 +602,7 @@
                             <figure class="smallCard Card3">
                                 <img src="assets/img/scriptbg.png" alt="scriptbg3">
                                 <a href="https://younghwan12.github.io/codingclass/javascript/effect/quizEffect01.html" target="_blank"><img class="script02" src="assets/img/script03.png" alt="script03"></a>
-                                <div class="sec05__card__tit">
+                                <div class="sec05__card__tit Card3__tit">
                                     퀴즈
                                 </div>
                                 <div class="sec05__card__txt">
@@ -612,7 +612,7 @@
                             <figure class="bigCard Card5">
                                 <img src="assets/img/scriptbg.png" alt="scriptbg5">
                                 <a href="https://younghwan12.github.io/codingclass/javascript/effect/gameEffect01.html" target="_blank"><img class="script01" src="assets/img/script05.png" alt="script05"></a>
-                                <div class="sec05__card__tit">
+                                <div class="sec05__card__tit Card5__tit">
                                     테트리스
                                 </div>
                                 <div class="sec05__card__txt">
@@ -624,7 +624,7 @@
                             <figure class="smallCard Card2">
                                 <img src="assets/img/scriptbg.png" alt="scriptbg2">
                                 <a href="https://younghwan12.github.io/codingclass/javascript/effect/searchEffect01.html" target="_blank"><img class="script02" src="assets/img/script02.png" alt="script02"></a>                                
-                                <div class="sec05__card__tit">
+                                <div class="sec05__card__tit Card2__tit">
                                     서치
                                 </div>
                                 <div class="sec05__card__txt">
@@ -634,7 +634,7 @@
                             <figure class="bigCard Card4">
                                 <img src="assets/img/scriptbg.png" alt="scriptbg4">
                                 <a href="https://younghwan12.github.io/codingclass/javascript/effect/mouseEffect01.html" target="_blank"><img class="script01" src="assets/img/script04.png" alt="script04"></a>
-                                <div class="sec05__card__tit">
+                                <div class="sec05__card__tit Card4__tit">
                                     마우스
                                 </div>
                                 <div class="sec05__card__txt">
@@ -644,7 +644,7 @@
                             <figure class="smallCard Card6">
                                 <img src="assets/img/scriptbg.png" alt="scriptbg6">
                                 <a href="https://younghwan12.github.io/codingclass/javascript/effect/sliderEffect01.html" target="_blank"><img class="script02" src="assets/img/script06.png" alt="script06"></a>
-                                <div class="sec05__card__tit">
+                                <div class="sec05__card__tit Card6__tit">
                                     슬라이드
                                 </div>
                                 <div class="sec05__card__txt">
@@ -885,7 +885,6 @@
             <div class="wrapper">
                 <div class="footer__txt">
                     <h2>contact me</h2>
-                    <div>Phone : 010 - 9095 - 3432</div>
                     <div>
                         Email : <a href="mailto:leesh3432@naver.com">leesh3432@naver.com</a>
                     </div>                     
@@ -948,6 +947,128 @@
                     end: "+=6000",
                 },
             });
+
+            // gsap.set(".sec05__card__txt", {display: "none"})
+            gsap.set(".sec05__card__txt", {opacity: 0})
+
+            gsap.set(".Card1", {rotation: 10})
+            gsap.set(".Card2", {rotation: -5})
+            gsap.set(".Card3", {rotation: -35, yPercent: -5})
+            gsap.set(".Card4", {rotation: 15})
+            gsap.set(".Card5", {rotation: -55})
+            gsap.set(".Card6", {rotation: 25})
+
+            
+            gsap.set(".Card1__tit", {xPercent:-10})
+            gsap.set(".Card2__tit", {xPercent:-10})
+            gsap.set(".Card3__tit", {xPercent:-10})
+            gsap.set(".Card4__tit", {xPercent:-10})
+            gsap.set(".Card5__tit", {xPercent:-10})
+            gsap.set(".Card6__tit", {xPercent:-10})
+
+            gsap.to(".Card1", {
+                x: 50, rotation:0,
+                scrollTrigger: {
+                    trigger: ".Card1",
+                    start: "top 20%",
+                    scrub: true,
+                }
+            });
+            gsap.to(".Card1__tit", {
+                xPercent:30 ,yPercent: -600, rotation:30, z:1,
+                scrollTrigger: {
+                    trigger: ".Card1",
+                    start: "top 20%",
+                    scrub: true,
+                }
+            });
+
+            gsap.to(".Card2", {
+                x: 50, rotation:0, delay:.3,
+                scrollTrigger: {
+                    trigger: ".Card1",
+                    start: "top 20%",
+                    scrub: true,
+                }
+            });
+            gsap.to(".Card2__tit", {
+                xPercent:60 ,yPercent: -600, rotation:60, z:1,
+                scrollTrigger: {
+                    trigger: ".Card2",
+                    start: "top 20%",
+                    scrub: true,
+                }
+            }); 
+
+            gsap.to(".Card3", {
+                x: 50, rotation:0,
+                scrollTrigger: {
+                    trigger: ".Card3",
+                    start: "top 20%",
+                    scrub: true,
+                }
+            });
+            gsap.to(".Card3__tit", {
+                xPercent:-80 ,yPercent: -600, rotation:-60, z:1,
+                scrollTrigger: {
+                    trigger: ".Card3",
+                    start: "top 20%",
+                    scrub: true,
+                }
+            });
+
+            gsap.to(".Card4", {
+                x: 50, rotation:0,
+                scrollTrigger: {
+                    trigger: ".Card3",
+                    start: "top 20%",
+                    scrub: true,
+                }
+            });
+            gsap.to(".Card4__tit", {
+                xPercent:60 ,yPercent: -600, rotation:60, z:1,
+                scrollTrigger: {
+                    trigger: ".Card3",
+                    start: "top 20%",
+                    scrub: true,
+                }
+            });
+
+            gsap.to(".Card5", {
+                x: 50, rotation:0,
+                scrollTrigger: {
+                    trigger: ".Card5",
+                    start: "top 20%",
+                    scrub: true,
+                }
+            });
+            gsap.to(".Card5__tit", {
+                xPercent:-80 ,yPercent: -600, rotation:-76, z:1,
+                scrollTrigger: {
+                    trigger: ".Card5",
+                    start: "top 20%",
+                    scrub: true,
+                }
+            });
+
+            gsap.to(".Card6", {
+                x: 50, rotation:0,
+                scrollTrigger: {
+                    trigger: ".Card5",
+                    start: "top 20%",
+                    scrub: true,
+                }
+            });
+            gsap.to(".Card6__tit", {
+                xPercent:60 ,yPercent: -600, rotation:60, z:1,
+                scrollTrigger: {
+                    trigger: ".Card6",
+                    start: "top 20%",
+                    scrub: true,
+                }
+            });
+
+            
         })
 
         // ScrollTrigger.matchMedia({
@@ -1623,54 +1744,7 @@
             }
         });
 
-        gsap.to(".Card1", {
-            x: 50, 
-            scrollTrigger: {
-                trigger: ".Card1",
-                start: "top 20%",
-                scrub: true,
-            }
-        });
-        gsap.to(".Card2", {
-            x: 50, 
-            scrollTrigger: {
-                trigger: ".Card1",
-                start: "top 20%",
-                scrub: true,
-            }
-        });
-        gsap.to(".Card3", {
-            x: -50, 
-            scrollTrigger: {
-                trigger: ".Card3",
-                start: "top 20%",
-                scrub: true,
-            }
-        });
-        gsap.to(".Card4", {
-            x: -50, 
-            scrollTrigger: {
-                trigger: ".Card3",
-                start: "top 20%",
-                scrub: true,
-            }
-        });
-        gsap.to(".Card5", {
-            x: 50, 
-            scrollTrigger: {
-                trigger: ".Card5",
-                start: "top 20%",
-                scrub: true,
-            }
-        });
-        gsap.to(".Card6", {
-            x: 50, 
-            scrollTrigger: {
-                trigger: ".Card5",
-                start: "top 20%",
-                scrub: true,
-            }
-        });
+        
 
         // section05__txt
 

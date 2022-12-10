@@ -32,7 +32,7 @@ body {
     height: 36px;
     position: relative;
     cursor: pointer;
-    transform: scale(0.7);
+    transform: scale(0.6);
 }
 .ham_menu div {
     position: absolute;
@@ -978,7 +978,7 @@ svg.highlight {
 .sec05__card__tit {
     color: #fff;
     margin-top: 20px;
-    font-size: 4vw;
+    font-size: 5vw;
     font-family: '116watermelon';
 }
 .sec05__card__txt {
@@ -1104,7 +1104,9 @@ svg.highlight {
     padding-bottom: 20%;
     /* padding-bottom: 40%; */
 }
-
+.Card1__tit, .Card2__tit, .Card3__tit, .Card4__tit, .Card5__tit, .Card6__tit {
+    mix-blend-mode: difference;
+}
 .sec06-01__card {
     display: flex;
     justify-content: space-between;
