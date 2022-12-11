@@ -1169,6 +1169,14 @@ svg.highlight {
     color: #fff;
     text-align: center;
     padding-bottom: 2%;
+    position: relative;
+}
+
+.profile2 {
+    opacity: .6;
+    width: 14vw; 
+    right: 16%;
+    bottom: 0;
 }
 .footer__txt h2 {
     text-transform: uppercase;

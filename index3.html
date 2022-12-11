@@ -890,6 +890,9 @@
                     </div>                     
                     <div>Github : <a href="https://github.com/younghwan12" target="_blank">github.com/younghwan12</a></div>
                     <div>Blog : <a href="https://younghwan112.tistory.com/" target="_blank">younghwan112.tistory.com</a></div>
+                    <div class="decor profile2">
+                        <img src="assets/img/profile2.png" alt="profile02">
+                    </div>
                 </div>
             </div>            
         </footer>
@@ -952,16 +955,16 @@
             gsap.set(".sec05__card__txt", {opacity: 0})
 
             gsap.set(".Card1", {rotation: 10})
-            gsap.set(".Card2", {rotation: -5})
-            gsap.set(".Card3", {rotation: -35, yPercent: -5})
-            gsap.set(".Card4", {rotation: 15})
-            gsap.set(".Card5", {rotation: -55})
-            gsap.set(".Card6", {rotation: 25})
+            gsap.set(".Card2", {rotation: -5, yPercent:25})
+            gsap.set(".Card3", {rotation: -25})
+            gsap.set(".Card4", {rotation: 15, yPercent:25})
+            gsap.set(".Card5", {rotation: -35})
+            gsap.set(".Card6", {rotation: 20, yPercent:25})
 
             
             gsap.set(".Card1__tit", {xPercent:-10})
-            gsap.set(".Card2__tit", {xPercent:-10})
-            gsap.set(".Card3__tit", {xPercent:-10})
+            gsap.set(".Card2__tit", {xPercent:20})
+            gsap.set(".Card3__tit", {xPercent:-10, yPercent:-30})
             gsap.set(".Card4__tit", {xPercent:-10})
             gsap.set(".Card5__tit", {xPercent:-10})
             gsap.set(".Card6__tit", {xPercent:-10})
@@ -1163,54 +1166,6 @@
                 start: "top 30%",
             }
         });
-        // gsap.to(".sec02__p2__p1 span", {
-        //     ease: "power3.easeInOut",
-        //     delay:.8,
-        //     opacity:1,
-        //     xPercent:0,
-        //     yPercent:0,
-        //     stagger: 0.02,
-        //     scrollTrigger: {
-        //         trigger: ".halfmoon",
-        //         start: "top 30%",
-        //     }
-        // });
-        // gsap.to(".sec02__p2__p2 span", {
-        //     ease: "power3.easeInOut",
-        //     delay:.8,
-        //     opacity:1,
-        //     xPercent:0,
-        //     yPercent:0,
-        //     stagger: 0.02,
-        //     scrollTrigger: {
-        //         trigger: ".halfmoon",
-        //         start: "top 30%",
-        //     }
-        // });
-        // gsap.to(".sec02__p2__p3 span", {
-        //     ease: "power3.easeInOut",
-        //     delay:.8,
-        //     opacity:1,
-        //     xPercent:0,
-        //     yPercent:0,
-        //     stagger: 0.02,
-        //     scrollTrigger: {
-        //         trigger: ".halfmoon",
-        //         start: "top 30%",
-        //     }
-        // });
-        // gsap.to(".sec02__p2__p4 span", {
-        //     ease: "power3.easeInOut",
-        //     delay:.8,
-        //     opacity:1,
-        //     xPercent:0,
-        //     yPercent:0,
-        //     stagger: 0.02,
-        //     scrollTrigger: {
-        //         trigger: ".halfmoon",
-        //         start: "top 30%",
-        //     }
-        // });
         gsap.to(".town", {
             rotation: -16,
             stagger: .2,
