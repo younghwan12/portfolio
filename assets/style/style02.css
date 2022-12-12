@@ -11,7 +11,9 @@ body {
     margin: 0 auto;
     box-sizing: border-box;
 }
-
+.black {
+    background-color: #000;
+}
 /* header */
 #main {
     position: relative;
@@ -40,6 +42,7 @@ body {
     height: 4px;
     border-radius: 2px;
     background: #fff;
+    mix-blend-mode: difference;
     transition: transform 0.45s cubic-bezier(0.9, -0.6, 0.3, 1.6),
         width 0.2s ease 0.2s;
 }
@@ -101,18 +104,18 @@ body {
     }
     .header__menu {
         position: fixed;
-        right: -100%;
-        top: 80px;
+        right: -105%;
+        width: 98%;
         padding: 20px;
         text-align: right;
-        transition: right 0.4s ease-in;        
-        background-color: rgba(255, 255, 255, 0.4);
+        transition: right 0.4s ease-in;
+        background-color: rgba(0, 0, 0, 0.4);
     }
-    .header__menu ul li {
-        margin-bottom: 10px;
+    #header nav {
+        justify-content: center !important;
     }
     #header nav ul a {
-        color: #dbf53b !important;
+        color: #fff !important;
     }
     .header__member a:hover {
         background-color: #000;
@@ -151,14 +154,8 @@ body {
         transition: opacity 0.3s 1.6s;
     }
     .ham_menu {
-        right: 35px;
-        top: 20px;
-    }
-    #header nav {
-        display: block !important;
-    }
-    #header nav ul {
-        display: block !important;
+        right: 15px;
+        top: 15px;
     }
 }
 #header nav {
@@ -472,7 +469,8 @@ svg.highlight {
 .sec03__card__txt2 {
     width: 38%;
     font-family: 'IropkeBatang';
-    font-size: 1.4vw;
+    font-size: 1.5vw;
+    line-height: 1.4;
     overflow: hidden;
 }
 .sec03__card__txt2 span {
@@ -482,7 +480,9 @@ svg.highlight {
 .sec03__card__txt3 {
     width: 38%;
     font-family: 'IropkeBatang';
-    font-size: 1.4vw;
+    font-size: 1.5vw;
+    line-height: 1.4;
+    overflow: hidden;
 }
 .sec03__card__txt3 span {
     display: inline-block;
@@ -859,7 +859,7 @@ svg.highlight {
 .strainer2 {
     width: 7vw;
     right: 15%;
-    top: 25%;
+    top: 15%;
     transform: rotate(45deg);
 }
 .bubble01 {
@@ -935,7 +935,7 @@ svg.highlight {
 .sec05__txt1 {
     color: #fff;
     margin-left: 60%;
-    font-size: 1.2vw;
+    font-size: 1.6vw;
     font-family: 'IropkeBatang';
     white-space: nowrap;
 }
@@ -1066,7 +1066,7 @@ svg.highlight {
 }
 .sec06__txt {
     font-family: 'IropkeBatang';
-    font-size: 1.3vw;
+    font-size: 1.6vw;
     margin-left: 15%;
 }
 .sec06__txt__t1 span, .sec06__txt__t2 span, .sec06__txt__t3 span, .sec06__txt__t4 span {
@@ -1173,10 +1173,9 @@ svg.highlight {
 }
 
 .profile2 {
-    opacity: .8;
-    width: 14vw; 
-    right: 16%;
-    bottom: 0;
+    width: 12vw;
+    right: 42%;
+    bottom: 88%;
 }
 .footer__txt h2 {
     text-transform: uppercase;
@@ -1503,6 +1502,6 @@ svg.highlight {
         padding-top: 0;
     }
     .profile2 {
-        left: 10%;
+        right: 5%;
     }
 }
