@@ -320,8 +320,7 @@ svg.highlight {
     font-size: 1.5vw;
     font-family: "IropkeBatang";
     line-height: 1.5;
-    /* overflow: hidden; */
-    word-break: keep-all;
+    white-space: nowrap;
 }
 .wrapper__inner .sec02__txt .sec02__p1 {
     margin-bottom: 5%;
@@ -472,6 +471,7 @@ svg.highlight {
     font-size: 1.5vw;
     line-height: 1.4;
     overflow: hidden;
+    white-space: nowrap;
 }
 .sec03__card__txt2 span {
     display: inline-block;
@@ -483,6 +483,7 @@ svg.highlight {
     font-size: 1.5vw;
     line-height: 1.4;
     overflow: hidden;
+    white-space: nowrap;
 }
 .sec03__card__txt3 span {
     display: inline-block;
@@ -766,6 +767,7 @@ svg.highlight {
     font-size: 1.4vw;
     font-weight: 100;
     margin-bottom: 30px;
+    white-space: nowrap;
 }
 .sec04-01__txt1 span, .sec04-02__txt1 span, .sec04-03__txt1 span, .sec04-04__txt1 span, .sec04-05__txt1 span {
     display: inline-block;
@@ -1068,6 +1070,7 @@ svg.highlight {
     font-family: 'IropkeBatang';
     font-size: 1.6vw;
     margin-left: 15%;
+    white-space: nowrap;
 }
 .sec06__txt__t1 span, .sec06__txt__t2 span, .sec06__txt__t3 span, .sec06__txt__t4 span {
     display: inline-block;
@@ -1153,6 +1156,7 @@ svg.highlight {
     width: 100%;
     bottom: 0;
     z-index: -1;
+    padding-bottom: 10%;
 }
 
 /* #footer */
@@ -1163,7 +1167,7 @@ svg.highlight {
     left: 0;
     bottom: 0;
     width: 100%;
-    /* position: relative; */
+    background-color: #000;
 }
 .footer__txt {
     color: #fff;
@@ -1173,8 +1177,8 @@ svg.highlight {
 }
 
 .profile2 {
-    width: 12vw;
-    right: 42%;
+    width: 10vw;
+    right: 43.5%;
     bottom: 88%;
 }
 .footer__txt h2 {
@@ -1199,7 +1203,7 @@ svg.highlight {
 
 @media (max-width: 1280px) {
     .wrapper__inner {
-        max-width: 690px;
+        max-width: 835px;
     }
     /* .wrapper__inner__big {
         max-width: 550px;
@@ -1445,7 +1449,7 @@ svg.highlight {
     }
 
     #section06-1 {
-        padding-bottom: 40%;
+        padding-bottom: 48%;
     }
     .footer__txt {
         text-align: right;
