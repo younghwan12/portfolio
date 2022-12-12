@@ -134,6 +134,7 @@ body {
     }
     #header nav ul a {
         font-size: 2vw !important;
+        margin: 0 !important;
     }
     .header__menu.active {
         right: 0;
@@ -324,7 +325,6 @@ svg.highlight {
 }
 .wrapper__inner .sec02__txt .sec02__p1 {
     margin-bottom: 5%;
-    margin-right: 25%;
 }
 .sec02__p1__t1, .sec02__p1__t2 {
     overflow: hidden;
@@ -1228,6 +1228,7 @@ svg.highlight {
     } 
     .sec03__card__txt2, .sec03__card__txt3 {
         font-size: 1.8vw;
+        text-align: center;
     }
     .sec04__tit {
         font-size: 12vw;
@@ -1235,14 +1236,17 @@ svg.highlight {
     }
     .sec04__txt1 {
         font-size: 3vw;
+        text-align: center;
+        margin-bottom: 50px;
     }
     .sec04__txt2 ul li {
-        font-size: 2.5vw;
+        font-size: 2.7vw;
         list-style: none;
     }
     .sec04-01__txt1, .sec04-02__txt1, .sec04-03__txt1, .sec04-04__txt1, .sec04-05__txt1 {
-        font-size: 1.6vw;
+        font-size: 2.8vw;
         margin-top: 3%;
+        text-align: center;
     }
     .strainer2 {
         top: 10%;
@@ -1251,12 +1255,12 @@ svg.highlight {
         justify-content: space-between;
     }
     .sec04-con__right ul li {
-        width: 8vw;
-        height: 8vw;
+        width: 12vw;
+        height: 12vw;
     }
     .sec04-con__right ul li a {
         font-size: 1.8vw;
-        line-height: 8vw;
+        line-height: 12vw;
     }
     .sec05__txt1 {
         margin-left: 48%;
@@ -1493,7 +1497,8 @@ svg.highlight {
         width: 100%;
     }
     .sec04-01__tit {
-        font-size:  7vw;
+        font-size: 9vw;
+        text-align: center;
     }
     .rocket, .rocketfire, .station {
         display: none;
