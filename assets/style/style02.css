@@ -1173,7 +1173,7 @@ svg.highlight {
 }
 
 .profile2 {
-    opacity: .6;
+    opacity: .8;
     width: 14vw; 
     right: 16%;
     bottom: 0;
@@ -1501,5 +1501,8 @@ svg.highlight {
     }
     #section07 {
         padding-top: 0;
+    }
+    .profile2 {
+        left: 10%;
     }
 }
