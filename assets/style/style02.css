@@ -325,20 +325,19 @@ svg.highlight {
 .wrapper__inner .sec02__txt .sec02__p1 {
     margin-bottom: 5%;
     margin-right: 25%;
+}
+.sec02__p1__t1, .sec02__p1__t2 {
     overflow: hidden;
 }
-
 .sec02__p1 span, .sec02__p2 span {
     display: inline-block;
     white-space: pre;
 }
-.sec02__p2__p1 span, .sec02__p2__p2 span, .sec02__p2__p3 span, .sec02__p2__p4 span {
-    display: inline-block;
-    white-space: pre;
-    word-break: keep-all;
-}
 .wrapper__inner .sec02__txt .sec02__p2 {
     margin-left: 25%;
+}
+.sec02__p2__t1 , .sec02__p2__t2, .sec02__p2__t3, .sec02__p2__t4 {
+    overflow: hidden;
 }
 /* section02__outer */
 .cloud-section {
