@@ -464,7 +464,7 @@ svg.highlight {
     transform: rotate(6deg);
 }
 .sec03__card__txt2 {
-    width: 38%;
+    width: 41%;
     font-family: 'IropkeBatang';
     font-size: 1.5vw;
     line-height: 1.4;
@@ -475,14 +475,11 @@ svg.highlight {
     white-space: pre;
 }
 .sec03__card__txt3 {
-    width: 38%;
+    width: 41%;
     font-family: 'IropkeBatang';
     font-size: 1.5vw;
     line-height: 1.4;
     white-space: nowrap;
-}
-.sec03__card__txt3__t1 {
-    overflow: hidden;
 }
 .sec03__card__txt3 span {
     display: inline-block;
@@ -935,7 +932,7 @@ svg.highlight {
 }
 .sec05__txt1 {
     color: #fff;
-    margin-left: 60%;
+    margin-left: 55%;
     font-size: 1.6vw;
     font-family: 'IropkeBatang';
     white-space: nowrap;
