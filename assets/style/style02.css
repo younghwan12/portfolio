@@ -339,7 +339,6 @@ svg.highlight {
 }
 .wrapper__inner .sec02__txt .sec02__p2 {
     margin-left: 25%;
-    overflow: hidden;
 }
 /* section02__outer */
 .cloud-section {
@@ -470,7 +469,6 @@ svg.highlight {
     font-family: 'IropkeBatang';
     font-size: 1.5vw;
     line-height: 1.4;
-    overflow: hidden;
     white-space: nowrap;
 }
 .sec03__card__txt2 span {
@@ -482,8 +480,10 @@ svg.highlight {
     font-family: 'IropkeBatang';
     font-size: 1.5vw;
     line-height: 1.4;
-    overflow: hidden;
     white-space: nowrap;
+}
+.sec03__card__txt3__t1 {
+    overflow: hidden;
 }
 .sec03__card__txt3 span {
     display: inline-block;
